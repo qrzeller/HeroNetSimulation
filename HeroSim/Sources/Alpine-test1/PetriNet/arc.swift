@@ -7,35 +7,41 @@
 
 import Foundation
 
-struct Arc<PlaceType>{
+struct Arc<PlaceIn, PlaceOut>{
     enum Way{
         case fromPlace
         case fromTransition
     }
-    var connectedPlace: Place<PlaceType>
+    var connectedPlaceIn: Place<PlaceIn>? = nil
+    var connectedPlaceOut: Place<PlaceOut>? = nil
     
-    let label: ([PlaceType]) -> PlaceType?
+    let label: ([PlaceIn]) -> PlaceOut?
     let name : String
     let direction: Way
     
-    init(label: @escaping ([PlaceType]) -> PlaceType?, connectedPlace: Place<PlaceType>, direction: Way, name: String = "") {
+    init(label: @escaping ([PlaceIn]) -> PlaceOut?, connectedPlaceIn:  Place<PlaceIn>?,
+                                                    connectedPlaceOut: Place<PlaceOut>?, direction: Way, name: String = "") {
         self.label = label
         self.name = name
-        self.connectedPlace = connectedPlace
+        self.connectedPlaceIn = connectedPlaceIn
+        self.connectedPlaceOut = connectedPlaceOut
         self.direction = direction
         
+        assert(!(direction == .fromPlace) || (PlaceIn.self == PlaceOut.self), "We assumed for arc, In type == Out type") // p -> q
+
+        
     }
-     // params for out arcs only
+     // params for out arcs only    
     // return type can be any because (T or closure/function)
-    mutating func execute(paramsOut: [PlaceType]? = nil) -> PlaceType?{
+    mutating func execute(transitionParams: [PlaceIn]? = nil) -> PlaceOut?{
         if (direction == .fromPlace){
-            if let param = self.connectedPlace.getAValue() {
-                return label([param])// only 1 parameter
+            if let param = self.connectedPlaceIn!.getAValue() {
+                return label([param]) // Assume we did not change the type and (only one param)
             } else { return nil }
         } else {
             // let inCard = connectedPlace.getDomain().getDomainCardinality()
-            let newMark = label(paramsOut!)
-            connectedPlace.add(token: newMark as! PlaceType)
+            let newMark = label(transitionParams!)
+            connectedPlaceOut!.add(token: newMark!)
             return newMark
         }
     }

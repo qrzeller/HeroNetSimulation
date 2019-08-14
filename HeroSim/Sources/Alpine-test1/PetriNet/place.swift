@@ -16,23 +16,17 @@ struct Place<T> {
     // The domain of the tokens (marking)
     let domain: Domain
     
-    // Instanciate after
-    var linked = [Transition]() // not mandatory !
-    
-    init<I : Sequence>(markings : I, domain: Domain, comment: String, linkedTransition: [Transition] = [Transition]()) where I.Iterator.Element == T {
+    init<I : Sequence>(markings : I, domain: Domain, comment: String) where I.Iterator.Element == T {
         self.markings = Markings(markings: markings)
         self.comment = comment
         self.domain = domain
-        
-        for i in linkedTransition{
-            self.linked.append(i)
-        }
     }
     
     public func getAValue() -> T?{
         // get the first marking
         let m = markings[0]
-        markings.del(index: 0)
+        let isDel = markings.del(index: 0)
+        assert(isDel != nil, "Value was not deleted \(self)")
         return m
     }
     
@@ -45,11 +39,11 @@ struct Place<T> {
         self.comment = comment
     }
     
-    mutating func setLinked<I:Sequence>(linkedSeq:  I) where I.Iterator.Element == Transition {
-        for i in linkedSeq{
-            self.linked.append(i)
-        }
-    }
+//    mutating func setLinked<I:Sequence>(linkedSeq:  I) where I.Iterator.Element == Transition {
+//        for i in linkedSeq{
+//            self.linked.append(i)
+//        }
+//    }
     
     // ||||||||| Getter & Setter |||||||||||||
     public func getDomain() -> Domain {

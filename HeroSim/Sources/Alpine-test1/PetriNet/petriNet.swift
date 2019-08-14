@@ -16,21 +16,21 @@ struct PetriNet{
     
     let type : netType
     let commonName: String
-    let places: Places
-    let transitions: Transitions
+    let places: [Place<Any>]
+    let transitions: [Transition<Any, Any>]
     
-    init(places: [Place<Any>],transitions: [Transition], commonName: String = "" ,type: netType = .hero) {
+    init(places: [Place<Any>],transitions: [Transition<Any, Any>], commonName: String = "" ,type: netType = .hero) {
         self.type = type
         self.commonName = commonName
         
         // Init places and transition object.
         // TODO
-        self.places = Places(places: places)
-        self.transitions = Transitions(transitions: transitions)
+        self.places = places
+        self.transitions = transitions
     }
     
     func test(){
-        let ok = transitions[0]?.fire()
+        let ok = transitions[0].fire()
     }
     
 }

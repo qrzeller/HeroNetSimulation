@@ -7,20 +7,20 @@
 
 import Foundation
 
-struct Transition{
+struct Transition<In, Out>{
     
     // TODO
-    let transitionGuard: ([Any]) -> Bool
+    let transitionGuard: ([In]) -> Bool
     
-    let arcsIn :[Arc<Any>]
-    let arcsOut :[Arc<Any>]
+    let arcsIn :[Arc<In, In>] //assume we do not change the type in "in arcs" !
+    let arcsOut :[Arc<In, Out>]
     
     // TODO, in case we need to store what is it
     let description: Any?
     
     var enabled = true
     
-    init(transitionGuard: @escaping ([Any]) -> Bool, description: Any? = nil, arcsIn: [Arc<Any>], arcsOut: [Arc<Any>]) {
+    init(transitionGuard: @escaping ([In]) -> Bool, description: Any? = nil, arcsIn: [Arc<In, In>], arcsOut: [Arc<In, Out>]) {
         self.transitionGuard    = transitionGuard
         self.description        = description
         self.arcsIn             = arcsIn
@@ -32,10 +32,10 @@ struct Transition{
         if !enabled{ return false }
         
         // marking from place, executed by the labels
-        var executedToken = [Any]()
+        var executedToken = [In]()
         for var i in arcsIn{
             
-            if let inMark = i.execute(){
+            if let inMark = i.execute(){ // Assume type not changed (In == Out), as arc is way in. see line 15
                 print("Treating \(i.name) , \(inMark):")
                 
                 executedToken.append(inMark)
@@ -55,10 +55,10 @@ struct Transition{
         // TODO : we need to choose a subset of the variable. The in parameter are not everything for sure !!!!
         
         for var i in arcsOut{
-            if let outMark = i.execute(paramsOut: executedToken){
-                i.connectedPlace.add(token: outMark)
+            if let outMark = i.execute(transitionParams: executedToken){
+                print("The execution \(i.name) returned: \(outMark) ")
             } else {
-                print("The execution returned nil, " + i.name)
+                print("The execution \(i.name) returned nil !")
             }
         }
         

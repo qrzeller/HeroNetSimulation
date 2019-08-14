@@ -28,9 +28,19 @@ func plus2(a: Int) -> Int{
 func plus4(a: Int) -> Int{
     return a + 4
 }
-func nothing(a: [Any]) -> Any?{
-    print("Execute label with value: \(a)")
+func nothing(a: [Int]) -> Int?{
+    print("1. Execute label with value: \(a)")
     return a[0]
+}
+func nothing2(a: [(Int) -> Int]) -> ((Int) -> Int)?{
+    print("2. Execute label with value: \(a)")
+    return a[0]
+}
+func nothing3(a: [Any]) -> Int?{
+    print("3. Execute label with value: \(a)")
+    let f = a[1] as! (Int) -> Int?
+    let param = a[0] as! Int
+    return f(param)
 }
 func fGuard(in: [Any]) -> Bool {
     return true
@@ -50,11 +60,22 @@ var p3 = Place<Int>(markings: [0], domain: int, comment: "P3-result")
 
 
 
-let a1 = Arc(label: nothing, connectedPlace: p1, direction: .fromPlace      , name: "a1")
-let a2 = Arc(label: nothing, connectedPlace: p2, direction: .fromPlace      , name: "a2")
-let a3 = Arc(label: nothing, connectedPlace: p3, direction: .fromTransition , name: "a2")
+let a1 = Arc<Int, Int>(label: nothing, connectedPlaceIn: p1, connectedPlaceOut: nil, direction: .fromPlace      , name: "a1")
+let a2 = Arc<(Int) -> Int, (Int) -> Int>(label: nothing2, connectedPlaceIn: p2, connectedPlaceOut: nil, direction: .fromPlace      , name: "a2")
 
-var t1 = Transition(transitionGuard: fGuard, arcsIn: [a1,a2], arcsOut: [a3])
+// entry arcs are not function ?
+let a3 = Arc<Int, Int>(label: nothing3, connectedPlaceIn: nil, connectedPlaceOut: p3,  direction: .fromTransition , name: "a2")
 
-var pn = PetriNet(places: [p1,p2,p3], transitions: [t1], commonName: "Petri", type: .hero)
-pn.test()
+var t1 = Transition<Int, Int>(transitionGuard: fGuard, arcsOut: [a3], arcsIn: [a1,a2] as! [Arc<Any, Any>])
+
+//var pn = PetriNet(places: [p1,p2,p3] as! [Place<Any>], transitions: [t1 as! Transition<Any,Any>] , commonName: "Petri", type: .hero)
+//pn.test()
+let resultFire = t1.fire()
+
+
+
+
+// Comment
+
+// les types ne sont pas possible car ce sont les labels qui décident des interraction
+// les arcs d'entrées sont de types différents -> pas possible de les stores dans un tableau.
