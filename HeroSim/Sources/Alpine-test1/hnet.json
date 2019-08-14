@@ -1,0 +1,60 @@
+{
+    "metadata": {
+        "version"   : "0.0.1",
+        "type"      : "HERO",
+        "complexity": 1,
+        "date"      : "01-01-2010"
+    },
+    "transitions": {
+        "t1": {
+            "arcs" : {
+                "in": {
+                    "a1": {"label":"code", ("replace": "yes")}, <!replace not usefull>
+                    "a2": {"label":"code", "replace": ""}
+                },
+                "out":{
+                    "a3": {
+                        "label"  : "operationNoCurry"
+                    }
+                }
+                
+            },
+            "guards": {
+                "order":["a1", "a2", "a3"],
+                "code":""
+            },
+            "comment": "Some text"
+            "enabled": true
+        },
+        "t2": {
+            "arcs" : {"a1": {"in":"p3", "out":""}, "a2": {"in":"p4", "out":""},"a3": {"out":"p5", "in":""}},
+            "guards": {
+                "order":["a1", "a2", "a3"], # In and Out ?
+                "code":""
+            },
+            "comment": "Some text"
+            "enabled": true
+        }
+    
+    },
+    "places": {
+        "p1": {
+            "isRef":      true,
+            "type":       "func",
+            "definition": "2 1",
+            "comments": "Text to read"
+        },
+        "p2":{
+            "isRef":      false,
+            "type":       "Z",
+            "definition": "",
+            "comments": "Text to read"
+        }
+    },
+    "env":{
+        "lang": "Alpine",
+        "version": "x.x.x",
+        "context": "curry.alpine"
+    }
+
+}
