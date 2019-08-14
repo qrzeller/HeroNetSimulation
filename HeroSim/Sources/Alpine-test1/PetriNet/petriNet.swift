@@ -17,7 +17,7 @@ struct PetriNet{
     let type : netType
     let commonName: String
     let places: [Place<Any>]
-    let transitions: [Transition<Any, Any>]
+    var transitions: [Transition<Any, Any>]
     
     init(places: [Place<Any>],transitions: [Transition<Any, Any>], commonName: String = "" ,type: netType = .hero) {
         self.type = type
@@ -29,8 +29,8 @@ struct PetriNet{
         self.transitions = transitions
     }
     
-    func test(){
-        let ok = transitions[0].fire()
+    mutating func test(){
+        var ok = transitions[0].fire()
     }
     
 }

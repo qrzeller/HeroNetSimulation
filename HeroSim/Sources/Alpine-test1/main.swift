@@ -38,7 +38,7 @@ func nothing2(a: [(Int) -> Int]) -> ((Int) -> Int)?{
 }
 func nothing3(a: [Any]) -> Int?{
     print("3. Execute label with value: \(a)")
-    let f = a[1] as! (Int) -> Int?
+    let f = a[1] as! (Int) -> Int
     let param = a[0] as! Int
     return f(param)
 }
@@ -64,9 +64,9 @@ let a1 = Arc<Int, Int>(label: nothing, connectedPlaceIn: p1, connectedPlaceOut: 
 let a2 = Arc<(Int) -> Int, (Int) -> Int>(label: nothing2, connectedPlaceIn: p2, connectedPlaceOut: nil, direction: .fromPlace      , name: "a2")
 
 // entry arcs are not function ?
-let a3 = Arc<Int, Int>(label: nothing3, connectedPlaceIn: nil, connectedPlaceOut: p3,  direction: .fromTransition , name: "a2")
+let a3 = Arc<Any, Int>(label: nothing3, connectedPlaceIn: nil, connectedPlaceOut: p3,  direction: .fromTransition , name: "a2")
 
-var t1 = Transition<Int, Int>(transitionGuard: fGuard, arcsOut: [a3], arcsIn: [a1,a2] as! [Arc<Any, Any>])
+var t1 = Transition<Int, Int>(transitionGuard: fGuard, arcsIn: [a1], arcsOut: [a3], function: a2)
 
 //var pn = PetriNet(places: [p1,p2,p3] as! [Place<Any>], transitions: [t1 as! Transition<Any,Any>] , commonName: "Petri", type: .hero)
 //pn.test()

@@ -13,26 +13,25 @@ struct Transition<In, Out>{
     let transitionGuard: ([In]) -> Bool
     
     let arcsIn :[Arc<In, In>] //assume we do not change the type in "in arcs" !
-    let arcsOut :[Arc<In, Out>]
-    
-    // TODO, in case we need to store what is it
-    let description: Any?
+    let arcsOut :[Arc<Any, Out>]
+    var function : Arc<(In)-> Out, (In)-> Out>?
     
     var enabled = true
     
-    init(transitionGuard: @escaping ([In]) -> Bool, description: Any? = nil, arcsIn: [Arc<In, In>], arcsOut: [Arc<In, Out>]) {
+    init(transitionGuard: @escaping ([In]) -> Bool, arcsIn: [Arc<In, In>], arcsOut: [Arc<Any, Out>], function: Arc<(In)-> Out, (In)-> Out>?) {
         self.transitionGuard    = transitionGuard
-        self.description        = description
         self.arcsIn             = arcsIn
         self.arcsOut            = arcsOut
+        
+        self.function = function
     }
     
     
-    public func fire() -> Bool{
+    public mutating func fire() -> Bool{
         if !enabled{ return false }
         
         // marking from place, executed by the labels
-        var executedToken = [In]()
+        var executedToken = [Any]()
         for var i in arcsIn{
             
             if let inMark = i.execute(){ // Assume type not changed (In == Out), as arc is way in. see line 15
@@ -44,10 +43,9 @@ struct Transition<In, Out>{
                 return false
             }
         }
-        // run token between them. -----
-        // Normally the job of the out label :
-        let fun = executedToken[1]  as! (Int) -> Int
-        print("-----> Executed :", fun(executedToken[0] as! Int))
+        
+        let fun = self.function!.execute()!
+        executedToken.append(fun)
         
         // -----------------------------
         
