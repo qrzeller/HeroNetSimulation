@@ -10,14 +10,14 @@ import Foundation
 struct Place<T> {
     
     // Container for markings, of type T
-    let markings: Markings<T>
+    let markings: Tokens<T>
     // Just for information purpose or display.
     var comment: String
     // The domain of the tokens (marking)
     let domain: Domain
     
     init<I : Sequence>(markings : I, domain: Domain, comment: String) where I.Iterator.Element == T {
-        self.markings = Markings(markings: markings)
+        self.markings = Tokens(markings: markings)
         self.comment = comment
         self.domain = domain
     }

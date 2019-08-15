@@ -10,15 +10,15 @@ import Foundation
 struct Transition<In, Out>{
     
     // TODO
-    let transitionGuard: ([In]) -> Bool
+    let transitionGuard: ([Any]) -> Bool//([In]) -> Bool
     
-    let arcsIn :[Arc<In, In>] //assume we do not change the type in "in arcs" !
-    let arcsOut :[Arc<Any, Out>]
+    var arcsIn :[Arc<In, In>] //assume we do not change the type in "in arcs" !
+    var arcsOut :[Arc<Any, Out>]
     var function : Arc<(In)-> Out, (In)-> Out>?
     
     var enabled = true
     
-    init(transitionGuard: @escaping ([In]) -> Bool, arcsIn: [Arc<In, In>], arcsOut: [Arc<Any, Out>], function: Arc<(In)-> Out, (In)-> Out>?) {
+    init(transitionGuard: @escaping ([Any]) -> Bool, arcsIn: [Arc<In, In>], arcsOut: [Arc<Any, Out>], function: Arc<(In)-> Out, (In)-> Out>? = nil) {
         self.transitionGuard    = transitionGuard
         self.arcsIn             = arcsIn
         self.arcsOut            = arcsOut
@@ -31,26 +31,46 @@ struct Transition<In, Out>{
         if !enabled{ return false }
         
         // marking from place, executed by the labels
-        var executedToken = [Any]()
+        var executedTokenVariable = [In]()
+        var executedTokenFunction = [(In)-> Out]()
+        var executedToken         = [Any]() // labels needs any
+        
         for var i in arcsIn{
             
             if let inMark = i.execute(){ // Assume type not changed (In == Out), as arc is way in. see line 15
                 print("Treating \(i.name) , \(inMark):")
                 
-                executedToken.append(inMark)
+                executedTokenVariable.append(inMark)
             } else {
                 print("One label returned nil, " + i.name)
+                resetStateVariable(tokens: executedTokenVariable)
                 return false
             }
         }
         
-        let fun = self.function!.execute()!
-        executedToken.append(fun)
+        if var arcFun = self.function{
+            if let funcToken = arcFun.execute(){
+                executedTokenFunction.append(funcToken)
+            } else {
+                print("The label for \(arcFun.name) returned nil.")
+            }
+        }
         
-        // -----------------------------
+        executedToken = executedTokenVariable + executedTokenFunction
+        // ----------------------------- Check guards
+        
+        // Guard did not validate, return token to state.
+        if !transitionGuard(executedToken) {
+            self.resetStateVariable(tokens: executedTokenVariable)
+            if !executedTokenFunction.isEmpty{
+                resetStateFunction(token: executedTokenFunction)
+            }
+            return false
+        }
         
         
-        // TODO : we need to choose a subset of the variable. The in parameter are not everything for sure !!!!
+        
+        // _____________________________
         
         for var i in arcsOut{
             if let outMark = i.execute(transitionParams: executedToken){
@@ -70,5 +90,17 @@ struct Transition<In, Out>{
     
     public mutating func enable(){
         self.enabled = true
+    }
+    
+    // Put back token in the places
+    private mutating func resetStateVariable(tokens: [In]) -> Void{
+        print("Guard fails, refill value")
+        for i in 0 ..< tokens.count{ // tokens count because it can be parially executed
+            arcsIn[i].connectedPlaceIn!.add(token: tokens[i])
+        }
+    }
+    // but back function token in the place
+    private mutating func resetStateFunction(token: [(In)-> Out]){
+        function!.connectedPlaceIn!.add(token: token[0]) // we handle only 1 function for now
     }
 }

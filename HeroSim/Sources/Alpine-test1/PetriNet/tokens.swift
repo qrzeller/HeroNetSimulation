@@ -1,5 +1,5 @@
 //
-//  markings.swift
+//  tokens.swift
 //  Alpine-test1
 //
 //  Created by Quentin Zeller on 08.08.19.
@@ -7,32 +7,34 @@
 
 import Foundation
 
-class Markings<T>{ // todo MARKING
+class Tokens<T>: CustomStringConvertible{
+    var description: String { return tokens.description }
+    // todo MARKING
     
-    // The marking as an Array (can be changed as accessed by subscript)
-    private var markings = [T]()
+    // The token set as an Array (can be changed as accessed by subscript)
+    private var tokens = [T]()
     
     init<I : Sequence>(markings : I) where I.Iterator.Element == T {
         for i in markings{
-            self.markings.append(i)
+            self.tokens.append(i)
         }
     }
     
     // Return nil if does not exist
     subscript(index: Int) -> T?{
         get{
-            assert (markings.count > index && index >= 0, "Token index does not exist : \(index)")
-            return (markings.count > index && index >= 0) ? markings[index] : nil
+            assert (tokens.count > index && index >= 0, "Token index does not exist : \(index)")
+            return (tokens.count > index && index >= 0) ? tokens[index] : nil
         }
 //        set(value){
 //            markings[index] = markings.contains(index) ? value : nil
 //        }
     }
     
-    // Add an element to the markings, Don't chek if already exist
+    // Add an element to the token set, Don't chek if already exist
     func add(expr: T){
         //if !markings.contains(expr){
-            markings.append(expr)
+            tokens.append(expr)
         //}
     }
     
@@ -41,7 +43,7 @@ class Markings<T>{ // todo MARKING
         
         let deleted = self[index] // used to check if exist and return value
         if deleted != nil{
-            markings.remove(at: index)
+            tokens.remove(at: index)
         }
         return deleted
     }
@@ -49,6 +51,6 @@ class Markings<T>{ // todo MARKING
 
     // ||||||||| Getter & Setter |||||||||||||
     public func getCardinality() -> Int {
-        return markings.count
+        return tokens.count
     }
 }
