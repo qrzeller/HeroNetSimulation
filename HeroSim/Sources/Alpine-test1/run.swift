@@ -22,7 +22,6 @@ func test2(){
             print("Error info: \(error)")
             return "not loaded"
         }
-        
     }
 
     var module: String = read(fileName: root+"curry.alpine")
