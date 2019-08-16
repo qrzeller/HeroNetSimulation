@@ -11,18 +11,26 @@ struct Structures2{
         case number(Int)
         case addition(ArithmeticExpressionStandard, ArithmeticExpressionStandard)
         case multiplication(ArithmeticExpressionStandard, ArithmeticExpressionStandard)
-    }
-    
-    func evaluate(_ expression: ArithmeticExpressionStandard) -> Int {
-        switch expression {
-        case let .number(value):
-            return value
-        case let .addition(left, right):
-            return evaluate(left) + evaluate(right)
-        case let .multiplication(left, right):
-            return evaluate(left) * evaluate(right)
+        case add2(ArithmeticExpressionStandard)
+        case add4(ArithmeticExpressionStandard)
+        
+        func evaluate(_ expression: ArithmeticExpressionStandard) -> Int {
+            switch expression {
+            case let .number(value):
+                return value
+            case let .addition(left, right):
+                return evaluate(left) + evaluate(right)
+            case let .multiplication(left, right):
+                return evaluate(left) * evaluate(right)
+            case let .add2(a):
+                return evaluate(a) + 2
+            case let .add4(a):
+                return evaluate(a) + 4
+            }
         }
     }
+    
+    
     
     // |||||||||||||||||||||||||||| FOR PARTIAL APPLICATION |||||||||||||||||||||||||||||
     indirect enum ArithmeticPartialExpression {
@@ -65,7 +73,7 @@ struct Structures2{
         
         let product = partialEvaluate(ArithmeticPartialExpression.multiplication(sum))(ArithmeticExpressionStandard.number(2))
         
-        print(evaluate(product))
+        print(ArithmeticExpressionStandard.evaluate(product))
         
         
     }
@@ -86,7 +94,7 @@ struct Structures2{
         let sum = sumPart(four)
         let product = partialEvaluate(ArithmeticPartialExpression.multiplication(sum))(ArithmeticExpressionStandard.number(2))
         
-        print(evaluate(product))
+        print(ArithmeticExpressionStandard.evaluate(product))
         
         
     }
@@ -99,7 +107,7 @@ struct Structures2{
         let sum = ArithmeticExpressionStandard.addition(five, four)
         let product = ArithmeticExpressionStandard.multiplication(sum, ArithmeticExpressionStandard.number(2))
         
-        print(evaluate(product))
+        print(ArithmeticExpressionStandard.evaluate(product))
         
         
     }
