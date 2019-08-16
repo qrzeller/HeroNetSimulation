@@ -80,8 +80,8 @@ let resultFire = t1.fire()
 // les types ne sont pas possible car ce sont les labels qui décident des interraction
 // les arcs d'entrées sont de types différents -> pas possible de les stores dans un tableau.
 
-print("Content of p1 : ", p1.markings)
+print("Content of p1 : ", p3.markings)
 
 // here guard should fail...
 t1.fire()
-print("Content of p1 : ", p1.markings) // token should roll
+print("Content of p1 : ", p3.markings) // token should roll
