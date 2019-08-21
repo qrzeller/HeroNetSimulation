@@ -30,4 +30,7 @@ voilaOk(4)
 
 youhyou(3)
 //voila(3)
+let somelabel = "a,.    b"
 
+let removed = somelabel.components(separatedBy: CharacterSet([" ", ",", "\t", "\n",])).filter { $0 != "" }
+print(removed)

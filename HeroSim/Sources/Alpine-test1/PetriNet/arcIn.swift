@@ -7,24 +7,32 @@
 
 import Foundation
 
-struct ArcIn<PlaceIn, PlaceOut>{
-    var connectedPlace: Place<PlaceIn>
+struct ArcIn<T>{
+    var connectedPlace: Place<T>
     
-    let label: ([PlaceIn]) -> PlaceOut?
+
+    let bindName: [String]
     let name : String
     
-    init(label: @escaping ([PlaceIn]) -> PlaceOut?, connectedPlace: Place<PlaceIn>, name: String = "") {
-        self.label = label
+    init(label: String, connectedPlace: Place<T>, name: String = "") {
+        
+        self.bindName = label.components(separatedBy: CharacterSet([" ", ",", "\t", "\n",])).filter { $0 != "" }
+        
         self.name = name
         self.connectedPlace = connectedPlace
         
     }
-    // params for out arcs only
-    // return type can be any because (T or closure/function)
-    mutating func execute() -> PlaceOut?{
-        if let param = self.connectedPlace.getAValue() {
-            return label([param]) // Assume we did not change the type and (only one param)
-        } else { return nil }
+
+    mutating func execute() -> [String: T]{
+        var binding = [String:T]()
+        
+        for i in bindName{
+            let param = self.connectedPlace.getAValue()
+            binding[i] = param
+        }
+        
+        return binding
+
         
     }
 }

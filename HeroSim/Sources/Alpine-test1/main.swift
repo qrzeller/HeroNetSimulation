@@ -26,6 +26,11 @@ var interpreter = Interpreter()
 try! interpreter.loadModule(fromString: module)
 
 print("__________________ HeroN ____________________")
+
+
+
+
+
 func label_a1(a: [String]) -> String{
     print("1. Execute label with value: \(a)")
     return a[0]
