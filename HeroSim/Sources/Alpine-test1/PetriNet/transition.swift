@@ -12,12 +12,12 @@ struct Transition<In, Out>{
     // TODO
     let transitionGuard: ([In]) -> Bool//([In]) -> Bool
     
-    var arcsIn :[Arc<In, In>] // TODO only binding
-    var arcsOut :[Arc<In, Out>]
+    var arcsIn  :[ArcIn<In, In>] // TODO only binding
+    var arcsOut :[ArcOut<In, Out>]
     
     var enabled = true
     
-    init(transitionGuard: @escaping ([In]) -> Bool, arcsIn: [Arc<In, In>], arcsOut: [Arc<In, Out>]) {
+    init(transitionGuard: @escaping ([In]) -> Bool, arcsIn: [ArcIn<In, In>], arcsOut: [ArcOut<In, Out>]) {
         self.transitionGuard    = transitionGuard
         self.arcsIn             = arcsIn
         self.arcsOut            = arcsOut
@@ -78,7 +78,7 @@ struct Transition<In, Out>{
     private mutating func resetState(tokens: [In]) -> Void{
         print("Guard fails, refill value")
         for i in 0 ..< tokens.count{ // tokens count because it can be parially executed
-            arcsIn[i].connectedPlaceIn!.add(token: tokens[i])
+            arcsIn[i].connectedPlace.add(token: tokens[i])
         }
     }
 }

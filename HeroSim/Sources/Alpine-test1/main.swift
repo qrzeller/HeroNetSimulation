@@ -53,11 +53,11 @@ var p1 = Place(markings: ["1","2","3"], domain: int, comment: "P1-Int")
 var p2 = Place(markings: ["add","sub"], domain: f, comment: "P2-Func")
 var p3 = Place(markings: ["10"], domain: int, comment: "P3-result")
 
-let a1 = Arc<String,String>(label: label_a1, connectedPlaceIn: p1, connectedPlaceOut: nil, direction: .fromPlace, name: "a1")
-let a2 = Arc<String,String>(label: label_a2, connectedPlaceIn: p2, connectedPlaceOut: nil, direction: .fromPlace , name: "a2")
-let a3 = Arc(label: l_a3, connectedPlaceIn: nil, connectedPlaceOut: p3,  direction: .fromTransition , name: "a2")
+let a1 = ArcIn(label: label_a1, connectedPlace: p1, name: "a1")
+let a2 = ArcIn(label: label_a2, connectedPlace: p2, name: "a2")
+let a3 = ArcOut(label: l_a3, connectedPlace: p3, name: "a2")
 
-var t1 = Transition<String,String>(transitionGuard: fGuard, arcsIn: [a1,a2], arcsOut: [a3])
+var t1 = Transition(transitionGuard: fGuard, arcsIn: [a1,a2], arcsOut: [a3])
 
 let resultFire = t1.fire()
 let resultFire2 = t1.fire()
