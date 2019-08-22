@@ -12,7 +12,7 @@ struct ArcIn<T: Equatable>: CustomStringConvertible{
         return """
         📓 ArcIn :
                 Name: \(name)
-                From place : \(connectedPlace.comment)
+                From place : \(connectedPlace.name)
                 Binding : \(bindName)
         """
     }

@@ -13,8 +13,8 @@ struct ArcOut<PlaceIn: Equatable, PlaceOut: Equatable>: CustomStringConvertible{
         return """
         📓 ArcOut:
                 Name: \(name)
-                To place : \(connectedPlace.comment)
-                label : \(label)
+                To place : \(connectedPlace.name)
+                label : \(String(describing: label))
         """
     }
     

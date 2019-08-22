@@ -13,20 +13,20 @@ struct Place<T: Equatable>: CustomStringConvertible {
         📓 Place :
                 Tokens : \(tokens)
                 Domain : \(domain)
-                Info   : \(comment)
+                Name   : \(name)
         """
     }
     
     // Container for markings, of type T
     let tokens: Tokens<T>
     // Just for information purpose or display.
-    var comment: String
+    var name: String
     // The domain of the tokens (marking)
     let domain: Domain
     
-    init<I : Sequence>(tokens : I, domain: Domain, comment: String) where I.Iterator.Element == T {
+    init<I : Sequence>(tokens : I, domain: Domain, name: String) where I.Iterator.Element == T {
         self.tokens = Tokens(tokens: tokens)
-        self.comment = comment
+        self.name = name
         self.domain = domain
     }
     
@@ -61,6 +61,6 @@ struct Place<T: Equatable>: CustomStringConvertible {
     
     // Modify the comments
     mutating func setComment(comment: String){
-        self.comment = comment
+        self.name = comment
     }
 }

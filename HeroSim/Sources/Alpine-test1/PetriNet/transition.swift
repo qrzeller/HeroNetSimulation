@@ -18,10 +18,13 @@ struct Transition<In: Equatable, Out: Equatable>{
     var enabled = true
     let existingBindings: [String]
     
-    init(transitionGuard: @escaping ([String: In]) -> Bool, arcsIn: [ArcIn<In>], arcsOut: [ArcOut<In, Out>]) {
+    let name: String
+    
+    init(transitionGuard: @escaping ([String: In]) -> Bool, arcsIn: [ArcIn<In>], arcsOut: [ArcOut<In, Out>], name:String) {
         self.transitionGuard    = transitionGuard
         self.arcsIn             = arcsIn
         self.arcsOut            = arcsOut
+        self.name               = name
         
         // store existing bindings (used for manual fire: public mutating func fire(executedToken : [String:In]) -> Bool)
         var bindings = [String]()
@@ -78,7 +81,10 @@ struct Transition<In: Equatable, Out: Equatable>{
     // Fire with pre defined tokens (manual fire)
     public mutating func fire(manualToken : [String: In]) -> Bool{
         if !enabled{ return false }
-        
+        if manualToken.count != existingBindings.count {
+            print("📕 The size of the dictionnary must match the count of the bindings.")
+            return false
+        }
         // Check if tokens exists
         var executedToken         = [String: In]()
         for token in manualToken{
@@ -93,7 +99,7 @@ struct Transition<In: Equatable, Out: Equatable>{
                 if a.bindName.contains(token.key) {
                     if let deleted = a.connectedPlace.tokens.del(value: token.value){
                         executedToken[token.key] = deleted // same as = token.value
-                        
+                        break // does not need to search further...
                     }else{
                         print("📕 Token \(token) does not exist")
                         self.resetState(tokens: executedToken)

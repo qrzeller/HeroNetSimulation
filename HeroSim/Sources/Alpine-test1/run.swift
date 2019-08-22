@@ -24,7 +24,7 @@ func test2(){
         }
     }
 
-    var module: String = read(fileName: root+"curry.alpine")
+    let module: String = read(fileName: root+"curry.alpine")
 
     let expressionFunc: Set = ["add", "sub", "div", "mul"]
     let expressionNumber: Set = [-1, 1,2,3,4,5,6]
