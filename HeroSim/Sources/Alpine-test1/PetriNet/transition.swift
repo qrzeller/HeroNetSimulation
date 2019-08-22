@@ -131,6 +131,42 @@ struct Transition<In: Equatable, Out: Equatable>{
     }
 
     
+    // Fire without removing values, adding value output
+    public func fireForMarking() -> Bool{
+        if !enabled{ return false }
+        
+        // marking from place, executed by the labels
+        var executedToken         = [String: In]()
+        for var i in arcsIn{
+            let inMarks = i.execute(delete: false)
+            for inMark in inMarks{
+                if inMark.value != nil{
+                    executedToken[inMark.key] = inMark.value
+                } else { // probably mean that we have not enough token in our place
+                    print("📙 One binding could not be performed, Arc:\(i.name), \(inMark), probably no more token")
+                }
+            }
+        }
+        
+        // ---------------- Check guards -------------------------------
+        // If guard did not validate, return token to state.
+        if !transitionGuard(executedToken) {
+            print("📙 The guard fail")
+            return false
+        }
+        
+        // _______________ Execute out arcs _____________________________
+        
+        for var i in arcsOut{
+            if let outMark = i.execute(transitionParams: executedToken){
+                //print("📗 The execution \(i.name) returned: \(outMark) ")
+            } else {
+                print("📕 The execution \(i.name) returned nil !")
+            }
+        }
+        
+        return true // improove
+    }
     
     public mutating func disable(){
         self.enabled = false

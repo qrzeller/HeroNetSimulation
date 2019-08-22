@@ -38,16 +38,15 @@ struct ArcIn<T: Equatable>: CustomStringConvertible{
         case random
         case predictive
     }
-    mutating func execute(how : How = .random) -> [String: T?]{
+    mutating func execute(how : How = .random, delete: Bool = true) -> [String: T?]{
         var binding = [String:T?]()
         
         for i in bindName{
-            let param = how == .random ? self.connectedPlace.getRandomValue() : self.connectedPlace.getAValue()
+            let param = how == .random ? self.connectedPlace.getRandomValue(delete: delete) :
+                                         self.connectedPlace.getAValue(delete: delete)
             binding[i] = param
         }
         
         return binding
-
-        
     }
 }

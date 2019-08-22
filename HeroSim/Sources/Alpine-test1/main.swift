@@ -57,5 +57,17 @@ print("__________________ HeroN ____________________")
 //let p = PetriNet(places: places, transitions: transitions, commonName: "calculatrice", type: PetriNet.netType.hero)
 let p = PetriNet()
 p.definitionTest()
-p.startDefinitionTest()
+//p.startDefinitionTest()
+//p.randomRun(count: 2)
+p.marking()
 
+
+
+// Questions :
+//      - Allow multiple ouput ? (and in alpine ?)
+//      - In x, y ;  out x, x
+//      - Out x+y ; x-y sur même place?
+
+// TODO:
+//      - label in alpine.
+//      - definition file

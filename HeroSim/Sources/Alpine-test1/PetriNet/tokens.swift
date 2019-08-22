@@ -58,4 +58,8 @@ class Tokens<T: Equatable>: CustomStringConvertible{
     public func getCardinality() -> Int {
         return tokens.count
     }
+    
+    public func getAsArray() -> [T]{
+        return tokens
+    }
 }

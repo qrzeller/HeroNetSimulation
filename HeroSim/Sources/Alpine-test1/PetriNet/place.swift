@@ -31,19 +31,19 @@ struct Place<T: Equatable>: CustomStringConvertible {
     }
     
     // get the first marking
-    public func getAValue() -> T?{
+    public func getAValue(delete: Bool = true) -> T?{
         let m = tokens[0]
-        _ = tokens.del(index: 0)
+        if delete {_ = tokens.del(index: 0)}
         return m
     }
     
     // get a random value in the tokens of self
-    public func getRandomValue() -> T?{
+    public func getRandomValue(delete:Bool = true) -> T?{
         let card = tokens.getCardinality()
         if card < 1 {return nil}
-        let i = Int.random(in: 0..<card)
-        let m = tokens[i]
-        _ = tokens.del(index: 0)
+        let r = Int.random(in: 0..<card)
+        let m = tokens[r]
+        if delete{_ = tokens.del(index: r)}
         return m
     }
     
