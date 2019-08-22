@@ -11,8 +11,8 @@ func mul(_ x: Int, _ y: Int) -> Int ::
 x * y
 
 // Example: operationNoCurry(9, 5 , op: add)
-func operationNoCurry(_ x: Int, _ y: Int , op: (Int, Int) -> Int) -> Int ::
-op(x,y)
+func operationNoCurry( a: Int, b: Int , op: (Int, Int) -> Int) -> Int ::
+op(a,b)
 
 // Example: operationCurry(9, op: add)(5)
 func operationCurry(_ x: Int, op: (Int, Int) -> Int) -> (Int) -> Int ::

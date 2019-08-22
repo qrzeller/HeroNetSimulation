@@ -7,8 +7,17 @@
 
 import Foundation
 
-struct ArcOut<PlaceIn, PlaceOut>{
+struct ArcOut<PlaceIn: Equatable, PlaceOut: Equatable>: CustomStringConvertible{
 
+    var description: String{
+        return """
+        📓 ArcOut:
+                Name: \(name)
+                To place : \(connectedPlace.comment)
+                label : \(label)
+        """
+    }
+    
     var connectedPlace: Place<PlaceOut>
     
     let label: ([String: PlaceIn]) -> PlaceOut?

@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct Place<T>: CustomStringConvertible {
+struct Place<T: Equatable>: CustomStringConvertible {
     var description: String {
         return """
-        Place :
-            Tokens : \(tokens)
-            Domain : \(domain)
-            Info   : \(comment)
+        📓 Place :
+                Tokens : \(tokens)
+                Domain : \(domain)
+                Info   : \(comment)
         """
     }
     
@@ -30,9 +30,19 @@ struct Place<T>: CustomStringConvertible {
         self.domain = domain
     }
     
+    // get the first marking
     public func getAValue() -> T?{
-        // get the first marking
         let m = tokens[0]
+        _ = tokens.del(index: 0)
+        return m
+    }
+    
+    // get a random value in the tokens of self
+    public func getRandomValue() -> T?{
+        let card = tokens.getCardinality()
+        if card < 1 {return nil}
+        let i = Int.random(in: 0..<card)
+        let m = tokens[i]
         _ = tokens.del(index: 0)
         return m
     }

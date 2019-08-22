@@ -16,10 +16,10 @@ struct PetriNet{
     
     let type : netType
     let commonName: String
-    let places: [Place<Any>]
-    var transitions: [Transition<Any, Any>]
+    let places: [Place<String>]
+    var transitions: [Transition<String, String>]
     
-    init(places: [Place<Any>],transitions: [Transition<Any, Any>], commonName: String = "" ,type: netType = .hero) {
+    init(places: [Place<String>],transitions: [Transition<String, String>], commonName: String = "" ,type: netType = .hero) {
         self.type = type
         self.commonName = commonName
         

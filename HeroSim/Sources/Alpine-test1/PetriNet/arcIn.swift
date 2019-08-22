@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct ArcIn<T>: CustomStringConvertible{
+struct ArcIn<T: Equatable>: CustomStringConvertible{
     var description: String{
         return """
-        ArcIn :
-            Name: \(name)
-            From place : \(connectedPlace.comment)
-            Binding : \(bindName)
+        📓 ArcIn :
+                Name: \(name)
+                From place : \(connectedPlace.comment)
+                Binding : \(bindName)
         """
     }
     
@@ -31,11 +31,18 @@ struct ArcIn<T>: CustomStringConvertible{
         
     }
 
-    mutating func execute() -> [String: T?]{
+    // describe how we want to get our token from the place :
+    // - random : take token in a random way
+    // - predictive : get first token of the datastructure
+    enum How {
+        case random
+        case predictive
+    }
+    mutating func execute(how : How = .random) -> [String: T?]{
         var binding = [String:T?]()
         
         for i in bindName{
-            let param = self.connectedPlace.getAValue()
+            let param = how == .random ? self.connectedPlace.getRandomValue() : self.connectedPlace.getAValue()
             binding[i] = param
         }
         

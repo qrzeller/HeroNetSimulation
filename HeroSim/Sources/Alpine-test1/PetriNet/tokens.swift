@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Tokens<T>: CustomStringConvertible{
+class Tokens<T: Equatable>: CustomStringConvertible{
     var description: String { return tokens.description }
     // todo MARKING
     
@@ -46,6 +46,11 @@ class Tokens<T>: CustomStringConvertible{
             tokens.remove(at: index)
         }
         return deleted
+    }
+    func del(value: T) -> T?{
+        let index = self.tokens.firstIndex(of: value)
+        if index == nil { return nil }
+        return del(index: index!)
     }
     
 
