@@ -7,9 +7,17 @@
 
 import Foundation
 
-struct ArcIn<T>{
-    var connectedPlace: Place<T>
+struct ArcIn<T>: CustomStringConvertible{
+    var description: String{
+        return """
+        ArcIn :
+            Name: \(name)
+            From place : \(connectedPlace.comment)
+            Binding : \(bindName)
+        """
+    }
     
+    var connectedPlace: Place<T>
 
     let bindName: [String]
     let name : String
@@ -23,8 +31,8 @@ struct ArcIn<T>{
         
     }
 
-    mutating func execute() -> [String: T]{
-        var binding = [String:T]()
+    mutating func execute() -> [String: T?]{
+        var binding = [String:T?]()
         
         for i in bindName{
             let param = self.connectedPlace.getAValue()

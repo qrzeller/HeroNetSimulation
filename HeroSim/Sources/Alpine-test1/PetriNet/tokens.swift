@@ -14,8 +14,8 @@ class Tokens<T>: CustomStringConvertible{
     // The token set as an Array (can be changed as accessed by subscript)
     private var tokens = [T]()
     
-    init<I : Sequence>(markings : I) where I.Iterator.Element == T {
-        for i in markings{
+    init<I : Sequence>(tokens : I) where I.Iterator.Element == T {
+        for i in tokens{
             self.tokens.append(i)
         }
     }
@@ -23,7 +23,7 @@ class Tokens<T>: CustomStringConvertible{
     // Return nil if does not exist
     subscript(index: Int) -> T?{
         get{
-            assert (tokens.count > index && index >= 0, "Token index does not exist : \(index)")
+            //assert (tokens.count > index && index >= 0, "Token index does not exist : \(index)")
             return (tokens.count > index && index >= 0) ? tokens[index] : nil
         }
 //        set(value){

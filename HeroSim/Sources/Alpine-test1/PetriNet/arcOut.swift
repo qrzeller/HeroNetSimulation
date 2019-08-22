@@ -11,10 +11,10 @@ struct ArcOut<PlaceIn, PlaceOut>{
 
     var connectedPlace: Place<PlaceOut>
     
-    let label: ([PlaceIn]) -> PlaceOut?
+    let label: ([String: PlaceIn]) -> PlaceOut?
     let name : String
     
-    init(label: @escaping ([PlaceIn]) -> PlaceOut?, connectedPlace:  Place<PlaceOut>, name: String = "") {
+    init(label: @escaping ([String: PlaceIn]) -> PlaceOut?, connectedPlace:  Place<PlaceOut>, name: String = "") {
         self.label = label
         self.name = name
         self.connectedPlace = connectedPlace
@@ -22,7 +22,7 @@ struct ArcOut<PlaceIn, PlaceOut>{
     }
      // params for out arcs only    
     // return type can be any because (T or closure/function)
-    mutating func execute(transitionParams: [PlaceIn]) -> PlaceOut?{
+    mutating func execute(transitionParams: [String: PlaceIn]) -> PlaceOut?{
         
         // let inCard = connectedPlace.getDomain().getDomainCardinality()
         let newMark = label(transitionParams)

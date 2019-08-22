@@ -34,3 +34,13 @@ let somelabel = "a,.    b"
 
 let removed = somelabel.components(separatedBy: CharacterSet([" ", ",", "\t", "\n",])).filter { $0 != "" }
 print(removed)
+
+
+var di = [String: Int]()
+di["hello"] = 2
+di["2"] = 3
+
+for d in di{
+    print(d.value)
+}
+
