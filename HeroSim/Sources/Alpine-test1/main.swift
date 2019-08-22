@@ -57,9 +57,8 @@ print("__________________ HeroN ____________________")
 //let p = PetriNet(places: places, transitions: transitions, commonName: "calculatrice", type: PetriNet.netType.hero)
 let p = PetriNet()
 p.definitionTest()
-//p.startDefinitionTest()
-//p.randomRun(count: 2)
-p.marking()
+p.startDefinitionTest()
+p.randomRun(count: 1)
 
 
 

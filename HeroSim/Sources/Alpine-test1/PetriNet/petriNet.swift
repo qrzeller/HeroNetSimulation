@@ -38,7 +38,7 @@ class PetriNet{
         let int = Domain(domainCardinality: 1, domainSet: "Int", codomainCardinality: 0, codomainSet: "")
         let f   = Domain(domainCardinality: 1, domainSet: "Int", codomainCardinality: 1, codomainSet: "Int")
         
-        let p1 = Place(tokens: ["1", "2", "3", "4"], domain: int, name: "p1")
+        let p1 = Place(tokens: ["1", "2", "3"], domain: int, name: "p1")
         let p2 = Place(tokens: ["add","sub"], domain: f, name: "p2")
         let p3 = Place(tokens: ["10"], domain: int, name: "p3")
         let places = [p1,p2,p3]
@@ -68,7 +68,7 @@ class PetriNet{
     func randomRun(count: Int = 1){
         for _ in 0..<count{
             var t = transitions.values.randomElement()
-            t?.fire()
+            _ = t?.fire()
         }
     }
     
@@ -87,6 +87,7 @@ class PetriNet{
         print(places["p1"]!)
         print(places["p2"]!)
         print(places["p3"] ?? "Place p3 does not exist")
+        //_ = transitions["t1"]?.fire()
     }
     
     func marking(){
