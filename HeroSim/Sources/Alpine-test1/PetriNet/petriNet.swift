@@ -44,14 +44,12 @@ class PetriNet{
         let places = [p1,p2,p3]
         
         let a1 = ArcIn(label: "a, b", connectedPlace: p1, name: "a1"); print(a1)
-        let r1 = ArcOut(label: {return $0["a"]}, connectedPlace: p1, name: "r4")
         
         let a2 = ArcIn(label: "c", connectedPlace: p2, name: "a2")
-        let r2 = ArcOut(label: {return $0["c"]}, connectedPlace: p2, name: "r2")
         
         let a3 = ArcOut(label: PetriNet.opNoCurry, connectedPlace: p3, name: "a2"); print(a3)
         
-        let t1 = Transition(transitionGuard: PetriNet.noGuardPrint, arcsIn: [a1,a2], arcsOut: [a3, r1, r2], name: "t1")
+        let t1 = Transition(transitionGuard: PetriNet.noGuardPrint, arcsIn: [a1,a2], arcsOut: [a3], name: "t1")
         let transitions = [t1]
         
         for p in places{
@@ -98,8 +96,8 @@ class PetriNet{
         markings.append(rendermarking())
         
         // compute all combination :
-        var nonstop = true
-        while nonstop{
+        var nonstop = 100
+        while nonstop > 0{
             for t in transitions{
                 
                 _ = t.value.fireForMarking() // does not delete values
@@ -122,11 +120,10 @@ class PetriNet{
             // compare all places
             
             if(markings[markings.endIndex-1] == markings[markings.endIndex-2]){
-                nonstop = false
+                nonstop -= 1
                 print("markings : ")
                 print(markings.last!)
             }
-            print(markings.last!)
             
         }
         
@@ -136,7 +133,7 @@ class PetriNet{
     private func rendermarking() -> [[String]]{
         var ret = [[String]]()
         for p in places{
-            var token = p.value.tokens.getAsArray()
+            var token = Array(Set(p.value.tokens.getAsArray()))
             token.sort()
             ret.append(token) // need to sort to compare
         }
