@@ -41,8 +41,8 @@ class PetriNet{
     // load the json file: Definition of our network
     public func loadDefinitionFile(path: String){
         let defFile = PetriNet.readFile(fileName: path)
-        
         print(defFile)
+        
     }
     
     public static func readFile(fileName: String) -> String{
