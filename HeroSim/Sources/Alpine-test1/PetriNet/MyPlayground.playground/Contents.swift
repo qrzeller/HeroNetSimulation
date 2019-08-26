@@ -43,4 +43,20 @@ di["2"] = 3
 for d in di{
     print(d.value)
 }
+var hw = "hello worlod"
+let rg = hw.range(of: "o.*o", options: .regularExpression)
 
+hw.replaceSubrange(rg!, with: "0 W0")
+
+
+var lab = "operationNoCurry(a: $a$, b: $b$, op: $c$)"
+
+var searchRg:Range<String.Index> = lab.startIndex..<lab.endIndex
+while let idx = lab.range(of: "[$].*?[$]", options: .regularExpression, range: searchRg) {
+    let rep = lab[lab.index(after: idx.lowerBound)..<lab.index(before: idx.upperBound)]
+    lab.replaceSubrange(idx, with: "x")
+    searchRg = idx.lowerBound..<lab.endIndex
+    
+}
+
+print(lab)

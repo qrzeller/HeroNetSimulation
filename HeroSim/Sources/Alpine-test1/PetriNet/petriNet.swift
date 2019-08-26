@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import Interpreter
 
 
 class PetriNet{
@@ -18,10 +18,12 @@ class PetriNet{
     let commonName: String
     var places = [String: Place<String>]()
     var transitions = [String: Transition<String, String>]()
+    let interpreter: Interpreter
 
-    init(places: [Place<String>] = [Place<String>](),transitions: [Transition<String, String>] = [Transition<String, String>]() , commonName: String = "" ,type: netType = .hero) {
+    init(interpreter: Interpreter, places: [Place<String>] = [Place<String>](),transitions: [Transition<String, String>] = [Transition<String, String>]() , commonName: String = "" ,type: netType = .hero) {
         self.type = type
         self.commonName = commonName
+        self.interpreter = interpreter
         
         // Init places and transition object.§
         for p in places{
@@ -32,9 +34,12 @@ class PetriNet{
             assert(self.transitions[t.name] == nil, "📕 The transition name must be unique !")
             self.transitions[t.name] = t
         }
+        
     }
     
     func definitionTest(){
+        let dr = {d, l in LabelTools.dynamicReplace(t: d, label: l, interpreter: self.interpreter)}
+        
         let int = Domain(domainCardinality: 1, domainSet: "Int", codomainCardinality: 0, codomainSet: "")
         let f   = Domain(domainCardinality: 1, domainSet: "Int", codomainCardinality: 1, codomainSet: "Int")
         
@@ -44,12 +49,15 @@ class PetriNet{
         let places = [p1,p2,p3]
         
         let a1 = ArcIn(label: "a, b", connectedPlace: p1, name: "a1"); print(a1)
+        let r1 = ArcOut(label: { $0["a"] }, connectedPlace: p1, name: "r4")
         
         let a2 = ArcIn(label: "c", connectedPlace: p2, name: "a2")
+        let r2 = ArcOut(label: { $0["c"] }, connectedPlace: p2, name: "r2")
         
-        let a3 = ArcOut(label: PetriNet.opNoCurry, connectedPlace: p3, name: "a2"); print(a3)
+        let lab3 = "operationNoCurry(a: $a$, b: $b$ , op: $c$)"
+        let a3 = ArcOut(label: {d in dr(d,lab3)}, connectedPlace: p3, name: "a2"); print(a3)
         
-        let t1 = Transition(transitionGuard: PetriNet.noGuardPrint, arcsIn: [a1,a2], arcsOut: [a3], name: "t1")
+        let t1 = Transition(transitionGuard: LabelTools.noGuardPrint, arcsIn: [a1,a2], arcsOut: [a3, r1, r2], name: "t1")
         let transitions = [t1]
         
         for p in places{
@@ -138,19 +146,6 @@ class PetriNet{
             ret.append(token) // need to sort to compare
         }
         return ret
-    }
-    
-    
-    // Basic function, example function if you want to personalise the labels execution
-    public static let opNoCurry = { (t: [String: String]) -> String? in
-        let code: String = "operationNoCurry(a: \(t["a"]!), b: \(t["b"]!) , op: \(t["c"]!))"
-        let value = try! interpreter.eval(string: code)
-        return value.description
-    }
-    
-    public static let noGuardPrint = { (a: [String: String]) -> Bool in
-        print("Guarded : \(a).")
-        return true
     }
     
 }

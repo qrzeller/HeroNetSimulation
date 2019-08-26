@@ -28,17 +28,14 @@ try! interpreter.loadModule(fromString: module)
 print("__________________ HeroN ____________________")
 
 
-let p = PetriNet()
+let p = PetriNet(interpreter : interpreter)
 p.definitionTest()
-p.marking()
+p.startDefinitionTest()
+//p.marking()
 
 
-
-// Questions :
-//      - Allow multiple ouput ? (and in alpine ?)
-//      - In x, y ;  out x, x
-//      - Out x+y ; x-y sur même place?
 
 // TODO:
 //      - label in alpine.
 //      - definition file
+//      - Marking
