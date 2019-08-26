@@ -37,6 +37,25 @@ class PetriNet{
         
     }
     
+    
+    // load the json file: Definition of our network
+    public func loadDefinitionFile(path: String){
+        let defFile = PetriNet.readFile(fileName: path)
+        
+        print(defFile)
+    }
+    
+    public static func readFile(fileName: String) -> String{
+        do {
+            let contents = try NSString(contentsOfFile: fileName, encoding: 4)
+            return contents as String
+        } catch {
+            // contents could not be loaded
+            print("Error info: \(error)")
+            return "not loaded"
+        }
+    }
+    
     func definitionTest(){
         let dr = {d, l in LabelTools.dynamicReplace(t: d, label: l, interpreter: self.interpreter)}
         
@@ -49,13 +68,13 @@ class PetriNet{
         let places = [p1,p2,p3]
         
         let a1 = ArcIn(label: "a, b", connectedPlace: p1, name: "a1"); print(a1)
-        let r1 = ArcOut(label: { $0["a"] }, connectedPlace: p1, name: "r4")
+        let r1 = ArcOut(label: [{ $0["a"] }, { $0["b"] }], connectedPlace: p1, name: "r4")
         
         let a2 = ArcIn(label: "c", connectedPlace: p2, name: "a2")
-        let r2 = ArcOut(label: { $0["c"] }, connectedPlace: p2, name: "r2")
+        let r2 = ArcOut(label: [{ $0["c"] }], connectedPlace: p2, name: "r2")
         
         let lab3 = "operationNoCurry(a: $a$, b: $b$ , op: $c$)"
-        let a3 = ArcOut(label: {d in dr(d,lab3)}, connectedPlace: p3, name: "a2"); print(a3)
+        let a3 = ArcOut(label: [{d in dr(d,lab3)}], connectedPlace: p3, name: "a2"); print(a3)
         
         let t1 = Transition(transitionGuard: LabelTools.noGuardPrint, arcsIn: [a1,a2], arcsOut: [a3, r1, r2], name: "t1")
         let transitions = [t1]

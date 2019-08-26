@@ -20,10 +20,10 @@ struct ArcOut<PlaceIn: Equatable, PlaceOut: Equatable>: CustomStringConvertible{
     
     var connectedPlace: Place<PlaceOut>
     
-    let label: ([String: PlaceIn]) -> PlaceOut?
+    let label: [([String: PlaceIn]) -> PlaceOut?]
     let name : String
     
-    init(label: @escaping ([String: PlaceIn]) -> PlaceOut?, connectedPlace:  Place<PlaceOut>, name: String = "") {
+    init(label: [([String: PlaceIn]) -> PlaceOut?], connectedPlace:  Place<PlaceOut>, name: String = "") {
         self.label = label
         self.name = name
         self.connectedPlace = connectedPlace
@@ -31,12 +31,17 @@ struct ArcOut<PlaceIn: Equatable, PlaceOut: Equatable>: CustomStringConvertible{
     }
      // params for out arcs only    
     // return type can be any because (T or closure/function)
-    mutating func execute(transitionParams: [String: PlaceIn]) -> PlaceOut?{
+    mutating func execute(transitionParams: [String: PlaceIn]) -> [PlaceOut]{
         
         // let inCard = connectedPlace.getDomain().getDomainCardinality()
-        let newMark = label(transitionParams)
-        connectedPlace.add(token: newMark!)
-        return newMark
+        var newMarks = [PlaceOut]()
+        for l in label{
+            if let newMark = l(transitionParams){
+                newMarks.append(newMark)
+                connectedPlace.add(token: newMark)
+            } else { print("📕 The function \(String(describing: l)) with parameters \(transitionParams) returned nil")}
+        }
+        return newMarks
         
     }
 }

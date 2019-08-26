@@ -68,11 +68,9 @@ struct Transition<In: Equatable, Out: Equatable>{
         // _______________ Execute out arcs _____________________________
         
         for var i in arcsOut{
-            if let outMark = i.execute(transitionParams: executedToken){
+            let outMark = i.execute(transitionParams: executedToken)
                 print("📗 The execution \(i.name) returned: \(outMark) ")
-            } else {
-                print("📕 The execution \(i.name) returned nil !")
-            }
+           
         }
         
         return true // improove
@@ -120,11 +118,9 @@ struct Transition<In: Equatable, Out: Equatable>{
         // _______________ Execute out arcs _____________________________
         
         for var i in arcsOut{
-            if let outMark = i.execute(transitionParams: executedToken){
+            let outMark = i.execute(transitionParams: executedToken)
                 print("📗 The execution \(i.name) returned: \(outMark) ")
-            } else {
-                print("📕 The execution \(i.name) returned nil !")
-            }
+          
         }
         
         return true // improove
@@ -158,11 +154,7 @@ struct Transition<In: Equatable, Out: Equatable>{
         // _______________ Execute out arcs _____________________________
         
         for var i in arcsOut{
-            if let outMark = i.execute(transitionParams: executedToken){
-                //print("📗 The execution \(i.name) returned: \(outMark) ")
-            } else {
-                print("📕 The execution \(i.name) returned nil !")
-            }
+            let outMark = i.execute(transitionParams: executedToken)
         }
         
         return true // improove

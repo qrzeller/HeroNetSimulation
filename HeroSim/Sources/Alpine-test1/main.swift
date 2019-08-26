@@ -8,29 +8,22 @@
 
 import Foundation
 import Interpreter
+let filePath = "/Users/quentinzeller/Github/OFA/HeroNetSimulation/HeroSim/Sources/Alpine-test1/curry.alpine"
+let fileDef  = "/Users/quentinzeller/Github/OFA/HeroNetSimulation/HeroSim/Sources/Alpine-test1/hnet.json"
 
-func read(fileName: String) -> String{
-    do {
-        let contents = try NSString(contentsOfFile: fileName, encoding: 4)
-        return contents as String
-    } catch {
-        // contents could not be loaded
-        print("Error info: \(error)")
-        return "not loaded"
-    }
-}
-
-let root = "/Users/quentinzeller/Github/OFA/HeroNetSimulation/HeroSim/Sources/Alpine-test1/"
-var module: String = read(fileName: root + "curry.alpine")
-var interpreter = Interpreter()
-try! interpreter.loadModule(fromString: module)
 
 print("__________________ HeroN ____________________")
+
+var interpreter = Interpreter()
+let module = PetriNet.readFile(fileName: filePath)
+try! interpreter.loadModule(fromString: module)
+
 
 
 let p = PetriNet(interpreter : interpreter)
 p.definitionTest()
 p.startDefinitionTest()
+p.loadDefinitionFile(path: fileDef)
 //p.marking()
 
 
