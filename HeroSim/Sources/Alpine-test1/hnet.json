@@ -16,7 +16,7 @@
                     "a3": {
                         "name": "a3",
                         "connectedPlace": "p3",
-                        "label"  : "operationNoCurry(a: $a$, b: $b$ , op: $c$)"
+                        "label"  : "operationNoCurry(a: $a$, b: $b$ , op: $c$);operationNoCurry(a: $b$, b: $b$ , op: $c$);$a$+2"
                     }
                 }
                 

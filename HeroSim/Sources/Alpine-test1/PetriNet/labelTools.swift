@@ -50,4 +50,8 @@ public struct LabelTools{
         print("Guarded : \(a).")
         return true
     }
+    
+    public static func multiLabel(labels: String, sep:Character = ";") -> [String] {
+        return labels.components(separatedBy: [";"])
+    }
 }

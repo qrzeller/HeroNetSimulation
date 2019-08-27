@@ -45,7 +45,11 @@ struct Transition<In: Equatable, Out: Equatable>{
             
             if let aos = arcs["out"] as? [String: [String: Any]]{
                 for ao in aos{ // load arc out from file
-                    arcsOut.append(ArcOut(label: [{d in labelExecution(d, ao.value["label"] as! String)}],
+                    var labels = [([String : In]) -> (Out?)]()
+                    for l in LabelTools.multiLabel(labels: ao.value["label"] as! String){
+                        labels.append({d in labelExecution(d, l)})
+                    }
+                    arcsOut.append(ArcOut(label:labels,
                                           connectedPlace: places[ao.value["connectedPlace"] as! String] as! Place<Out> ,
                                           name: ao.value["name"] as! String))
                 }
