@@ -117,8 +117,11 @@ class PetriNet{
     func randomRun(count: Int = 1){
         for _ in 0..<count{
             var t = transitions.values.randomElement()
-            t?.fire()
+            _ = t?.fire()
         }
+    }
+    func manualRun(transitionName : String, binding: [String:String]){
+        _ = transitions[transitionName]?.fire(manualToken: binding)
     }
     
     func startDefinitionTest(){
@@ -151,7 +154,7 @@ class PetriNet{
         while nonstop > 0{
             for t in transitions{
                 
-                _ = t.value.fireForMarking() // does not delete values
+                //_ = t.value.fireForMarking() // does not delete values
                 markings.append(rendermarking())
                 
                 

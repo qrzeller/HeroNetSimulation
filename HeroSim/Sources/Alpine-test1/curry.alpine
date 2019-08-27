@@ -18,3 +18,8 @@ op(a,b)
 func operationCurry(_ x: Int, op: (Int, Int) -> Int) -> (Int) -> Int ::
 func partialApply(_ y: Int) -> Int ::
 op(x,y);
+
+func guardTwo(_ x: Int) -> Bool ::
+match x
+with 2 :: true
+with let n :: false

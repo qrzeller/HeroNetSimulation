@@ -9,7 +9,7 @@ import Foundation
 import Interpreter
 
 // some function / closure to use for the labels of arcs
-struct LabelTools{
+public struct LabelTools{
     
     // replace dynamically the opération
     public static func dynamicReplace(t: [String: String], label: String, interpreter: Interpreter) -> String? {
@@ -18,12 +18,11 @@ struct LabelTools{
         var searchRg:Range<String.Index> = lab.startIndex..<lab.endIndex
         while let idx = lab.range(of: "[$].*?[$]", options: .regularExpression, range: searchRg) {
             let rep = lab[lab.index(after: idx.lowerBound)..<lab.index(before: idx.upperBound)]
-            lab.replaceSubrange(idx, with: t[String(rep)]!)
+            if let bind = t[String(rep)] { lab.replaceSubrange(idx, with: bind)}
+            else { print("📕 This binding does not exist: \(rep)"); return nil}
             searchRg = idx.lowerBound..<lab.endIndex
             
         }
-        
-        print("....",lab,".....")
         do {
             let value = try interpreter.eval(string: lab)
             return value.description
@@ -36,8 +35,7 @@ struct LabelTools{
     
     // Transform output of swift in boolean, return false if other object than "True"
     public static func asBool(output: String?) -> Bool{
-        print("Guard output : ", output)
-        return output == "true"
+        return output?.uppercased() == "true".uppercased()
     }
     
     // Basic function, example function if you want to personalise the labels execution
@@ -47,6 +45,7 @@ struct LabelTools{
         return value.description
     }
     
+    // Does not guard but print output
     public static let noGuardPrint = { (a: [String: String]) -> Bool in
         print("Guarded : \(a).")
         return true

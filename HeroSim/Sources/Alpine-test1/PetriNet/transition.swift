@@ -31,7 +31,6 @@ struct Transition<In: Equatable, Out: Equatable>{
 
     // For json serialisation, work only with String type. Thus we assume In==Out==String
     init?(json: [String: [String: Any]], places : [String: Place<In>], labelExecution:@escaping ([String : In], String) -> (Out?) ){
-        
         assert(In.self == String.self && String.self == Out.self, "This initialiser assume types are String")
         
         arcsIn = [ArcIn<In>]()
@@ -105,21 +104,12 @@ struct Transition<In: Equatable, Out: Equatable>{
         
         // ---------------- Check guards -------------------------------
         // If guard did not validate, return token to state.
-        if !transitionGuard(executedToken) {
-            print("📙 The guard fail")
-            self.resetState(tokens: executedToken)
-            return false
-        }
+        if !computeGuard(executedToken: executedToken){ return false }
         
         // _______________ Execute out arcs _____________________________
         
-        for var i in arcsOut{
-            let outMark = i.execute(transitionParams: executedToken)
-                print("📗 The execution \(i.name) returned: \(outMark) ")
-           
-        }
-        
-        return true // improove
+        execOutArcs(executedToken: executedToken)
+        return true
     }
     
     // Fire with pre defined tokens (manual fire)
@@ -155,56 +145,65 @@ struct Transition<In: Equatable, Out: Equatable>{
         
         // ---------------- Check guards -------------------------------
         // If guard did not validate, return token to state.
+        if !computeGuard(executedToken: executedToken){
+            return false
+        }
+        // _______________ Execute out arcs _____________________________
+        
+        execOutArcs(executedToken: executedToken)
+        return true
+    }
+    
+    // checck if guard holds, otherwise refill the places with the tokens
+    private mutating func computeGuard(executedToken: [String: In]) -> Bool{
         if !transitionGuard(executedToken) {
-            print("📙 The guard fail")
+            print("📙 The guard failed")
             self.resetState(tokens: executedToken)
             return false
         }
-        
-        // _______________ Execute out arcs _____________________________
-        
+        return true
+    }
+    
+    private mutating func execOutArcs(executedToken: [String: In]){
         for var i in arcsOut{
             let outMark = i.execute(transitionParams: executedToken)
-                print("📗 The execution \(i.name) returned: \(outMark) ")
-          
+            print("📗 The execution \(i.name) with \(executedToken)\n\treturned: \(outMark) ")
+            
         }
-        
-        return true // improove
     }
-
     
     // Fire without removing values, adding value output
-    public func fireForMarking() -> Bool{
-        if !enabled{ return false }
-        
-        // marking from place, executed by the labels
-        var executedToken         = [String: In]()
-        for var i in arcsIn{
-            let inMarks = i.execute(delete: false)
-            for inMark in inMarks{
-                if inMark.value != nil{
-                    executedToken[inMark.key] = inMark.value
-                } else { // probably mean that we have not enough token in our place
-                    print("📙 One binding could not be performed, Arc:\(i.name), \(inMark), probably no more token")
-                }
-            }
-        }
-        
-        // ---------------- Check guards -------------------------------
-        // If guard did not validate, return token to state.
-        if !transitionGuard(executedToken) {
-            print("📙 The guard fail")
-            return false
-        }
-        
-        // _______________ Execute out arcs _____________________________
-        
-        for var i in arcsOut{
-            let outMark = i.execute(transitionParams: executedToken)
-        }
-        
-        return true // improove
-    }
+//    public func fireForMarking() -> Bool{
+//        if !enabled{ return false }
+//
+//        // marking from place, executed by the labels
+//        var executedToken         = [String: In]()
+//        for var i in arcsIn{
+//            let inMarks = i.execute(delete: false)
+//            for inMark in inMarks{
+//                if inMark.value != nil{
+//                    executedToken[inMark.key] = inMark.value
+//                } else { // probably mean that we have not enough token in our place
+//                    print("📙 One binding could not be performed, Arc:\(i.name), \(inMark), probably no more token")
+//                }
+//            }
+//        }
+//
+//        // ---------------- Check guards -------------------------------
+//        // If guard did not validate, return token to state.
+//        if !transitionGuard(executedToken) {
+//            print("📙 The guard fail")
+//            return false
+//        }
+//
+//        // _______________ Execute out arcs _____________________________
+//
+//        for var i in arcsOut{
+//            let outMark = i.execute(transitionParams: executedToken)
+//        }
+//
+//        return true // improove
+//    }
     
     public mutating func disable(){
         self.enabled = false

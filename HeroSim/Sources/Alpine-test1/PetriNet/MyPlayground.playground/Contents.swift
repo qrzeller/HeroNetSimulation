@@ -60,3 +60,25 @@ while let idx = lab.range(of: "[$].*?[$]", options: .regularExpression, range: s
 }
 
 print(lab)
+
+print("__________________")
+import Interpreter
+let filePath = "/Users/quentinzeller/Github/OFA/HeroNetSimulation/HeroSim/Sources/Alpine-test1/curry.alpine"
+var interpreter = Interpreter()
+
+func readFile(fileName: String) -> String{
+    do {
+        let contents = try NSString(contentsOfFile: fileName, encoding: 4)
+        return contents as String
+    } catch {
+        // contents could not be loaded
+        print("Error info: \(error)")
+        return "not loaded"
+    }
+}
+
+let module = readFile(fileName: filePath)
+try! interpreter.loadModule(fromString: module)
+
+let value = try interpreter.eval(string: "guardTwo(2)")
+
