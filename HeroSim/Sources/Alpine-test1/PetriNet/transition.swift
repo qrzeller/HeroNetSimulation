@@ -9,7 +9,7 @@ import Foundation
 
 struct Transition<In: Equatable, Out: Equatable>{
 
-    let transitionGuard: ([String: In]) -> Bool//([In]) -> Bool
+    let transitionGuard: [([String: In]) -> Bool]//([In]) -> Bool
     
     var arcsIn  :[ArcIn<In>] // TODO only binding
     var arcsOut :[ArcOut<In, Out>]
@@ -19,7 +19,7 @@ struct Transition<In: Equatable, Out: Equatable>{
     
     let name: String
     
-    init(transitionGuard: @escaping ([String: In]) -> Bool, arcsIn: [ArcIn<In>], arcsOut: [ArcOut<In, Out>], name:String) {
+    init(transitionGuard: [([String: In]) -> Bool], arcsIn: [ArcIn<In>], arcsOut: [ArcOut<In, Out>], name:String) {
         self.transitionGuard    = transitionGuard
         self.arcsIn             = arcsIn
         self.arcsOut            = arcsOut
@@ -58,10 +58,14 @@ struct Transition<In: Equatable, Out: Equatable>{
         }else{print("📕 No arcs found"); return nil}
         
         if let codeGuard = json["guards"]?["code"] as? String{
-            transitionGuard = {(d: [String: In]) -> Bool in LabelTools.asBool(output: labelExecution(d, codeGuard) as! String?)}
+            var guards = [([String: In]) -> Bool]()
+            for c in LabelTools.multiLabel(labels: codeGuard){
+                guards.append({(d: [String: In]) -> Bool in LabelTools.asBool(output: labelExecution(d, c) as! String?)})
+            }
+            transitionGuard = guards
         } else {
             print("📙 No proper guard found, assume no guard")
-            transitionGuard = {d in return true}
+            transitionGuard = [{d in return true}]
         }
         self.existingBindings = Transition<In, Out>.computebinding(arcsIn: arcsIn)
         if let name = json["meta"]?["name"] as? String {
@@ -160,10 +164,12 @@ struct Transition<In: Equatable, Out: Equatable>{
     
     // checck if guard holds, otherwise refill the places with the tokens
     private mutating func computeGuard(executedToken: [String: In]) -> Bool{
-        if !transitionGuard(executedToken) {
-            print("📙 The guard failed")
-            self.resetState(tokens: executedToken)
-            return false
+        for f in transitionGuard{
+            if !f(executedToken) {
+                print("📙 The guard failed")
+                self.resetState(tokens: executedToken)
+                return false
+            }
         }
         return true
     }

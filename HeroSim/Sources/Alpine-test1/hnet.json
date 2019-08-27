@@ -16,14 +16,14 @@
                     "a3": {
                         "name": "a3",
                         "connectedPlace": "p3",
-                        "label"  : "operationNoCurry(a: $a$, b: $b$ , op: $c$);operationNoCurry(a: $b$, b: $b$ , op: $c$);$a$+2"
+                        "label"  : "operationNoCurry(a: $a$, b: $b$ , op: $c$) ; operationNoCurry(a: $b$, b: $b$ , op: $c$) ; $a$+2"
                     }
                 }
                 
             },
             "guards": {
                 "codeSaved":"1==1",
-                "code": "guardTwo($a$)",
+                "code": "guardTwo($a$);guardTwo(2)",
                 "enabled": true
             },
             "meta": {

@@ -80,6 +80,8 @@ class PetriNet{
         }
     }
     
+    
+    // To delete on prod & in test functions
     func definitionTest(labelExecution: @escaping ([String : String], String) -> String?){
         let dr = labelExecution
         
@@ -100,7 +102,7 @@ class PetriNet{
         let lab3 = "operationNoCurry(a: $a$, b: $b$ , op: $c$)"
         let a3 = ArcOut(label: [{d in dr(d,lab3)}], connectedPlace: p3, name: "a2"); print(a3)
         
-        let t1 = Transition(transitionGuard: LabelTools.noGuardPrint, arcsIn: [a1,a2], arcsOut: [a3, r1, r2], name: "t1")
+        let t1 = Transition(transitionGuard: [LabelTools.noGuardPrint], arcsIn: [a1,a2], arcsOut: [a3, r1, r2], name: "t1")
         let transitions = [t1]
         
         for p in places{
