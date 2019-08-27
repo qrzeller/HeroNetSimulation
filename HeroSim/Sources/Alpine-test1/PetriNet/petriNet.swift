@@ -18,12 +18,10 @@ class PetriNet{
     let commonName: String
     var places = [String: Place<String>]()
     var transitions = [String: Transition<String, String>]()
-    let interpreter: Interpreter
 
-    init(interpreter: Interpreter, places: [Place<String>] = [Place<String>](),transitions: [Transition<String, String>] = [Transition<String, String>]() , commonName: String = "" ,type: netType = .hero) {
+    init(places: [Place<String>] = [Place<String>](),transitions: [Transition<String, String>] = [Transition<String, String>]() , commonName: String = "" ,type: netType = .hero) {
         self.type = type
         self.commonName = commonName
-        self.interpreter = interpreter
         
         // Init places and transition object.§
         for p in places{
@@ -39,9 +37,35 @@ class PetriNet{
     
     
     // load the json file: Definition of our network
-    public func loadDefinitionFile(path: String){
+    public func loadDefinitionFile(path: String, labelExecution:@escaping ([String : String], String) -> String?){
         let defFile = PetriNet.readFile(fileName: path)
-        print(defFile)
+        let data = Data(defFile.utf8)
+        print("_____________________________")
+        do {
+            // make sure this JSON is in the format we expect
+            if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+                // read places
+                
+                if let jPlaces = json["places"] as? [String: [String:Any]]{
+                    for p in jPlaces{
+                        self.places[p.key] = Place(json: p.value)
+                    }
+                }else{
+                    print("📕 No places found")
+                }
+                
+                if let jTrans = json["transitions"] as? [String: [String: [String: Any]]]{
+                    for p in jTrans {
+                        self.transitions[p.key] = Transition(json: p.value, places: self.places, labelExecution: labelExecution)
+                    }
+                }else{
+                    print("📕 No transitions found")
+                }
+                
+            }
+        } catch let error as NSError {
+            print("Failed to load: \(error.localizedDescription)")
+        }
         
     }
     
@@ -56,8 +80,8 @@ class PetriNet{
         }
     }
     
-    func definitionTest(){
-        let dr = {d, l in LabelTools.dynamicReplace(t: d, label: l, interpreter: self.interpreter)}
+    func definitionTest(labelExecution: @escaping ([String : String], String) -> String?){
+        let dr = labelExecution
         
         let int = Domain(domainCardinality: 1, domainSet: "Int", codomainCardinality: 0, codomainSet: "")
         let f   = Domain(domainCardinality: 1, domainSet: "Int", codomainCardinality: 1, codomainSet: "Int")

@@ -22,45 +22,47 @@
                 
             },
             "guards": {
-                "code":""
+                "code":"",
+                "enabled": true
             },
-            "comment": "t1"
-            "enabled": true
+            "meta": {
+                "name": "t1"
+            }
         }
     
     },
     "places": {
         "p1": {
-            "domain"{
+            "domain": {
                 "domainCardinality":    1,
                 "codomainCardinality":  0,
                 "domainSet":            "Int",
                 "codomainSet":          ""
             },
             "name": "p1",
-            "tokens":   ["1", "2", "3", "4"],
+            "tokens":   ["1", "2", "3", "4"]
         },
         "p2": {
-            "domain"{
+            "domain": {
                 "domainCardinality":    1,
                 "codomainCardinality":  1,
                 "domainSet":            "Int",
                 "codomainSet":          "Int"
             },
             "name": "p2",
-            "tokens":   ["add", "sub"],
+            "tokens":   ["add", "sub"]
         },
         "p3": {
-            "domain"{
+            "domain": {
                 "domainCardinality":    1,
                 "codomainCardinality":  0,
                 "domainSet":            "Int",
                 "codomainSet":          ""
             },
             "name": "p3",
-            "tokens":   ["10"],
-        }
-    },
+            "tokens":   ["10"]
+        }}
+    ,
     "env":{
         "lang": "Alpine",
         "version": "x.x.x",

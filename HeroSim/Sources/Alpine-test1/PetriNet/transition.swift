@@ -8,8 +8,7 @@
 import Foundation
 
 struct Transition<In: Equatable, Out: Equatable>{
-    
-    // TODO
+
     let transitionGuard: ([String: In]) -> Bool//([In]) -> Bool
     
     var arcsIn  :[ArcIn<In>] // TODO only binding
@@ -27,12 +26,59 @@ struct Transition<In: Equatable, Out: Equatable>{
         self.name               = name
         
         // store existing bindings (used for manual fire: public mutating func fire(executedToken : [String:In]) -> Bool)
+        self.existingBindings = Transition<In, Out>.computebinding(arcsIn: arcsIn)
+    }
+
+    // For json serialisation, work only with String type. Thus we assume In==Out==String
+    init?(json: [String: [String: Any]], places : [String: Place<In>], labelExecution:@escaping ([String : In], String) -> (Out?) ){
+        
+        assert(In.self == String.self && String.self == Out.self, "This initialiser assume types are String")
+        
+        arcsIn = [ArcIn<In>]()
+        arcsOut = [ArcOut<In,Out>]()
+        
+        if let arcs = json["arcs"]{
+            if let ais = arcs["in"] as? [String: [String: Any]]{
+                for ai in ais{ // load arcs in from file
+                    arcsIn.append(ArcIn(label: ai.value["label"] as! String, connectedPlace: places[ai.value["connectedPlace"] as! String]! , name: ai.value["name"] as! String))
+                }
+            } else {print("📕 No arcIn found."); return nil}
+            
+            if let aos = arcs["out"] as? [String: [String: Any]]{
+                for ao in aos{ // load arc out from file
+                    arcsOut.append(ArcOut(label: [{d in labelExecution(d, ao.value["label"] as! String)}],
+                                          connectedPlace: places[ao.value["connectedPlace"] as! String] as! Place<Out> ,
+                                          name: ao.value["name"] as! String))
+                }
+            } else {print("📕 No arcOut found."); return nil}
+            
+        }else{print("📕 No arcs found"); return nil}
+        
+        if let codeGuard = json["guards"]?["code"] as? String{
+            transitionGuard = {(d: [String: In]) -> Bool in LabelTools.asBool(output: labelExecution(d, codeGuard) as! String?)}
+        } else {
+            print("📙 No proper guard found, assume no guard")
+            transitionGuard = {d in return true}
+        }
+        self.existingBindings = Transition<In, Out>.computebinding(arcsIn: arcsIn)
+        if let name = json["meta"]?["name"] as? String {
+            self.name = name
+        }else{
+            print("📕 The name is not defined, and required in the class petriNet")
+            return nil
+        }
+        
+    }
+    
+    // compute all bindings entry, used only in *init()*
+    private static func computebinding(arcsIn: [ArcIn<In>]) -> [String]{
         var bindings = [String]()
         for a in arcsIn {
             bindings.append(contentsOf: a.bindName)
         }
-        self.existingBindings = bindings
+        return bindings
     }
+    
     
     public mutating func fire() -> Bool{
         if !enabled{ return false }

@@ -29,7 +29,30 @@ struct Place<T: Equatable>: CustomStringConvertible {
         self.name = name
         self.domain = domain
     }
-    
+    // For JSON serialisation
+    init?(json: [String: Any]){
+        let name: String
+        let tokens: [T]
+        let domain: Domain
+        
+        if let n = json["name"] as? String{
+            name = n
+        }else{
+            print("Cannot initialise name.")
+            return nil
+        }
+        
+        if let t = json["tokens"] as? [T]{
+            tokens = t
+        }else{print("Could not load tokens."); return nil}
+        
+        if let d = json["domain"] as? [String: Any]{
+            domain = Domain(domainCardinality: d["domainCardinality"] as! Int, domainSet: d["domainSet"] as! String,
+                            codomainCardinality: d["codomainCardinality"] as! Int, codomainSet: d["codomainSet"] as! String)
+        } else {print("Domain not well defined"); return nil}
+        
+        self.init(tokens: tokens, domain: domain, name: name)
+    }
     // get the first marking
     public func getAValue(delete: Bool = true) -> T?{
         let m = tokens[0]

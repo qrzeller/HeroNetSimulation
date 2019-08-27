@@ -17,13 +17,15 @@ print("__________________ HeroN ____________________")
 var interpreter = Interpreter()
 let module = PetriNet.readFile(fileName: filePath)
 try! interpreter.loadModule(fromString: module)
+let labelExecution = {d, l in LabelTools.dynamicReplace(t: d, label: l, interpreter: interpreter)}
 
 
 
-let p = PetriNet(interpreter : interpreter)
-p.definitionTest()
-p.startDefinitionTest()
-p.loadDefinitionFile(path: fileDef)
+let p = PetriNet()
+p.definitionTest(labelExecution: labelExecution)
+//p.startDefinitionTest()
+p.loadDefinitionFile(path: fileDef, labelExecution: labelExecution)
+p.randomRun()
 //p.marking()
 
 
