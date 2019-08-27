@@ -116,11 +116,14 @@ class PetriNet{
         
     }
     
-    func randomRun(count: Int = 1){
+    func randomRun(count: Int = 1) -> Bool{
         for _ in 0..<count{
             var t = transitions.values.randomElement()
-            _ = t?.fire()
+            if let res = t?.fire(){ if !res {return false}
+            }else {print("!!No transition to run!!");return false}
+            
         }
+        return true
     }
     func manualRun(transitionName : String, binding: [String:String]){
         _ = transitions[transitionName]?.fire(manualToken: binding)
