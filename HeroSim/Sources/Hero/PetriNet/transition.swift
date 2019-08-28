@@ -45,11 +45,13 @@ struct Transition<In: Equatable, Out: Equatable>{
             
             if let aos = arcs["out"] as? [String: [String: Any]]{
                 for ao in aos{ // load arc out from file
-                    var labels = [([String : In]) -> (Out?)]()
+                    var labels = [([String : In]) -> (Out?)]() // executed labels
+                    var debugLabels = [String]() // for debig only
                     for l in LabelTools.multiLabel(labels: ao.value["label"] as! String){
                         labels.append({d in labelExecution(d, l)})
+                        debugLabels.append(l)
                     }
-                    arcsOut.append(ArcOut(label:labels,
+                    arcsOut.append(ArcOut(label:labels, debugLabel: debugLabels,
                                           connectedPlace: places[ao.value["connectedPlace"] as! String] as! Place<Out> ,
                                           name: ao.value["name"] as! String))
                 }
@@ -177,7 +179,12 @@ struct Transition<In: Equatable, Out: Equatable>{
     private mutating func execOutArcs(executedToken: [String: In]){
         for var i in arcsOut{
             let outMark = i.execute(transitionParams: executedToken)
-            print("📗 The execution \(i.name) with \(executedToken)\n\treturned: \(outMark) ")
+            print("""
+                📗 The execution \(i.name),
+                    bindings: \(executedToken),
+                    with the label \(i.debugLabel)
+                    returned: \(outMark)
+                """)
             
         }
     }

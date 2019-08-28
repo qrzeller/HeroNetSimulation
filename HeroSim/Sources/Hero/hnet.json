@@ -9,14 +9,15 @@
         "t1": {
             "arcs" : {
                 "in": {
-                    "a1": {"name": "a1", "connectedPlace": "p1", "label":"a, b"},
+                    "a1": {"name": "a1", "connectedPlace": "p1", "label":"a"},
                     "a2": {"name": "a2", "connectedPlace": "p2", "label":"c"}
+                    
                 },
                 "out":{
                     "a3": {
                         "name": "a3",
                         "connectedPlace": "p3",
-                        "label"  : "operationNoCurry(a: $a$, b: $b$ , op: $c$) ; operationNoCurry(a: $b$, b: $b$ , op: $c$) ; $a$+2"
+                        "label"  : "operationNoCurry(a: $a$, b: $b$ , op: $c$) ; operationNoCurry(a: $b$, b: $a$ , op: $c$)"
                     }
                 }
                 
@@ -28,6 +29,30 @@
             },
             "meta": {
                 "name": "t1"
+            }
+        },
+        "t2": {
+            "arcs" : {
+                "in": {
+                    "a4": {"name": "a4", "connectedPlace": "p3", "label":"x"},
+                    "a5": {"name": "a5", "connectedPlace": "p1", "label":"b"},
+                    
+                },
+                "out":{
+                    "a6": {
+                        "name": "a6",
+                        "connectedPlace": "p1",
+                        "label"  : "$x$;$b$+2"
+                    }
+                }
+                
+            },
+            "guards": {
+                "code": "",
+                "enabled": true
+            },
+            "meta": {
+                "name": "t2"
             }
         }
     
@@ -61,7 +86,7 @@
                 "codomainSet":          ""
             },
             "name": "p3",
-            "tokens":   ["10"]
+            "tokens":   []
         }}
     ,
     "env":{

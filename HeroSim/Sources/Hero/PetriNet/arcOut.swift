@@ -21,12 +21,14 @@ struct ArcOut<PlaceIn: Equatable, PlaceOut: Equatable>: CustomStringConvertible{
     var connectedPlace: Place<PlaceOut>
     
     let label: [([String: PlaceIn]) -> PlaceOut?]
+    let debugLabel: [String]
     let name : String
     
-    init(label: [([String: PlaceIn]) -> PlaceOut?], connectedPlace:  Place<PlaceOut>, name: String = "") {
-        self.label = label
-        self.name = name
+    init(label: [([String: PlaceIn]) -> PlaceOut?], debugLabel:[String] = [String](), connectedPlace:  Place<PlaceOut>, name: String = "") {
+        self.label          = label
+        self.name           = name
         self.connectedPlace = connectedPlace
+        self.debugLabel     = debugLabel
 
     }
      // params for out arcs only    
