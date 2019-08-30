@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ArcIn<T: Equatable>: CustomStringConvertible{
+struct ArcIn<T: Equatable & Comparable>: CustomStringConvertible{
     var description: String{
         return """
         📓 ArcIn :

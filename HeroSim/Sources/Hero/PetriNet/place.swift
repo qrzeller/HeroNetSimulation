@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Place<T: Equatable>: CustomStringConvertible {
+struct Place<T: Equatable & Comparable>: CustomStringConvertible {
     var description: String {
         return """
         📓 Place :

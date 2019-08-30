@@ -151,52 +151,43 @@ class PetriNet{
         print("-- Marking mode : ")
         
         // store markings
-        var markings = [[[String]]]() // list of epoch of place of value
-        markings.append(rendermarking())
+        var markings: Set = [getMarking()]
         
+        for i in 0..<20{
+        for var t in transitions{
+            var select = [String:String]()
+            
+            for a in t.value.arcsIn{
+                print("arc : ", a)
+                for bn in a.bindName{
+                    select[bn] = a.connectedPlace.getAValue(delete: false) // need to get all combination if bindName > 1 TODO
+                }
+            }
+            
+            
+            _ = t.value.fire(manualToken: select)
+            markings.insert(getMarking())
+            t.value.resetState()
+        }
+        }
+        
+        print("Possibilités : ", markings.count)
         // compute all combination :
-        var nonstop = 100
-        while nonstop > 0{
-            for t in transitions{
-                
-                //_ = t.value.fireForMarking() // does not delete values
-                markings.append(rendermarking())
-                
-                
-                
-    //            for a in t.value.arcsIn{
-    //                let bindings = a.bindName
-    //                let tokens   = a.connectedPlace.tokens.getAsArray()
-    //
-    //                // perform all binding for a specific arc
-    //                for i in 0..<tokens.count{
-    //
-    //                }
-    //
-    //
-            }
-            
-            // compare all places
-            
-            if(markings[markings.endIndex-1] == markings[markings.endIndex-2]){
-                nonstop -= 1
-                print("markings : ")
-                print(markings.last!)
-            }
-            
-        }
+        print("_____")
+        for i in markings{
+            print(i)}
         
         
     }
-    
-    private func rendermarking() -> [[String]]{
-        var ret = [[String]]()
-        for p in places{
-            var token = Array(Set(p.value.tokens.getAsArray()))
-            token.sort()
-            ret.append(token) // need to sort to compare
+    // get current marking
+    private func getMarking() -> [String: String]{
+        var dict = [String: String]()
+        
+        for p in places {
+            dict[p.value.name] = p.value.tokens.description
         }
-        return ret
+        return dict
     }
+
     
 }

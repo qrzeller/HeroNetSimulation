@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ArcOut<PlaceIn: Equatable, PlaceOut: Equatable>: CustomStringConvertible{
+struct ArcOut<PlaceIn: Equatable & Comparable, PlaceOut: Equatable & Comparable>: CustomStringConvertible{
 
     var description: String{
         return """

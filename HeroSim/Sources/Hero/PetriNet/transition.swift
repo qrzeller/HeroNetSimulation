@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Transition<In: Equatable, Out: Equatable>{
+struct Transition<In: Equatable & Comparable, Out: Equatable & Comparable>{
 
     let transitionGuard: [([String: In]) -> Bool]//([In]) -> Bool
     
@@ -18,6 +18,9 @@ struct Transition<In: Equatable, Out: Equatable>{
     let existingBindings: [String]
     
     let name: String
+    
+    var lastExecutedTokenIn  : [String: In] = [String: In]()
+    var lastExecutedTokenOut : [String: [Out]] = [String: [Out]]()
     
     init(transitionGuard: [([String: In]) -> Bool], arcsIn: [ArcIn<In>], arcsOut: [ArcOut<In, Out>], name:String) {
         self.transitionGuard    = transitionGuard
@@ -152,20 +155,21 @@ struct Transition<In: Equatable, Out: Equatable>{
                 }
             }
         }
-        
         // ---------------- Check guards -------------------------------
         // If guard did not validate, return token to state.
         if !computeGuard(executedToken: executedToken){
             return false
         }
         // _______________ Execute out arcs _____________________________
-        
         execOutArcs(executedToken: executedToken)
         return true
     }
     
     // checck if guard holds, otherwise refill the places with the tokens
     private mutating func computeGuard(executedToken: [String: In]) -> Bool{
+        self.lastExecutedTokenIn.removeAll()// for trace and reset (marking)
+        self.lastExecutedTokenOut.removeAll()// for trace and reset (marking)
+
         for f in transitionGuard{
             if !f(executedToken) {
                 print("📙 The guard failed")
@@ -185,8 +189,10 @@ struct Transition<In: Equatable, Out: Equatable>{
                     with the label \(i.debugLabel)
                     returned: \(outMark)
                 """)
-            
+            self.lastExecutedTokenOut[i.name] = outMark // for trace and reset (marking)
         }
+        
+        self.lastExecutedTokenIn  = executedToken // for trace and reset (marking)
     }
     
     // Fire without removing values, adding value output
@@ -228,6 +234,23 @@ struct Transition<In: Equatable, Out: Equatable>{
     
     public mutating func enable(){
         self.enabled = true
+    }
+    
+    
+    // used to calculate all the marking efficiently
+    public mutating func resetState(){
+        print("OUT TOREMOVE : ", lastExecutedTokenOut)
+        self.resetState(tokens: lastExecutedTokenIn)
+        for a in arcsOut {
+            let arcName = a.name
+            print("arcName", arcName)
+            if let toRemove = self.lastExecutedTokenOut[arcName]{
+                for r in toRemove{
+                    print("removed ", r)
+                    a.connectedPlace.tokens.del(value: r)
+                }
+            } else {print("empty list to remove ..reset state..")}
+        }
     }
     
     // Put back token in the places

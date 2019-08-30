@@ -25,11 +25,11 @@ let p = PetriNet()
 //p.definitionTest(labelExecution: labelExecution)
 //p.startDefinitionTest()
 p.loadDefinitionFile(path: fileDef, labelExecution: labelExecution)
-p.manualRun(transitionName: "t1", binding: ["a":"2","c":"sub"])
+//p.manualRun(transitionName: "t1", binding: ["a":"2","c":"sub"])
 //p.randomRun()
-p.transitions["t2"]?.fire()
+//p.transitions["t2"]?.fire()
 
-//p.marking()
+p.marking()
 
 
 

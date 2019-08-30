@@ -7,9 +7,10 @@
 
 import Foundation
 
-class Tokens<T: Equatable>: CustomStringConvertible{
-    var description: String { return tokens.description }
+class Tokens<T: Equatable & Comparable>: CustomStringConvertible{
+    var description: String { return tokens.sorted().description }
     // todo MARKING
+    
     
     // The token set as an Array (can be changed as accessed by subscript)
     private var tokens = [T]()
