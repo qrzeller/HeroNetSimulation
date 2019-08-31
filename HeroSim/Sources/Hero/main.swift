@@ -29,7 +29,8 @@ p.loadDefinitionFile(path: fileDef, labelExecution: labelExecution)
 //p.randomRun()
 //p.transitions["t2"]?.fire()
 
-p.marking()
+Combination.test()
+//p.marking()
 
 
 

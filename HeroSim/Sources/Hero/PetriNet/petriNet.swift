@@ -152,30 +152,39 @@ class PetriNet{
         
         // store markings
         var markings: Set = [getMarking()]
+        let currentMarking = getMarking()
         
-        for i in 0..<20{
-        for var t in transitions{
-            var select = [String:String]()
-            
-            for a in t.value.arcsIn{
-                print("arc : ", a)
-                for bn in a.bindName{
-                    select[bn] = a.connectedPlace.getAValue(delete: false) // need to get all combination if bindName > 1 TODO
+
+
+            for var t in transitions{
+                var select = [String: String]()
+                
+                
+                for a in t.value.arcsIn {
+                    let set = Set(a.connectedPlace.tokens.getAsArray())
+                    
+                    for h in 0 ..< a.bindName.count{
+                        var workingSet = set
+                        
+                        
+                    }
+                    
                 }
+                
+                //Evaluate
+                _ = t.value.fire(manualToken: select)
+                markings.insert(getMarking())
+                t.value.resetState()
+                
             }
-            
-            
-            _ = t.value.fire(manualToken: select)
-            markings.insert(getMarking())
-            t.value.resetState()
-        }
-        }
+        
         
         print("Possibilités : ", markings.count)
         // compute all combination :
         print("_____")
+
         for i in markings{
-            print(i)}
+            print("🔷", i.sorted(by: { $0.0 < $1.0 }))}
         
         
     }
@@ -188,6 +197,7 @@ class PetriNet{
         }
         return dict
     }
+    
 
     
 }

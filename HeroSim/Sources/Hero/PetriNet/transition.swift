@@ -241,6 +241,7 @@ struct Transition<In: Equatable & Comparable, Out: Equatable & Comparable>{
     public mutating func resetState(){
         print("OUT TOREMOVE : ", lastExecutedTokenOut)
         self.resetState(tokens: lastExecutedTokenIn)
+        
         for a in arcsOut {
             let arcName = a.name
             print("arcName", arcName)

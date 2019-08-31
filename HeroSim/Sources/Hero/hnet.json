@@ -17,14 +17,15 @@
                     "a3": {
                         "name": "a3",
                         "connectedPlace": "p3",
-                        "label"  : "operationNoCurry(a: $a$, b: $b$ , op: $c$) ; operationNoCurry(a: $b$, b: $a$ , op: $c$)"
+                        "label"  : "operationNoCurry(a: $a$, b: $b$ , op: $c$)",
+                        "labelBack"  : "operationNoCurry(a: $a$, b: $b$ , op: $c$);operationNoCurry(a: $b$, b: $a$ , op: $c$)"
                     }
                 }
                 
             },
             "guards": {
                 "codeSaved":"guardTwo($a$);",
-                "code": "guardTwo(2)",
+                "code": "guardTwo(2);",
                 "enabled": true
             },
             "meta": {
@@ -42,7 +43,8 @@
                     "a6": {
                         "name": "a6",
                         "connectedPlace": "p1",
-                        "label"  : "$x$;$b$+2"
+                        "label"  : "$x$",
+                        "labelBack"  : "$x$;$b$+2"
                     }
                 }
                 

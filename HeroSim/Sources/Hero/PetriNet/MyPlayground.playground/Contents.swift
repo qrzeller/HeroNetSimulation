@@ -63,7 +63,7 @@ print(lab)
 
 print("__________________")
 import Interpreter
-let filePath = "/Users/quentinzeller/Github/OFA/HeroNetSimulation/HeroSim/Sources/Alpine-test1/curry.alpine"
+let filePath = "/Users/quentinzeller/Github/OFA/HeroNetSimulation/HeroSim/Sources/Hero/curry.alpine"
 var interpreter = Interpreter()
 
 func readFile(fileName: String) -> String{
@@ -82,3 +82,36 @@ try! interpreter.loadModule(fromString: module)
 
 let value = try interpreter.eval(string: "guardTwo(2)")
 
+
+func between<T>(x: T, ys: [T]) -> [[T]] {
+    if let (head, tail) = ys.decompose {
+        return [[x] + ys] + between(x: x, ys: tail).map { [head] + $0 }
+    } else {
+        return [[x]]
+    }
+}
+
+extension Array {
+    var decompose : (head: Element, tail: [Element])? {
+        return (count > 0) ? (self[0], Array(self[1..<count])) : nil
+    }
+}
+
+infix operator >>= 
+func >>=<A, B>(xs: [A], f: (A) -> [B]) -> [B] {
+    return xs.map(f).reduce([], +)
+}
+
+// Inspired from : https://www.objc.io/blog/2014/12/08/functional-snippet-10-permutations/
+func perm<T>(xs: [T]) -> [[T]] {
+    if let (head, tail) = xs.decompose {
+        return perm(xs: tail) >>= { permTail in
+            between(x: head, ys: permTail)
+        }
+    } else {
+        return [[]]
+    }
+}
+
+var permutations = perm(xs: ["a", "b", "c"])
+print(permutations)
