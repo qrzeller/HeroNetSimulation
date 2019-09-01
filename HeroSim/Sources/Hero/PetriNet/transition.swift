@@ -239,16 +239,14 @@ struct Transition<In: Equatable & Comparable, Out: Equatable & Comparable>{
     
     // used to calculate all the marking efficiently
     public mutating func resetState(){
-        print("OUT TOREMOVE : ", lastExecutedTokenOut)
+        print("🔷 Reset state and removing evaluated expression : ", lastExecutedTokenOut)
         self.resetState(tokens: lastExecutedTokenIn)
         
         for a in arcsOut {
             let arcName = a.name
-            print("arcName", arcName)
             if let toRemove = self.lastExecutedTokenOut[arcName]{
                 for r in toRemove{
-                    print("removed ", r)
-                    a.connectedPlace.tokens.del(value: r)
+                    _ = a.connectedPlace.tokens.del(value: r)
                 }
             } else {print("empty list to remove ..reset state..")}
         }

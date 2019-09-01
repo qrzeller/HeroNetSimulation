@@ -146,58 +146,79 @@ class PetriNet{
         print(places["p3"] ?? "Place p3 does not exist")
     }
     
-    func marking(){
-        print("________________________________________________________")
+    func marking() -> Set<[String : [String]]>{
         print("-- Marking mode : ")
         
         // store markings
         var markings: Set = [getMarking()]
+        var previousMarking = markings // for do while loop (break condition)
+        
         let currentMarking = getMarking()
         
-
-
-            for var t in transitions{
-                var select = [String: String]()
-                
-                
-                for a in t.value.arcsIn {
-                    let set = Set(a.connectedPlace.tokens.getAsArray())
+        
+        repeat{ previousMarking = markings // for the break of do while loop. (if state don't change -> fixed point)
+            
+            for m in markings{ // iterate over all marking
+                setMarking(marking: m) // change state of petri net to this marking
+                for var t in transitions{
                     
-                    for h in 0 ..< a.bindName.count{
-                        var workingSet = set
-                        
-                        
+                    var tokensByArcs = [[[String]]]()
+                    var bindingsByArcs = [[String]]()
+                    for a in t.value.arcsIn {
+                        let tokens = a.connectedPlace.tokens.getAsArray()
+                        let bindings = a.bindName
+                        var rWorking = Array(Array<String>(repeating: "", count: bindings.count))
+                        var resultArc   = [[String]]()
+                        Combinatorix.permutationNoRep(arr: tokens, data: &rWorking, r: bindings.count, result: &resultArc)
+                        tokensByArcs.append(resultArc) // all combination of bindings for a certain place
+                        bindingsByArcs.append(bindings)
+                    }
+
+                    let comb = Combinatorix.cardProd(array: tokensByArcs)
+                    
+                    func makeDict(tokens:[String]) -> [String: String]{
+                        var res = [String:String]()
+                        let bind:[String] = Array(bindingsByArcs.joined())
+                        for b in 0..<bind.count{
+                            res[bind[b]] = tokens[b]
+                        }
+                        return res
                     }
                     
+                    //Evaluate
+                    func evaluate(select: [String: String]){
+                        if (t.value.fire(manualToken: select)){
+                            markings.insert(getMarking())
+                            t.value.resetState()}
+                    }
+                    
+                    for c in comb{
+                        let binding = makeDict(tokens: c)
+                        evaluate(select: binding)
+                    }
+                
                 }
-                
-                //Evaluate
-                _ = t.value.fire(manualToken: select)
-                markings.insert(getMarking())
-                t.value.resetState()
-                
             }
+        }while(markings != previousMarking) // if same, it's a fix point
         
-        
-        print("Possibilités : ", markings.count)
-        // compute all combination :
-        print("_____")
-
-        for i in markings{
-            print("🔷", i.sorted(by: { $0.0 < $1.0 }))}
-        
-        
+        return markings
     }
+    
     // get current marking
-    private func getMarking() -> [String: String]{
-        var dict = [String: String]()
+    private func getMarking() -> [String: [String]]{
+        var dict = [String: [String]]()
         
         for p in places {
-            dict[p.value.name] = p.value.tokens.description
+            dict[p.value.name] = p.value.tokens.getAsArray()
         }
         return dict
     }
     
-
+    // change the marking of our petri net
+    private func setMarking(marking: [String: [String]]){
+        for m in marking{
+            places[m.key]?.tokens.setAlltokens(t: m.value)
+        }
+    }
     
 }

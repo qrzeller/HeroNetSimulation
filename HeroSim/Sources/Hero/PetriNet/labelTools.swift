@@ -45,7 +45,7 @@ public struct LabelTools{
     }
     
     // Basic function, example function if you want to personalise the labels execution
-    public static let opNoCurry = { (t: [String: String]) -> String? in
+    public static let opNoCurry = { (t: [String: String], interpreter: Interpreter) -> String? in
         let code: String = "operationNoCurry(a: \(t["a"]!), b: \(t["b"]!) , op: \(t["c"]!))"
         let value = try! interpreter.eval(string: code)
         return value.description

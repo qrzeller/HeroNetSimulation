@@ -97,12 +97,12 @@ extension Array {
     }
 }
 
-infix operator >>= 
+infix operator >>=
 func >>=<A, B>(xs: [A], f: (A) -> [B]) -> [B] {
     return xs.map(f).reduce([], +)
 }
 
-// Inspired from : https://www.objc.io/blog/2014/12/08/functional-snippet-10-permutations/
+// tested from : https://www.objc.io/blog/2014/12/08/functional-snippet-10-permutations/
 func perm<T>(xs: [T]) -> [[T]] {
     if let (head, tail) = xs.decompose {
         return perm(xs: tail) >>= { permTail in

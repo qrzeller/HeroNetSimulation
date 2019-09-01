@@ -57,7 +57,7 @@
                 "name": "t2"
             }
         }
-        
+    
     },
     "places": {
         "p1": {
@@ -96,5 +96,5 @@
         "version": "x.x.x",
         "context": "curry.alpine"
     }
-    
+
 }

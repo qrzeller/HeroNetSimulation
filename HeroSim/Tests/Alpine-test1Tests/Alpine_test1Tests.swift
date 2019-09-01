@@ -1,6 +1,5 @@
 import XCTest
 import Interpreter
-@testable import Alpinetest1
 
 final class Alpinetest1Tests: XCTestCase {
     func testExample() {

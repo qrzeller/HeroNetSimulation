@@ -8,8 +8,8 @@
 
 import Foundation
 import Interpreter
-let filePath = "/Users/quentinzeller/Github/OFA/HeroNetSimulation/HeroSim/Sources/Hero/curry.alpine"
-let fileDef  = "/Users/quentinzeller/Github/OFA/HeroNetSimulation/HeroSim/Sources/Hero/hnet.json"
+let filePath = "/tmp/hero/curry.alpine"
+let fileDef  = "/tmp/hero/hnet.json"
 
 
 print("__________________ HeroN ____________________")
@@ -29,12 +29,11 @@ p.loadDefinitionFile(path: fileDef, labelExecution: labelExecution)
 //p.randomRun()
 //p.transitions["t2"]?.fire()
 
-Combination.test()
-//p.marking()
 
+let allMarking = p.marking()
 
+print("________________________________________________")
 
-// TODO:
-//      - label in alpine.
-//      - definition file
-//      - Marking
+for i in allMarking{
+    print("🔷", i.sorted(by: { $0.0 < $1.0 }))}
+print("🔷🔷🔷 All different marking : ", allMarking.count)

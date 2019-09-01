@@ -60,7 +60,13 @@ class Tokens<T: Equatable & Comparable>: CustomStringConvertible{
         return tokens.count
     }
     
+    // sorted is usefull for marking comparison (as those are not sets but multi-set)
     public func getAsArray() -> [T]{
-        return tokens
+        return tokens.sorted()
+    }
+    
+    // replace completely the tokens by input t
+    public func setAlltokens(t :[T]){
+        self.tokens = t
     }
 }
