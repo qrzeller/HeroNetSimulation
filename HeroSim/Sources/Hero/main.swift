@@ -22,8 +22,6 @@ let labelExecution = {d, l in LabelTools.dynamicReplace(t: d, label: l, interpre
 
 
 let p = PetriNet()
-//p.definitionTest(labelExecution: labelExecution)
-//p.startDefinitionTest()
 p.loadDefinitionFile(path: fileDef, labelExecution: labelExecution)
 //p.manualRun(transitionName: "t1", binding: ["a":"2","c":"sub"])
 //p.randomRun()

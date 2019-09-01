@@ -169,7 +169,7 @@ class PetriNet{
                         let bindings = a.bindName
                         var rWorking = Array(Array<String>(repeating: "", count: bindings.count))
                         var resultArc   = [[String]]()
-                        Combinatorix.permutationNoRep(arr: tokens, data: &rWorking, r: bindings.count, result: &resultArc)
+                        Combinatorix.permutationNoRep(multiset: tokens, rArray: &rWorking, result: &resultArc)
                         tokensByArcs.append(resultArc) // all combination of bindings for a certain place
                         bindingsByArcs.append(bindings)
                     }

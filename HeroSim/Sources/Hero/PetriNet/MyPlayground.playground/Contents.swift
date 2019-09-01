@@ -53,7 +53,7 @@ var lab = "operationNoCurry(a: $a$, b: $b$, op: $c$)"
 
 var searchRg:Range<String.Index> = lab.startIndex..<lab.endIndex
 while let idx = lab.range(of: "[$].*?[$]", options: .regularExpression, range: searchRg) {
-    let rep = lab[lab.index(after: idx.lowerBound)..<lab.index(before: idx.upperBound)]
+    _ = lab[lab.index(after: idx.lowerBound)..<lab.index(before: idx.upperBound)]
     lab.replaceSubrange(idx, with: "x")
     searchRg = idx.lowerBound..<lab.endIndex
     

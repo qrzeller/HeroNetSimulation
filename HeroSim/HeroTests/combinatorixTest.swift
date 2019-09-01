@@ -26,7 +26,7 @@ class combinatorixTest: XCTestCase {
         let r = 2
         var data: [String] = Array<String>(repeating: "", count: r) // size ?
         
-        Combinatorix.permutationNoRep(arr: arr, data: &data, index: 0, r: r, result: &result)
+        Combinatorix.permutationNoRep(multiset: arr, rArray: &data, result: &result)
         XCTAssert(result.count == Set(result).count, "There is dupplicate")
         XCTAssert(result.count ==  30, "Result should be 30")
     }
@@ -40,7 +40,7 @@ class combinatorixTest: XCTestCase {
         
         var data: [String] = Array<String>(repeating: "", count: r) // size ?
         
-        Combinatorix.permutationNoRep(arr: arr, data: &data, index: 0, r: r, result: &result)
+        Combinatorix.permutationNoRep(multiset: arr, rArray: &data, result: &result)
         XCTAssert(result.count == Set(result).count, "There is dupplicate")
         XCTAssert(result.count ==  6, "Result should be 6")
     }
@@ -55,7 +55,7 @@ class combinatorixTest: XCTestCase {
         
         var data: [String] = Array<String>(repeating: "", count: r) // size ?
         
-        Combinatorix.permutationNoRep(arr: arr, data: &data, index: 0, r: r, result: &result)
+        Combinatorix.permutationNoRep(multiset: arr, rArray: &data, result: &result)
         XCTAssert(result.count == Set(result).count, "There is dupplicate")
         XCTAssert(result.count ==  15600, "Result should be 15600")
     }
