@@ -7,6 +7,15 @@ All files for the xcode project are present and useful if you want to use the un
 This xcode project is a terminal one, thus some definition files are moved in /tmp/hero/ for convenience, check to allow access.
 It use librairies from [AlpineLang](https://github.com/kyouko-taiga/AlpineLang) and the exemple interpreter of the expression is Alpine.
 
+## How to build ?
+This installation come with a Xcode project.
+The dependencies are located in this [path](./HeroSim/.build/checkouts) path.
+To load them, enable git submodules with the commande : `git submodule init`
+To download them: `git submodule update`
+You should be ready to go.
+Be sure the IDE have enought access to load file in `/tmp/hero` but this should not be a problem as it's tempory ramdisk.
+
+
 ## How to use ?
 It come's with a main file, you can try to uncomment to see some result.
 
