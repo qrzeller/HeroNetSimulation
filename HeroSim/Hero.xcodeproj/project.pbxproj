@@ -1,0 +1,2036 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"Alpine-test1::Alpine-test1PackageTests::ProductTarget" /* HeroPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_140 /* Build configuration list for PBXAggregateTarget "HeroPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_143 /* PBXTargetDependency */,
+			);
+			name = HeroPackageTests;
+			productName = "Alpine-test1PackageTests";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		F41CDAD622FC374600441F7D /* place.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDAD522FC374600441F7D /* place.swift */; };
+		F41CDADE22FC37A100441F7D /* petriNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDADD22FC37A100441F7D /* petriNet.swift */; };
+		F41CDAE022FC3D2F00441F7D /* tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDADF22FC3D2F00441F7D /* tokens.swift */; };
+		F41CDAE222FD71AE00441F7D /* domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDAE122FD71AE00441F7D /* domain.swift */; };
+		F41CDAE52300324300441F7D /* arcOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDAE42300324300441F7D /* arcOut.swift */; };
+		F41CDAE8230DEF9E00441F7D /* arcIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDAE6230DEDEB00441F7D /* arcIn.swift */; };
+		F42FB978230DF13D00946211 /* transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDAD922FC376700441F7D /* transition.swift */; };
+		F4365E3A231B168B000DD3D2 /* permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4365E39231B168B000DD3D2 /* permutation.swift */; };
+		F4365E3B231B168B000DD3D2 /* permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4365E39231B168B000DD3D2 /* permutation.swift */; };
+		F4365E3D231B363D000DD3D2 /* combinatorixTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4365E3C231B363D000DD3D2 /* combinatorixTest.swift */; };
+		F4365E3E231BD46D000DD3D2 /* place.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDAD522FC374600441F7D /* place.swift */; };
+		F4365E3F231BD471000DD3D2 /* transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDAD922FC376700441F7D /* transition.swift */; };
+		F4365E40231BD477000DD3D2 /* petriNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDADD22FC37A100441F7D /* petriNet.swift */; };
+		F4365E41231BD477000DD3D2 /* tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDADF22FC3D2F00441F7D /* tokens.swift */; };
+		F4365E42231BD477000DD3D2 /* domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDAE122FD71AE00441F7D /* domain.swift */; };
+		F4365E43231BD477000DD3D2 /* arcOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDAE42300324300441F7D /* arcOut.swift */; };
+		F4365E44231BD477000DD3D2 /* arcIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CDAE6230DEDEB00441F7D /* arcIn.swift */; };
+		F4365E45231BD477000DD3D2 /* labelTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9223123101D1C00586DB5 /* labelTools.swift */; };
+		F4365E56231BE077000DD3D2 /* curry.alpine in CopyFiles */ = {isa = PBXBuildFile; fileRef = F4365E47231BD67C000DD3D2 /* curry.alpine */; };
+		F4365E57231BE077000DD3D2 /* hnet.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = F4365E36231929D7000DD3D2 /* hnet.json */; };
+		F4365E5A231C5CF7000DD3D2 /* hnet_markingTest.json in Copy Files */ = {isa = PBXBuildFile; fileRef = F4365E59231C5CF7000DD3D2 /* hnet_markingTest.json */; };
+		F47216252315C9D700DD1F58 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472161C2315C39700DD1F58 /* Hero.swift */; };
+		F4C9223323101FFE00586DB5 /* labelTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9223123101D1C00586DB5 /* labelTools.swift */; };
+		OBJ_100 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Scope.swift */; };
+		OBJ_101 /* SourceRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* SourceRange.swift */; };
+		OBJ_102 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Symbol.swift */; };
+		OBJ_103 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Type.swift */; };
+		OBJ_105 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Utils::Product" /* Utils.framework */; };
+		OBJ_113 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* main.swift */; };
+		OBJ_115 /* ArgParse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ArgParse::ArgParse::Product" /* ArgParse.framework */; };
+		OBJ_116 /* Interpreter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Interpreter::Product" /* Interpreter.framework */; };
+		OBJ_117 /* Sema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Sema::Product" /* Sema.framework */; };
+		OBJ_118 /* Parser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Parser::Product" /* Parser.framework */; };
+		OBJ_119 /* AST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::AST::Product" /* AST.framework */; };
+		OBJ_120 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Utils::Product" /* Utils.framework */; };
+		OBJ_138 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_152 /* ArgParse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ArgParse::ArgParse::Product" /* ArgParse.framework */; };
+		OBJ_153 /* Interpreter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Interpreter::Product" /* Interpreter.framework */; };
+		OBJ_154 /* Sema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Sema::Product" /* Sema.framework */; };
+		OBJ_155 /* Parser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Parser::Product" /* Parser.framework */; };
+		OBJ_156 /* AST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::AST::Product" /* AST.framework */; };
+		OBJ_157 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Utils::Product" /* Utils.framework */; };
+		OBJ_171 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* Package.swift */; };
+		OBJ_176 /* ArgParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* ArgParse.swift */; };
+		OBJ_183 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Package.swift */; };
+		OBJ_188 /* EvaluationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* EvaluationContext.swift */; };
+		OBJ_189 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Interpreter.swift */; };
+		OBJ_190 /* InterpreterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* InterpreterError.swift */; };
+		OBJ_191 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Value.swift */; };
+		OBJ_193 /* Sema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Sema::Product" /* Sema.framework */; };
+		OBJ_194 /* Parser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Parser::Product" /* Parser.framework */; };
+		OBJ_195 /* AST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::AST::Product" /* AST.framework */; };
+		OBJ_196 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Utils::Product" /* Utils.framework */; };
+		OBJ_205 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Lexer.swift */; };
+		OBJ_206 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ParseError.swift */; };
+		OBJ_207 /* Parser+Expr.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Parser+Expr.swift */; };
+		OBJ_208 /* Parser+Func.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Parser+Func.swift */; };
+		OBJ_209 /* Parser+Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Parser+Sign.swift */; };
+		OBJ_210 /* Parser+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Parser+Type.swift */; };
+		OBJ_211 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Parser.swift */; };
+		OBJ_212 /* SyntaxError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* SyntaxError.swift */; };
+		OBJ_213 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Token.swift */; };
+		OBJ_215 /* AST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::AST::Product" /* AST.framework */; };
+		OBJ_216 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Utils::Product" /* Utils.framework */; };
+		OBJ_223 /* ConstraintCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* ConstraintCreator.swift */; };
+		OBJ_224 /* ConstraintSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* ConstraintSolver.swift */; };
+		OBJ_225 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Dispatcher.swift */; };
+		OBJ_226 /* NameBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* NameBinder.swift */; };
+		OBJ_227 /* Normalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Normalizer.swift */; };
+		OBJ_228 /* SAError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* SAError.swift */; };
+		OBJ_229 /* SAPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* SAPass.swift */; };
+		OBJ_230 /* SubstitutionTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* SubstitutionTable.swift */; };
+		OBJ_231 /* SymbolCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* SymbolCreator.swift */; };
+		OBJ_233 /* Parser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Parser::Product" /* Parser.framework */; };
+		OBJ_234 /* AST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::AST::Product" /* AST.framework */; };
+		OBJ_235 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Utils::Product" /* Utils.framework */; };
+		OBJ_243 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Sequence+Extensions.swift */; };
+		OBJ_244 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Stack.swift */; };
+		OBJ_245 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Stopwatch.swift */; };
+		OBJ_246 /* TextInputBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* TextInputBuffer.swift */; };
+		OBJ_247 /* Unreachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Unreachable.swift */; };
+		OBJ_253 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Console.swift */; };
+		OBJ_254 /* Diagnostic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Diagnostic.swift */; };
+		OBJ_255 /* LocatableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* LocatableError.swift */; };
+		OBJ_256 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Logger.swift */; };
+		OBJ_257 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* main.swift */; };
+		OBJ_259 /* ArgParse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ArgParse::ArgParse::Product" /* ArgParse.framework */; };
+		OBJ_260 /* Interpreter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Interpreter::Product" /* Interpreter.framework */; };
+		OBJ_261 /* Sema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Sema::Product" /* Sema.framework */; };
+		OBJ_262 /* Parser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Parser::Product" /* Parser.framework */; };
+		OBJ_263 /* AST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::AST::Product" /* AST.framework */; };
+		OBJ_264 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AlpineLang::Utils::Product" /* Utils.framework */; };
+		OBJ_89 /* AST.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* AST.swift */; };
+		OBJ_90 /* ASTContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ASTContext.swift */; };
+		OBJ_91 /* ASTDumper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* ASTDumper.swift */; };
+		OBJ_92 /* ASTTransformer+Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* ASTTransformer+Traversal.swift */; };
+		OBJ_93 /* ASTTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ASTTransformer.swift */; };
+		OBJ_94 /* ASTVisitor+Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ASTVisitor+Traversal.swift */; };
+		OBJ_95 /* ASTVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ASTVisitor.swift */; };
+		OBJ_96 /* BuiltinScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* BuiltinScope.swift */; };
+		OBJ_97 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Constraint.swift */; };
+		OBJ_98 /* ConstraintLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* ConstraintLocation.swift */; };
+		OBJ_99 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Operators.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F47B64AF22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::alpine";
+			remoteInfo = alpine;
+		};
+		F47B64B022F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ArgParse::ArgParse";
+			remoteInfo = ArgParse;
+		};
+		F47B64B122F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Interpreter";
+			remoteInfo = Interpreter;
+		};
+		F47B64B222F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Sema";
+			remoteInfo = Sema;
+		};
+		F47B64B322F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Parser";
+			remoteInfo = Parser;
+		};
+		F47B64B422F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::AST";
+			remoteInfo = AST;
+		};
+		F47B64B522F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Utils";
+			remoteInfo = Utils;
+		};
+		F47B64B622F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Utils";
+			remoteInfo = Utils;
+		};
+		F47B64B722F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::AST";
+			remoteInfo = AST;
+		};
+		F47B64B822F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Utils";
+			remoteInfo = Utils;
+		};
+		F47B64B922F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Parser";
+			remoteInfo = Parser;
+		};
+		F47B64BA22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::AST";
+			remoteInfo = AST;
+		};
+		F47B64BB22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Utils";
+			remoteInfo = Utils;
+		};
+		F47B64BC22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Sema";
+			remoteInfo = Sema;
+		};
+		F47B64BD22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Parser";
+			remoteInfo = Parser;
+		};
+		F47B64BE22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::AST";
+			remoteInfo = AST;
+		};
+		F47B64BF22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Utils";
+			remoteInfo = Utils;
+		};
+		F47B64C022F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ArgParse::ArgParse";
+			remoteInfo = ArgParse;
+		};
+		F47B64C122F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Interpreter";
+			remoteInfo = Interpreter;
+		};
+		F47B64C222F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Sema";
+			remoteInfo = Sema;
+		};
+		F47B64C322F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Parser";
+			remoteInfo = Parser;
+		};
+		F47B64C422F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::AST";
+			remoteInfo = AST;
+		};
+		F47B64C522F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Utils";
+			remoteInfo = Utils;
+		};
+		F47B64C622F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alpine-test1::Alpine-test1";
+			remoteInfo = "Alpine-test1";
+		};
+		F47B64C722F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::alpine";
+			remoteInfo = alpine;
+		};
+		F47B64C822F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "ArgParse::ArgParse";
+			remoteInfo = ArgParse;
+		};
+		F47B64C922F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Interpreter";
+			remoteInfo = Interpreter;
+		};
+		F47B64CA22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Sema";
+			remoteInfo = Sema;
+		};
+		F47B64CB22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Parser";
+			remoteInfo = Parser;
+		};
+		F47B64CC22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::AST";
+			remoteInfo = AST;
+		};
+		F47B64CD22F1C3720034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AlpineLang::Utils";
+			remoteInfo = Utils;
+		};
+		F47B64CE22F1C3750034CBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alpine-test1::Alpine-test1Tests";
+			remoteInfo = "Alpine-test1Tests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4365E55231BDFF4000DD3D2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /tmp/hero;
+			dstSubfolderSpec = 0;
+			files = (
+				F4365E56231BE077000DD3D2 /* curry.alpine in CopyFiles */,
+				F4365E57231BE077000DD3D2 /* hnet.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4365E58231C5C8E000DD3D2 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /tmp/hero;
+			dstSubfolderSpec = 0;
+			files = (
+				F4365E5A231C5CF7000DD3D2 /* hnet_markingTest.json in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		"Alpine-test1::Alpine-test1::Product" /* Hero */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Hero; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Alpine-test1::Alpine-test1Tests::Product" /* HeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AlpineLang::AST::Product" /* AST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AlpineLang::Interpreter::Product" /* Interpreter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Interpreter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AlpineLang::Parser::Product" /* Parser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Parser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AlpineLang::Sema::Product" /* Sema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AlpineLang::Utils::Product" /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AlpineLang::alpine::Product" /* alpine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = alpine; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ArgParse::ArgParse::Product" /* ArgParse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ArgParse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41CDAD522FC374600441F7D /* place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = place.swift; sourceTree = "<group>"; };
+		F41CDAD922FC376700441F7D /* transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transition.swift; sourceTree = "<group>"; };
+		F41CDADD22FC37A100441F7D /* petriNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petriNet.swift; sourceTree = "<group>"; };
+		F41CDADF22FC3D2F00441F7D /* tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tokens.swift; sourceTree = "<group>"; };
+		F41CDAE122FD71AE00441F7D /* domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = domain.swift; sourceTree = "<group>"; };
+		F41CDAE322FDDDA000441F7D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F41CDAE42300324300441F7D /* arcOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arcOut.swift; sourceTree = "<group>"; };
+		F41CDAE6230DEDEB00441F7D /* arcIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arcIn.swift; sourceTree = "<group>"; };
+		F4365E36231929D7000DD3D2 /* hnet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hnet.json; path = Sources/Hero/hnet.json; sourceTree = SOURCE_ROOT; };
+		F4365E39231B168B000DD3D2 /* permutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = permutation.swift; sourceTree = "<group>"; };
+		F4365E3C231B363D000DD3D2 /* combinatorixTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = combinatorixTest.swift; sourceTree = "<group>"; };
+		F4365E47231BD67C000DD3D2 /* curry.alpine */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = curry.alpine; path = Sources/Hero/curry.alpine; sourceTree = SOURCE_ROOT; };
+		F4365E59231C5CF7000DD3D2 /* hnet_markingTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = hnet_markingTest.json; path = Sources/Hero/test_data/hnet_markingTest.json; sourceTree = "<group>"; };
+		F472161C2315C39700DD1F58 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		F4C9223123101D1C00586DB5 /* labelTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelTools.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Lexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		OBJ_18 /* ParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseError.swift; sourceTree = "<group>"; };
+		OBJ_19 /* Parser+Expr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+Expr.swift"; sourceTree = "<group>"; };
+		OBJ_20 /* Parser+Func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+Func.swift"; sourceTree = "<group>"; };
+		OBJ_21 /* Parser+Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+Sign.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* Parser+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Parser+Type.swift"; sourceTree = "<group>"; };
+		OBJ_23 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		OBJ_24 /* SyntaxError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxError.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		OBJ_27 /* EvaluationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationContext.swift; sourceTree = "<group>"; };
+		OBJ_28 /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		OBJ_29 /* InterpreterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterError.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		OBJ_32 /* AST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AST.swift; sourceTree = "<group>"; };
+		OBJ_33 /* ASTContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTContext.swift; sourceTree = "<group>"; };
+		OBJ_34 /* ASTDumper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTDumper.swift; sourceTree = "<group>"; };
+		OBJ_35 /* ASTTransformer+Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASTTransformer+Traversal.swift"; sourceTree = "<group>"; };
+		OBJ_36 /* ASTTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTTransformer.swift; sourceTree = "<group>"; };
+		OBJ_37 /* ASTVisitor+Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASTVisitor+Traversal.swift"; sourceTree = "<group>"; };
+		OBJ_38 /* ASTVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTVisitor.swift; sourceTree = "<group>"; };
+		OBJ_39 /* BuiltinScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltinScope.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		OBJ_41 /* ConstraintLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLocation.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Scope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scope.swift; sourceTree = "<group>"; };
+		OBJ_44 /* SourceRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceRange.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		OBJ_46 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		OBJ_48 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		OBJ_49 /* Diagnostic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnostic.swift; sourceTree = "<group>"; };
+		OBJ_50 /* LocatableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatableError.swift; sourceTree = "<group>"; };
+		OBJ_51 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		OBJ_52 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_54 /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_55 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		OBJ_56 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		OBJ_57 /* TextInputBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputBuffer.swift; sourceTree = "<group>"; };
+		OBJ_58 /* Unreachable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unreachable.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* ConstraintCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintCreator.swift; sourceTree = "<group>"; };
+		OBJ_61 /* ConstraintSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintSolver.swift; sourceTree = "<group>"; };
+		OBJ_62 /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		OBJ_63 /* NameBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameBinder.swift; sourceTree = "<group>"; };
+		OBJ_64 /* Normalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Normalizer.swift; sourceTree = "<group>"; };
+		OBJ_65 /* SAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAError.swift; sourceTree = "<group>"; };
+		OBJ_66 /* SAPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPass.swift; sourceTree = "<group>"; };
+		OBJ_67 /* SubstitutionTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstitutionTable.swift; sourceTree = "<group>"; };
+		OBJ_68 /* SymbolCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCreator.swift; sourceTree = "<group>"; };
+		OBJ_69 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Package.swift"; sourceTree = "<group>"; };
+		OBJ_72 /* ArgParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgParse.swift; sourceTree = "<group>"; };
+		OBJ_73 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/ArgParse.git-2938156366497609060/Package.swift"; sourceTree = "<group>"; };
+		OBJ_9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_105 /* Utils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_115 /* ArgParse.framework in Frameworks */,
+				OBJ_116 /* Interpreter.framework in Frameworks */,
+				OBJ_117 /* Sema.framework in Frameworks */,
+				OBJ_118 /* Parser.framework in Frameworks */,
+				OBJ_119 /* AST.framework in Frameworks */,
+				OBJ_120 /* Utils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_151 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_152 /* ArgParse.framework in Frameworks */,
+				OBJ_153 /* Interpreter.framework in Frameworks */,
+				OBJ_154 /* Sema.framework in Frameworks */,
+				OBJ_155 /* Parser.framework in Frameworks */,
+				OBJ_156 /* AST.framework in Frameworks */,
+				OBJ_157 /* Utils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_193 /* Sema.framework in Frameworks */,
+				OBJ_194 /* Parser.framework in Frameworks */,
+				OBJ_195 /* AST.framework in Frameworks */,
+				OBJ_196 /* Utils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_215 /* AST.framework in Frameworks */,
+				OBJ_216 /* Utils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_232 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_233 /* Parser.framework in Frameworks */,
+				OBJ_234 /* AST.framework in Frameworks */,
+				OBJ_235 /* Utils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_258 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_259 /* ArgParse.framework in Frameworks */,
+				OBJ_260 /* Interpreter.framework in Frameworks */,
+				OBJ_261 /* Sema.framework in Frameworks */,
+				OBJ_262 /* Parser.framework in Frameworks */,
+				OBJ_263 /* AST.framework in Frameworks */,
+				OBJ_264 /* Utils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F41CDAD222FC36D700441F7D /* PetriNet */ = {
+			isa = PBXGroup;
+			children = (
+				F41CDAE322FDDDA000441F7D /* MyPlayground.playground */,
+				F41CDAD522FC374600441F7D /* place.swift */,
+				F41CDAD922FC376700441F7D /* transition.swift */,
+				F41CDADD22FC37A100441F7D /* petriNet.swift */,
+				F41CDADF22FC3D2F00441F7D /* tokens.swift */,
+				F41CDAE122FD71AE00441F7D /* domain.swift */,
+				F41CDAE42300324300441F7D /* arcOut.swift */,
+				F41CDAE6230DEDEB00441F7D /* arcIn.swift */,
+				F4C9223123101D1C00586DB5 /* labelTools.swift */,
+			);
+			path = PetriNet;
+			sourceTree = "<group>";
+		};
+		F4365E38231B1650000DD3D2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F4365E39231B168B000DD3D2 /* permutation.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F472161B2315C36B00DD1F58 /* HeroTests */ = {
+			isa = PBXGroup;
+			children = (
+				F472161C2315C39700DD1F58 /* Hero.swift */,
+				F4365E3C231B363D000DD3D2 /* combinatorixTest.swift */,
+			);
+			path = HeroTests;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F472161B2315C36B00DD1F58 /* HeroTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* AlpineLang */,
+				OBJ_70 /* ArgParse 1.1.0 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_15 /* AlpineLang */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* Parser */,
+				OBJ_26 /* Interpreter */,
+				OBJ_31 /* AST */,
+				OBJ_47 /* alpine */,
+				OBJ_53 /* Utils */,
+				OBJ_59 /* Sema */,
+				OBJ_69 /* Package.swift */,
+			);
+			name = AlpineLang;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* Lexer.swift */,
+				OBJ_18 /* ParseError.swift */,
+				OBJ_19 /* Parser+Expr.swift */,
+				OBJ_20 /* Parser+Func.swift */,
+				OBJ_21 /* Parser+Sign.swift */,
+				OBJ_22 /* Parser+Type.swift */,
+				OBJ_23 /* Parser.swift */,
+				OBJ_24 /* SyntaxError.swift */,
+				OBJ_25 /* Token.swift */,
+			);
+			name = Parser;
+			path = ".build/checkouts/AlpineLang.git-510188728071463435/Sources/Parser";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_26 /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* EvaluationContext.swift */,
+				OBJ_28 /* Interpreter.swift */,
+				OBJ_29 /* InterpreterError.swift */,
+				OBJ_30 /* Value.swift */,
+			);
+			name = Interpreter;
+			path = ".build/checkouts/AlpineLang.git-510188728071463435/Sources/Interpreter";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_31 /* AST */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_32 /* AST.swift */,
+				OBJ_33 /* ASTContext.swift */,
+				OBJ_34 /* ASTDumper.swift */,
+				OBJ_35 /* ASTTransformer+Traversal.swift */,
+				OBJ_36 /* ASTTransformer.swift */,
+				OBJ_37 /* ASTVisitor+Traversal.swift */,
+				OBJ_38 /* ASTVisitor.swift */,
+				OBJ_39 /* BuiltinScope.swift */,
+				OBJ_40 /* Constraint.swift */,
+				OBJ_41 /* ConstraintLocation.swift */,
+				OBJ_42 /* Operators.swift */,
+				OBJ_43 /* Scope.swift */,
+				OBJ_44 /* SourceRange.swift */,
+				OBJ_45 /* Symbol.swift */,
+				OBJ_46 /* Type.swift */,
+			);
+			name = AST;
+			path = ".build/checkouts/AlpineLang.git-510188728071463435/Sources/AST";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_47 /* alpine */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_48 /* Console.swift */,
+				OBJ_49 /* Diagnostic.swift */,
+				OBJ_50 /* LocatableError.swift */,
+				OBJ_51 /* Logger.swift */,
+				OBJ_52 /* main.swift */,
+			);
+			name = alpine;
+			path = ".build/checkouts/AlpineLang.git-510188728071463435/Sources/alpine";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				F4365E59231C5CF7000DD3D2 /* hnet_markingTest.json */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_14 /* Dependencies */,
+				OBJ_74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_53 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_54 /* Sequence+Extensions.swift */,
+				OBJ_55 /* Stack.swift */,
+				OBJ_56 /* Stopwatch.swift */,
+				OBJ_57 /* TextInputBuffer.swift */,
+				OBJ_58 /* Unreachable.swift */,
+			);
+			name = Utils;
+			path = ".build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_59 /* Sema */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_60 /* ConstraintCreator.swift */,
+				OBJ_61 /* ConstraintSolver.swift */,
+				OBJ_62 /* Dispatcher.swift */,
+				OBJ_63 /* NameBinder.swift */,
+				OBJ_64 /* Normalizer.swift */,
+				OBJ_65 /* SAError.swift */,
+				OBJ_66 /* SAPass.swift */,
+				OBJ_67 /* SubstitutionTable.swift */,
+				OBJ_68 /* SymbolCreator.swift */,
+			);
+			name = Sema;
+			path = ".build/checkouts/AlpineLang.git-510188728071463435/Sources/Sema";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F4365E38231B1650000DD3D2 /* Tools */,
+				OBJ_8 /* Hero */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_70 /* ArgParse 1.1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_71 /* ArgParse */,
+				OBJ_73 /* Package.swift */,
+			);
+			name = "ArgParse 1.1.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_71 /* ArgParse */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_72 /* ArgParse.swift */,
+			);
+			name = ArgParse;
+			path = ".build/checkouts/ArgParse.git-2938156366497609060/Sources/ArgParse";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"AlpineLang::AST::Product" /* AST.framework */,
+				"AlpineLang::Parser::Product" /* Parser.framework */,
+				"AlpineLang::alpine::Product" /* alpine */,
+				"Alpine-test1::Alpine-test1::Product" /* Hero */,
+				"ArgParse::ArgParse::Product" /* ArgParse.framework */,
+				"AlpineLang::Utils::Product" /* Utils.framework */,
+				"AlpineLang::Sema::Product" /* Sema.framework */,
+				"AlpineLang::Interpreter::Product" /* Interpreter.framework */,
+				"Alpine-test1::Alpine-test1Tests::Product" /* HeroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_8 /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				F4365E47231BD67C000DD3D2 /* curry.alpine */,
+				F4365E36231929D7000DD3D2 /* hnet.json */,
+				F41CDAD222FC36D700441F7D /* PetriNet */,
+				OBJ_9 /* main.swift */,
+			);
+			name = Hero;
+			path = Sources/Hero;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Alpine-test1::Alpine-test1" /* Hero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_109 /* Build configuration list for PBXNativeTarget "Hero" */;
+			buildPhases = (
+				OBJ_112 /* Sources */,
+				OBJ_114 /* Frameworks */,
+				F4365E55231BDFF4000DD3D2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_121 /* PBXTargetDependency */,
+				OBJ_123 /* PBXTargetDependency */,
+				OBJ_125 /* PBXTargetDependency */,
+				OBJ_127 /* PBXTargetDependency */,
+				OBJ_129 /* PBXTargetDependency */,
+				OBJ_131 /* PBXTargetDependency */,
+				OBJ_132 /* PBXTargetDependency */,
+			);
+			name = Hero;
+			productName = Alpine_test1;
+			productReference = "Alpine-test1::Alpine-test1::Product" /* Hero */;
+			productType = "com.apple.product-type.tool";
+		};
+		"Alpine-test1::Alpine-test1Tests" /* HeroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_145 /* Build configuration list for PBXNativeTarget "HeroTests" */;
+			buildPhases = (
+				OBJ_148 /* Sources */,
+				OBJ_151 /* Frameworks */,
+				F4365E58231C5C8E000DD3D2 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_158 /* PBXTargetDependency */,
+				OBJ_159 /* PBXTargetDependency */,
+				OBJ_160 /* PBXTargetDependency */,
+				OBJ_161 /* PBXTargetDependency */,
+				OBJ_162 /* PBXTargetDependency */,
+				OBJ_163 /* PBXTargetDependency */,
+				OBJ_164 /* PBXTargetDependency */,
+				OBJ_165 /* PBXTargetDependency */,
+			);
+			name = HeroTests;
+			productName = Alpine_test1Tests;
+			productReference = "Alpine-test1::Alpine-test1Tests::Product" /* HeroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Alpine-test1::SwiftPMPackageDescription" /* HeroPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_134 /* Build configuration list for PBXNativeTarget "HeroPackageDescription" */;
+			buildPhases = (
+				OBJ_137 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeroPackageDescription;
+			productName = "Alpine-test1PackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+		"AlpineLang::AST" /* AST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_85 /* Build configuration list for PBXNativeTarget "AST" */;
+			buildPhases = (
+				OBJ_88 /* Sources */,
+				OBJ_104 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_106 /* PBXTargetDependency */,
+			);
+			name = AST;
+			productName = AST;
+			productReference = "AlpineLang::AST::Product" /* AST.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"AlpineLang::Interpreter" /* Interpreter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_184 /* Build configuration list for PBXNativeTarget "Interpreter" */;
+			buildPhases = (
+				OBJ_187 /* Sources */,
+				OBJ_192 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_197 /* PBXTargetDependency */,
+				OBJ_198 /* PBXTargetDependency */,
+				OBJ_199 /* PBXTargetDependency */,
+				OBJ_200 /* PBXTargetDependency */,
+			);
+			name = Interpreter;
+			productName = Interpreter;
+			productReference = "AlpineLang::Interpreter::Product" /* Interpreter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"AlpineLang::Parser" /* Parser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_201 /* Build configuration list for PBXNativeTarget "Parser" */;
+			buildPhases = (
+				OBJ_204 /* Sources */,
+				OBJ_214 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_217 /* PBXTargetDependency */,
+				OBJ_218 /* PBXTargetDependency */,
+			);
+			name = Parser;
+			productName = Parser;
+			productReference = "AlpineLang::Parser::Product" /* Parser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"AlpineLang::Sema" /* Sema */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_219 /* Build configuration list for PBXNativeTarget "Sema" */;
+			buildPhases = (
+				OBJ_222 /* Sources */,
+				OBJ_232 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_236 /* PBXTargetDependency */,
+				OBJ_237 /* PBXTargetDependency */,
+				OBJ_238 /* PBXTargetDependency */,
+			);
+			name = Sema;
+			productName = Sema;
+			productReference = "AlpineLang::Sema::Product" /* Sema.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"AlpineLang::SwiftPMPackageDescription" /* AlpineLangPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_167 /* Build configuration list for PBXNativeTarget "AlpineLangPackageDescription" */;
+			buildPhases = (
+				OBJ_170 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlpineLangPackageDescription;
+			productName = AlpineLangPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"AlpineLang::Utils" /* Utils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_239 /* Build configuration list for PBXNativeTarget "Utils" */;
+			buildPhases = (
+				OBJ_242 /* Sources */,
+				OBJ_248 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Utils;
+			productName = Utils;
+			productReference = "AlpineLang::Utils::Product" /* Utils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"AlpineLang::alpine" /* alpine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_249 /* Build configuration list for PBXNativeTarget "alpine" */;
+			buildPhases = (
+				OBJ_252 /* Sources */,
+				OBJ_258 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_265 /* PBXTargetDependency */,
+				OBJ_266 /* PBXTargetDependency */,
+				OBJ_267 /* PBXTargetDependency */,
+				OBJ_268 /* PBXTargetDependency */,
+				OBJ_269 /* PBXTargetDependency */,
+				OBJ_270 /* PBXTargetDependency */,
+			);
+			name = alpine;
+			productName = alpine;
+			productReference = "AlpineLang::alpine::Product" /* alpine */;
+			productType = "com.apple.product-type.tool";
+		};
+		"ArgParse::ArgParse" /* ArgParse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_172 /* Build configuration list for PBXNativeTarget "ArgParse" */;
+			buildPhases = (
+				OBJ_175 /* Sources */,
+				OBJ_177 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArgParse;
+			productName = ArgParse;
+			productReference = "ArgParse::ArgParse::Product" /* ArgParse.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"ArgParse::SwiftPMPackageDescription" /* ArgParsePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_179 /* Build configuration list for PBXNativeTarget "ArgParsePackageDescription" */;
+			buildPhases = (
+				OBJ_182 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArgParsePackageDescription;
+			productName = ArgParsePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Hero" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"AlpineLang::AST" /* AST */,
+				"Alpine-test1::Alpine-test1" /* Hero */,
+				"Alpine-test1::SwiftPMPackageDescription" /* HeroPackageDescription */,
+				"Alpine-test1::Alpine-test1PackageTests::ProductTarget" /* HeroPackageTests */,
+				"Alpine-test1::Alpine-test1Tests" /* HeroTests */,
+				"AlpineLang::SwiftPMPackageDescription" /* AlpineLangPackageDescription */,
+				"ArgParse::ArgParse" /* ArgParse */,
+				"ArgParse::SwiftPMPackageDescription" /* ArgParsePackageDescription */,
+				"AlpineLang::Interpreter" /* Interpreter */,
+				"AlpineLang::Parser" /* Parser */,
+				"AlpineLang::Sema" /* Sema */,
+				"AlpineLang::Utils" /* Utils */,
+				"AlpineLang::alpine" /* alpine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				F4C9223323101FFE00586DB5 /* labelTools.swift in Sources */,
+				F41CDAE022FC3D2F00441F7D /* tokens.swift in Sources */,
+				F41CDAE52300324300441F7D /* arcOut.swift in Sources */,
+				OBJ_113 /* main.swift in Sources */,
+				F41CDAD622FC374600441F7D /* place.swift in Sources */,
+				F41CDAE8230DEF9E00441F7D /* arcIn.swift in Sources */,
+				F41CDADE22FC37A100441F7D /* petriNet.swift in Sources */,
+				F4365E3A231B168B000DD3D2 /* permutation.swift in Sources */,
+				F41CDAE222FD71AE00441F7D /* domain.swift in Sources */,
+				F42FB978230DF13D00946211 /* transition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_138 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				F4365E42231BD477000DD3D2 /* domain.swift in Sources */,
+				F4365E3B231B168B000DD3D2 /* permutation.swift in Sources */,
+				F4365E44231BD477000DD3D2 /* arcIn.swift in Sources */,
+				F4365E43231BD477000DD3D2 /* arcOut.swift in Sources */,
+				F4365E41231BD477000DD3D2 /* tokens.swift in Sources */,
+				F4365E3E231BD46D000DD3D2 /* place.swift in Sources */,
+				F4365E40231BD477000DD3D2 /* petriNet.swift in Sources */,
+				F4365E3F231BD471000DD3D2 /* transition.swift in Sources */,
+				F47216252315C9D700DD1F58 /* Hero.swift in Sources */,
+				F4365E45231BD477000DD3D2 /* labelTools.swift in Sources */,
+				F4365E3D231B363D000DD3D2 /* combinatorixTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_170 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_171 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_176 /* ArgParse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_183 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_187 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_188 /* EvaluationContext.swift in Sources */,
+				OBJ_189 /* Interpreter.swift in Sources */,
+				OBJ_190 /* InterpreterError.swift in Sources */,
+				OBJ_191 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_205 /* Lexer.swift in Sources */,
+				OBJ_206 /* ParseError.swift in Sources */,
+				OBJ_207 /* Parser+Expr.swift in Sources */,
+				OBJ_208 /* Parser+Func.swift in Sources */,
+				OBJ_209 /* Parser+Sign.swift in Sources */,
+				OBJ_210 /* Parser+Type.swift in Sources */,
+				OBJ_211 /* Parser.swift in Sources */,
+				OBJ_212 /* SyntaxError.swift in Sources */,
+				OBJ_213 /* Token.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_223 /* ConstraintCreator.swift in Sources */,
+				OBJ_224 /* ConstraintSolver.swift in Sources */,
+				OBJ_225 /* Dispatcher.swift in Sources */,
+				OBJ_226 /* NameBinder.swift in Sources */,
+				OBJ_227 /* Normalizer.swift in Sources */,
+				OBJ_228 /* SAError.swift in Sources */,
+				OBJ_229 /* SAPass.swift in Sources */,
+				OBJ_230 /* SubstitutionTable.swift in Sources */,
+				OBJ_231 /* SymbolCreator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_243 /* Sequence+Extensions.swift in Sources */,
+				OBJ_244 /* Stack.swift in Sources */,
+				OBJ_245 /* Stopwatch.swift in Sources */,
+				OBJ_246 /* TextInputBuffer.swift in Sources */,
+				OBJ_247 /* Unreachable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_253 /* Console.swift in Sources */,
+				OBJ_254 /* Diagnostic.swift in Sources */,
+				OBJ_255 /* LocatableError.swift in Sources */,
+				OBJ_256 /* Logger.swift in Sources */,
+				OBJ_257 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_89 /* AST.swift in Sources */,
+				OBJ_90 /* ASTContext.swift in Sources */,
+				OBJ_91 /* ASTDumper.swift in Sources */,
+				OBJ_92 /* ASTTransformer+Traversal.swift in Sources */,
+				OBJ_93 /* ASTTransformer.swift in Sources */,
+				OBJ_94 /* ASTVisitor+Traversal.swift in Sources */,
+				OBJ_95 /* ASTVisitor.swift in Sources */,
+				OBJ_96 /* BuiltinScope.swift in Sources */,
+				OBJ_97 /* Constraint.swift in Sources */,
+				OBJ_98 /* ConstraintLocation.swift in Sources */,
+				OBJ_99 /* Operators.swift in Sources */,
+				OBJ_100 /* Scope.swift in Sources */,
+				OBJ_101 /* SourceRange.swift in Sources */,
+				OBJ_102 /* Symbol.swift in Sources */,
+				OBJ_103 /* Type.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_106 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Utils" /* Utils */;
+			targetProxy = F47B64B522F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_121 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::alpine" /* alpine */;
+			targetProxy = F47B64AF22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ArgParse::ArgParse" /* ArgParse */;
+			targetProxy = F47B64C022F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Interpreter" /* Interpreter */;
+			targetProxy = F47B64C122F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Sema" /* Sema */;
+			targetProxy = F47B64C222F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Parser" /* Parser */;
+			targetProxy = F47B64C322F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::AST" /* AST */;
+			targetProxy = F47B64C422F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Utils" /* Utils */;
+			targetProxy = F47B64C522F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alpine-test1::Alpine-test1Tests" /* HeroTests */;
+			targetProxy = F47B64CE22F1C3750034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alpine-test1::Alpine-test1" /* Hero */;
+			targetProxy = F47B64C622F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::alpine" /* alpine */;
+			targetProxy = F47B64C722F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ArgParse::ArgParse" /* ArgParse */;
+			targetProxy = F47B64C822F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Interpreter" /* Interpreter */;
+			targetProxy = F47B64C922F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Sema" /* Sema */;
+			targetProxy = F47B64CA22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Parser" /* Parser */;
+			targetProxy = F47B64CB22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::AST" /* AST */;
+			targetProxy = F47B64CC22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Utils" /* Utils */;
+			targetProxy = F47B64CD22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Sema" /* Sema */;
+			targetProxy = F47B64B222F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Parser" /* Parser */;
+			targetProxy = F47B64B922F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::AST" /* AST */;
+			targetProxy = F47B64BA22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Utils" /* Utils */;
+			targetProxy = F47B64BB22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::AST" /* AST */;
+			targetProxy = F47B64B422F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Utils" /* Utils */;
+			targetProxy = F47B64B622F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Parser" /* Parser */;
+			targetProxy = F47B64B322F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::AST" /* AST */;
+			targetProxy = F47B64B722F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Utils" /* Utils */;
+			targetProxy = F47B64B822F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "ArgParse::ArgParse" /* ArgParse */;
+			targetProxy = F47B64B022F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Interpreter" /* Interpreter */;
+			targetProxy = F47B64B122F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_267 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Sema" /* Sema */;
+			targetProxy = F47B64BC22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Parser" /* Parser */;
+			targetProxy = F47B64BD22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_269 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::AST" /* AST */;
+			targetProxy = F47B64BE22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+		OBJ_270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AlpineLang::Utils" /* Utils */;
+			targetProxy = F47B64BF22F1C3720034CBF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Alpine_test1_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_NAME = Hero;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = "Alpine-test1";
+			};
+			name = Debug;
+		};
+		OBJ_111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Alpine_test1_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_NAME = Hero;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = "Alpine-test1";
+			};
+			name = Release;
+		};
+		OBJ_135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				PRODUCT_NAME = HeroPackageDescription;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				PRODUCT_NAME = HeroPackageDescription;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = HeroPackageTests;
+			};
+			name = Debug;
+		};
+		OBJ_142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = HeroPackageTests;
+			};
+			name = Release;
+		};
+		OBJ_146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Alpine_test1Tests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_NAME = HeroTests;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = "Alpine-test1Tests";
+			};
+			name = Debug;
+		};
+		OBJ_147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Alpine_test1Tests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_NAME = HeroTests;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = "Alpine-test1Tests";
+			};
+			name = Release;
+		};
+		OBJ_168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/ArgParse_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ArgParse;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ArgParse;
+			};
+			name = Debug;
+		};
+		OBJ_174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/ArgParse_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ArgParse;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = ArgParse;
+			};
+			name = Release;
+		};
+		OBJ_180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Interpreter_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Interpreter;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Interpreter;
+			};
+			name = Debug;
+		};
+		OBJ_186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Interpreter_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Interpreter;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Interpreter;
+			};
+			name = Release;
+		};
+		OBJ_202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Parser_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Parser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Parser;
+			};
+			name = Debug;
+		};
+		OBJ_203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Parser_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Parser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Parser;
+			};
+			name = Release;
+		};
+		OBJ_220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Sema_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Sema;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Sema;
+			};
+			name = Debug;
+		};
+		OBJ_221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Sema_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Sema;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Sema;
+			};
+			name = Release;
+		};
+		OBJ_240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Utils_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Utils;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Utils;
+			};
+			name = Debug;
+		};
+		OBJ_241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/Utils_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Utils;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = Utils;
+			};
+			name = Release;
+		};
+		OBJ_250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/alpine_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = alpine;
+			};
+			name = Debug;
+		};
+		OBJ_251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/alpine_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = alpine;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/AST_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AST;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AST;
+			};
+			name = Debug;
+		};
+		OBJ_87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Hero.xcodeproj/AST_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AST;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AST;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_109 /* Build configuration list for PBXNativeTarget "Hero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_110 /* Debug */,
+				OBJ_111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_134 /* Build configuration list for PBXNativeTarget "HeroPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_135 /* Debug */,
+				OBJ_136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_140 /* Build configuration list for PBXAggregateTarget "HeroPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_141 /* Debug */,
+				OBJ_142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_145 /* Build configuration list for PBXNativeTarget "HeroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_146 /* Debug */,
+				OBJ_147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_167 /* Build configuration list for PBXNativeTarget "AlpineLangPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_168 /* Debug */,
+				OBJ_169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_172 /* Build configuration list for PBXNativeTarget "ArgParse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_173 /* Debug */,
+				OBJ_174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_179 /* Build configuration list for PBXNativeTarget "ArgParsePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_180 /* Debug */,
+				OBJ_181 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_184 /* Build configuration list for PBXNativeTarget "Interpreter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_185 /* Debug */,
+				OBJ_186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "Hero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_201 /* Build configuration list for PBXNativeTarget "Parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_202 /* Debug */,
+				OBJ_203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_219 /* Build configuration list for PBXNativeTarget "Sema" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_220 /* Debug */,
+				OBJ_221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_239 /* Build configuration list for PBXNativeTarget "Utils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_240 /* Debug */,
+				OBJ_241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_249 /* Build configuration list for PBXNativeTarget "alpine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_250 /* Debug */,
+				OBJ_251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_85 /* Build configuration list for PBXNativeTarget "AST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_86 /* Debug */,
+				OBJ_87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
