@@ -23,15 +23,15 @@ let labelExecution = {d, l in LabelTools.dynamicReplace(t: d, label: l, interpre
 
 let p = PetriNet()
 p.loadDefinitionFile(path: fileDef, labelExecution: labelExecution)
-//p.manualRun(transitionName: "t1", binding: ["a":"2","c":"sub"])
+p.manualRun(transitionName: "t1", binding: ["a":"2","c":"sub"])
 //p.randomRun()
 //p.transitions["t2"]?.fire()
 
 
-let allMarking = p.marking()
-
-print("________________________________________________")
-
-for i in allMarking{
-    print("🔷", i.sorted(by: { $0.0 < $1.0 }))}
-print("🔷🔷🔷 All different marking : ", allMarking.count)
+//let allMarking = p.marking()
+//
+//print("________________________________________________")
+//
+//for i in allMarking{
+//    print("🔷", i.sorted(by: { $0.0 < $1.0 }))}
+//print("🔷🔷🔷 All different marking : ", allMarking.count)
