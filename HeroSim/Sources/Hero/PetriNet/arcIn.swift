@@ -11,7 +11,7 @@ struct ArcIn<T: Equatable & Comparable>: CustomStringConvertible{
     var description: String{
         return """
         📓 ArcIn :
-                Name: \(name)
+                Name : \(name)
                 From place : \(connectedPlace.name)
                 Binding : \(bindName)
         """

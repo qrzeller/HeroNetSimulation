@@ -12,9 +12,9 @@ struct ArcOut<PlaceIn: Equatable & Comparable, PlaceOut: Equatable & Comparable>
     var description: String{
         return """
         📓 ArcOut:
-                Name: \(name)
+                Name : \(name)
                 To place : \(connectedPlace.name)
-                label : \(String(describing: label))
+                Label : \(String(describing: label))
         """
     }
     

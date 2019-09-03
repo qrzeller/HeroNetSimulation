@@ -25,7 +25,7 @@
             },
             "guards": {
                 "codeSaved":"guardTwo($a$);",
-                "code": "guardTwo(2);",
+                "code": "guardTwo($a$);",
                 "enabled": true
             },
             "meta": {
