@@ -1,0 +1,227 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NameBinder"
+provides-nominal:
+- "4Sema10NameBinderC"
+provides-member:
+- ["4Sema10NameBinderC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- "ASTContext"
+- "ASTVisitor"
+- "Array"
+- "AssignmentPrecedence"
+- "Func"
+- "Ident"
+- "If"
+- "MatchCase"
+- "Module"
+- "NameBinder"
+- !private "SAError"
+- "SAPass"
+- "Scope"
+- "Stack"
+- "String"
+- "TypeIdent"
+depends-member:
+- !private ["3AST10ASTContextC", "add"]
+- !private ["3AST10ASTContextC", "builtinScope"]
+- !private ["3AST10ASTContextC", "modules"]
+- !private ["3AST10ASTVisitorP", "SAError"]
+- ["3AST10ASTVisitorP", ""]
+- ["3AST10ASTVisitorP", "context"]
+- !private ["3AST10ASTVisitorP", "findScope"]
+- ["3AST10ASTVisitorP", "init"]
+- !private ["3AST10ASTVisitorP", "scopes"]
+- !private ["3AST10ASTVisitorP", "traverse"]
+- ["3AST10ASTVisitorP", "visit"]
+- !private ["Sa", "reversed"]
+- !private ["s13ArrayProtocolP", "reversed"]
+- !private ["SK", "reversed"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["3AST12BuiltinScopeC", "symbols"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["Sl", "index"]
+- !private ["Sl", "pop"]
+- !private ["Sl", "push"]
+- !private ["Sl", "reversed"]
+- !private ["Sl", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "reversed"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "reversed"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "reversed"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "symbols"]
+- !private ["s23CustomStringConvertibleP", "undefinedSymbol"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "reversed"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "reversed"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "condition"]
+- !private ["SQ", "elseExpr"]
+- !private ["SQ", "elseScope"]
+- !private ["SQ", "innerScope"]
+- !private ["SQ", "name"]
+- !private ["SQ", "reversed"]
+- !private ["SQ", "scope"]
+- !private ["SQ", "statements"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "symbols"]
+- !private ["SQ", "thenExpr"]
+- !private ["SQ", "thenScope"]
+- !private ["s5ErrorP", "undefinedSymbol"]
+- !private ["3AST4ExprC", "condition"]
+- !private ["3AST4ExprC", "elseExpr"]
+- !private ["3AST4ExprC", "elseScope"]
+- !private ["3AST4ExprC", "innerScope"]
+- !private ["3AST4ExprC", "name"]
+- !private ["3AST4ExprC", "scope"]
+- !private ["3AST4ExprC", "thenExpr"]
+- !private ["3AST4ExprC", "thenScope"]
+- !private ["s25ExpressibleByArrayLiteralP", "index"]
+- !private ["s25ExpressibleByArrayLiteralP", "pop"]
+- !private ["s25ExpressibleByArrayLiteralP", "push"]
+- !private ["s25ExpressibleByArrayLiteralP", "reversed"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["3AST4FuncC", "innerScope"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "reversed"]
+- !private ["SH", "subscript"]
+- !private ["SH", "symbols"]
+- !private ["3AST5IdentC", "name"]
+- !private ["3AST5IdentC", "scope"]
+- !private ["3AST2IfC", "condition"]
+- !private ["3AST2IfC", "elseExpr"]
+- !private ["3AST2IfC", "elseScope"]
+- !private ["3AST2IfC", "thenExpr"]
+- !private ["3AST2IfC", "thenScope"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["3AST9MatchCaseC", "innerScope"]
+- !private ["3AST6ModuleC", "innerScope"]
+- !private ["3AST6ModuleC", "statements"]
+- !private ["SM", "reversed"]
+- ["4Sema10NameBinderC", "ASTContext"]
+- ["4Sema10NameBinderC", "Func"]
+- ["4Sema10NameBinderC", "Ident"]
+- ["4Sema10NameBinderC", "If"]
+- ["4Sema10NameBinderC", "MatchCase"]
+- ["4Sema10NameBinderC", "Module"]
+- !private ["4Sema10NameBinderC", "SAError"]
+- ["4Sema10NameBinderC", "Scope"]
+- ["4Sema10NameBinderC", "Stack"]
+- ["4Sema10NameBinderC", "String"]
+- ["4Sema10NameBinderC", "TypeIdent"]
+- ["4Sema10NameBinderC", "context"]
+- ["4Sema10NameBinderC", "deinit"]
+- !private ["4Sema10NameBinderC", "findScope"]
+- ["4Sema10NameBinderC", "init"]
+- !private ["4Sema10NameBinderC", "scopes"]
+- !private ["4Sema10NameBinderC", "traverse"]
+- ["4Sema10NameBinderC", "visit"]
+- !private ["3AST4NodeC", "condition"]
+- !private ["3AST4NodeC", "elseExpr"]
+- !private ["3AST4NodeC", "elseScope"]
+- !private ["3AST4NodeC", "innerScope"]
+- !private ["3AST4NodeC", "name"]
+- !private ["3AST4NodeC", "scope"]
+- !private ["3AST4NodeC", "statements"]
+- !private ["3AST4NodeC", "thenExpr"]
+- !private ["3AST4NodeC", "thenScope"]
+- !private ["Sk", "reversed"]
+- !private ["Sm", "reversed"]
+- !private ["4Sema7SAErrorO", "undefinedSymbol"]
+- !private ["4Sema6SAPassP", "SAError"]
+- ["4Sema6SAPassP", ""]
+- ["4Sema6SAPassP", "context"]
+- !private ["4Sema6SAPassP", "findScope"]
+- ["4Sema6SAPassP", "init"]
+- !private ["4Sema6SAPassP", "scopes"]
+- !private ["4Sema6SAPassP", "traverse"]
+- ["4Sema6SAPassP", "visit"]
+- !private ["3AST5ScopeC", "symbols"]
+- !private ["ST", "index"]
+- !private ["ST", "pop"]
+- !private ["ST", "push"]
+- !private ["ST", "reversed"]
+- !private ["ST", "subscript"]
+- !private ["5Utils5StackV", "index"]
+- !private ["5Utils5StackV", "pop"]
+- !private ["5Utils5StackV", "push"]
+- !private ["5Utils5StackV", "subscript"]
+- !private ["3AST9TypeIdentC", "name"]
+- !private ["3AST9TypeIdentC", "scope"]
+- !private ["3AST8TypeSignC", "name"]
+- !private ["3AST8TypeSignC", "scope"]
+- !private ["s24_DestructorSafeContainerP", "reversed"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reversed"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+depends-nominal:
+- !private "3AST10ASTContextC"
+- "3AST10ASTVisitorP"
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "Sb"
+- !private "3AST12BuiltinScopeC"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
+- !private "s5ErrorP"
+- !private "3AST4ExprC"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "3AST4FuncC"
+- !private "SH"
+- !private "3AST5IdentC"
+- !private "3AST2IfC"
+- !private "s25LosslessStringConvertibleP"
+- !private "3AST9MatchCaseC"
+- !private "3AST6ModuleC"
+- !private "SM"
+- "4Sema10NameBinderC"
+- !private "3AST4NodeC"
+- !private "Sk"
+- !private "Sm"
+- !private "4Sema7SAErrorO"
+- "4Sema6SAPassP"
+- !private "3AST5ScopeC"
+- !private "ST"
+- !private "5Utils5StackV"
+- !private "3AST9TypeIdentC"
+- !private "3AST8TypeSignC"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+interface-hash: "50a43009169ff3271c74f53231195dd5"

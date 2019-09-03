@@ -1,0 +1,416 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["6ParserAAC", ""]
+- ["6ParserAAC", "parseSign"]
+- ["6ParserAAC", "parseAtomSign"]
+- ["6ParserAAC", "parseTupleSign"]
+- ["6ParserAAC", "parseTupleElemSign"]
+- ["6ParserAAC", "parseTypeIdent"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "&&"
+- !private "+"
+- !private "=="
+- !private "??"
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "FloatLiteralType"
+- !private "FuncSign"
+- !private "IntegerLiteralType"
+- !private "ParseError"
+- "Parser"
+- !private "SourceLocation"
+- !private "SourceRange"
+- !private "String"
+- !private "StringLiteralType"
+- "TupleSign"
+- "TupleSignElem"
+- "TypeIdent"
+- "TypeSign"
+- !private "UnicodeScalarType"
+- !private "UnionSign"
+- !private "||"
+depends-member:
+- !private ["Sa", "duplicates"]
+- !private ["Sa", "filter"]
+- !private ["Sa", "first"]
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "duplicates"]
+- !private ["s13ArrayProtocolP", "filter"]
+- !private ["s13ArrayProtocolP", "first"]
+- !private ["s13ArrayProtocolP", "isEmpty"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "duplicates"]
+- !private ["SK", "filter"]
+- !private ["SK", "first"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "isEmpty"]
+- !private ["SK", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "duplicates"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "duplicates"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "first"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "duplicates"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "duplicates"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "asLabel"]
+- !private ["s23CustomStringConvertibleP", "duplicateLabel"]
+- !private ["s23CustomStringConvertibleP", "duplicateName"]
+- !private ["s23CustomStringConvertibleP", "duplicates"]
+- !private ["s23CustomStringConvertibleP", "end"]
+- !private ["s23CustomStringConvertibleP", "expectedIdentifier"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "isLabel"]
+- !private ["s23CustomStringConvertibleP", "kind"]
+- !private ["s23CustomStringConvertibleP", "range"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "value"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "duplicates"]
+- !private ["Se", "filter"]
+- !private ["Se", "first"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "duplicates"]
+- !private ["SE", "filter"]
+- !private ["SE", "first"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "arrow"]
+- !private ["SQ", "asLabel"]
+- !private ["SQ", "cases"]
+- !private ["SQ", "colon"]
+- !private ["SQ", "comma"]
+- !private ["SQ", "duplicates"]
+- !private ["SQ", "end"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "first"]
+- ["SQ", "identifier"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "isLabel"]
+- !private ["SQ", "kind"]
+- !private ["SQ", "label"]
+- ["SQ", "leftParen"]
+- !private ["SQ", "name"]
+- !private ["SQ", "newline"]
+- !private ["SQ", "or"]
+- !private ["SQ", "range"]
+- !private ["SQ", "rightParen"]
+- ["SQ", "sharp"]
+- !private ["SQ", "start"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "underscore"]
+- !private ["SQ", "value"]
+- !private ["s5ErrorP", "duplicateLabel"]
+- !private ["s5ErrorP", "duplicateName"]
+- !private ["s5ErrorP", "expectedIdentifier"]
+- !private ["s5ErrorP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "duplicates"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["3AST8FuncSignC", "init"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "arrow"]
+- !private ["SH", "colon"]
+- !private ["SH", "comma"]
+- !private ["SH", "duplicates"]
+- !private ["SH", "filter"]
+- !private ["SH", "first"]
+- ["SH", "identifier"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isEmpty"]
+- ["SH", "leftParen"]
+- !private ["SH", "newline"]
+- !private ["SH", "or"]
+- !private ["SH", "rightParen"]
+- ["SH", "sharp"]
+- !private ["SH", "subscript"]
+- !private ["SH", "underscore"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "duplicates"]
+- !private ["SM", "filter"]
+- !private ["SM", "first"]
+- !private ["SM", "isEmpty"]
+- !private ["SM", "subscript"]
+- !private ["3AST4NodeC", "cases"]
+- !private ["3AST4NodeC", "label"]
+- !private ["3AST4NodeC", "name"]
+- !private ["3AST4NodeC", "range"]
+- !private ["6Parser10ParseErrorV", "deinit"]
+- !private ["6Parser10ParseErrorV", "init"]
+- !private ["6ParserAAC", "FuncSign"]
+- !private ["6ParserAAC", "ParseError"]
+- !private ["6ParserAAC", "SourceLocation"]
+- !private ["6ParserAAC", "SourceRange"]
+- !private ["6ParserAAC", "String"]
+- ["6ParserAAC", "TupleSign"]
+- ["6ParserAAC", "TupleSignElem"]
+- ["6ParserAAC", "TypeIdent"]
+- ["6ParserAAC", "TypeSign"]
+- !private ["6ParserAAC", "UnionSign"]
+- !private ["6ParserAAC", "consume"]
+- !private ["6ParserAAC", "consumeNewlines"]
+- !private ["6ParserAAC", "module"]
+- ["6ParserAAC", "parseAtomSign"]
+- !private ["6ParserAAC", "parseFailure"]
+- !private ["6ParserAAC", "parseLabel"]
+- !private ["6ParserAAC", "parseList"]
+- ["6ParserAAC", "parseSign"]
+- ["6ParserAAC", "parseTupleElemSign"]
+- ["6ParserAAC", "parseTupleSign"]
+- ["6ParserAAC", "parseTypeIdent"]
+- !private ["6ParserAAC", "peek"]
+- !private ["6ParserAAC", "rewind"]
+- !private ["6ParserAAC", "streamPosition"]
+- !private ["6ParserAAC", "unexpectedToken"]
+- !private ["Sk", "duplicates"]
+- !private ["Sk", "filter"]
+- !private ["Sk", "first"]
+- !private ["Sk", "isEmpty"]
+- !private ["Sk", "subscript"]
+- !private ["SX", "end"]
+- !private ["SX", "init"]
+- !private ["SX", "start"]
+- !private ["Sm", "duplicates"]
+- !private ["Sm", "filter"]
+- !private ["Sm", "first"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "isEmpty"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "arrow"]
+- !private ["SY", "colon"]
+- !private ["SY", "comma"]
+- ["SY", "identifier"]
+- ["SY", "leftParen"]
+- !private ["SY", "newline"]
+- !private ["SY", "or"]
+- !private ["SY", "rightParen"]
+- ["SY", "sharp"]
+- !private ["SY", "underscore"]
+- !private ["ST", "duplicates"]
+- !private ["ST", "filter"]
+- !private ["ST", "first"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "subscript"]
+- !private ["3AST11SourceRangeV", "end"]
+- !private ["3AST11SourceRangeV", "init"]
+- !private ["3AST11SourceRangeV", "start"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["6Parser11SyntaxErrorO", "duplicateLabel"]
+- !private ["6Parser11SyntaxErrorO", "duplicateName"]
+- !private ["6Parser11SyntaxErrorO", "expectedIdentifier"]
+- !private ["5Utils15TextInputBufferP", "init"]
+- !private ["5Utils15TextInputBufferP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["6Parser5TokenV", "asLabel"]
+- !private ["6Parser5TokenV", "deinit"]
+- !private ["6Parser5TokenV", "isLabel"]
+- !private ["6Parser5TokenV", "kind"]
+- !private ["6Parser5TokenV", "range"]
+- !private ["6Parser5TokenV", "value"]
+- !private ["6Parser9TokenKindO", "arrow"]
+- !private ["6Parser9TokenKindO", "colon"]
+- !private ["6Parser9TokenKindO", "comma"]
+- !private ["6Parser9TokenKindO", "deinit"]
+- ["6Parser9TokenKindO", "identifier"]
+- ["6Parser9TokenKindO", "leftParen"]
+- !private ["6Parser9TokenKindO", "newline"]
+- !private ["6Parser9TokenKindO", "or"]
+- !private ["6Parser9TokenKindO", "rightParen"]
+- ["6Parser9TokenKindO", "sharp"]
+- !private ["6Parser9TokenKindO", "underscore"]
+- !private ["3AST9TupleSignC", "init"]
+- !private ["3AST9TupleSignC", "range"]
+- !private ["3AST13TupleSignElemC", "init"]
+- !private ["3AST13TupleSignElemC", "label"]
+- !private ["3AST13TupleSignElemC", "name"]
+- !private ["3AST13TupleSignElemC", "range"]
+- !private ["3AST9TypeIdentC", "init"]
+- !private ["3AST8TypeSignC", "cases"]
+- !private ["3AST8TypeSignC", "range"]
+- !private ["3AST9UnionSignC", "cases"]
+- !private ["3AST9UnionSignC", "init"]
+- !private ["s24_DestructorSafeContainerP", "duplicates"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "duplicates"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "duplicates"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "3AST8FuncSignC"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "3AST4NodeC"
+- !private "6Parser10ParseErrorV"
+- "6ParserAAC"
+- !private "Sk"
+- !private "SX"
+- !private "Sm"
+- "SY"
+- !private "ST"
+- !private "3AST11SourceRangeV"
+- !private "SS"
+- !private "Sy"
+- !private "6Parser11SyntaxErrorO"
+- !private "5Utils15TextInputBufferP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "6Parser5TokenV"
+- "6Parser9TokenKindO"
+- !private "3AST9TupleSignC"
+- !private "3AST13TupleSignElemC"
+- !private "3AST9TypeIdentC"
+- !private "3AST8TypeSignC"
+- !private "3AST9UnionSignC"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "23ac036fa63549dbe6f09833c168dc9f"

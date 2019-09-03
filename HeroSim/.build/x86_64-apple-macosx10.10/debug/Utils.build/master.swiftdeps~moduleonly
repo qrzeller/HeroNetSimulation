@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "d5450d7380cd5a2a62a2051616748ac2"
+build_time: [1551695991, 1567000]
+inputs:
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils/Sequence+Extensions.swift": [1551695867, 0]
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils/Stack.swift": [1551695867, 0]
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils/Stopwatch.swift": [1551695867, 0]
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils/TextInputBuffer.swift": [1551695867, 0]
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils/Unreachable.swift": [1551695867, 0]

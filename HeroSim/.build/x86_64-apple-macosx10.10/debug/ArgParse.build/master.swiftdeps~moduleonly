@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "dd685a77dadd93869c5199766eec2029"
+build_time: [1551695991, 1548000]
+inputs:
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/ArgParse.git-2938156366497609060/Sources/ArgParse/ArgParse.swift": [1551695867, 0]

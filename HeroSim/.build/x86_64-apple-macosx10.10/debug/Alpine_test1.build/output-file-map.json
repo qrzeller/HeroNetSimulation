@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Alpine_test1.build/master.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/Sources/Alpine-test1/main.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Alpine_test1.build/main.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Alpine_test1.build/main.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Alpine_test1.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Alpine_test1.build/main.swiftdeps"
+  }
+}

@@ -1,0 +1,517 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TypeBase"
+- "Metatype"
+- "ErrorType"
+- "BuiltinType"
+- "TypeVariable"
+- "FunctionType"
+- "TupleType"
+- "TupleTypeElem"
+- "UnionType"
+- "=="
+- "=="
+- "=="
+- "=="
+provides-nominal:
+- "3AST8TypeBaseC"
+- "3AST8MetatypeC"
+- "3AST9ErrorTypeC"
+- "3AST11BuiltinTypeC"
+- "3AST12TypeVariableC"
+- "3AST12FunctionTypeC"
+- "3AST9TupleTypeC"
+- "3AST13TupleTypeElemV"
+- "3AST9UnionTypeC"
+provides-member:
+- ["3AST8TypeBaseC", ""]
+- ["3AST8MetatypeC", ""]
+- ["3AST9ErrorTypeC", ""]
+- ["3AST11BuiltinTypeC", ""]
+- ["3AST12TypeVariableC", ""]
+- ["3AST12FunctionTypeC", ""]
+- ["3AST9TupleTypeC", ""]
+- ["3AST13TupleTypeElemV", ""]
+- ["3AST9UnionTypeC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- !private "+"
+- !private "+="
+- "=="
+- !private "==="
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- "BuiltinType"
+- "CustomStringConvertible"
+- "Equatable"
+- "ErrorType"
+- "FloatLiteralType"
+- "FunctionType"
+- "Hashable"
+- "Int"
+- "IntegerLiteralType"
+- "Metatype"
+- "Set"
+- "String"
+- "StringLiteralType"
+- "TernaryPrecedence"
+- "TupleType"
+- "TupleTypeElem"
+- "TypeBase"
+- "TypeVariable"
+- !private "UnicodeScalarType"
+- "UnionType"
+- !private "||"
+depends-member:
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "joined"]
+- !private ["Sa", "map"]
+- !private ["s13ArrayProtocolP", "isEmpty"]
+- !private ["s13ArrayProtocolP", "joined"]
+- !private ["s13ArrayProtocolP", "map"]
+- !private ["SK", "hashValue"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["SK", "isEmpty"]
+- !private ["SK", "joined"]
+- !private ["SK", "map"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["3AST11BuiltinTypeC", "BuiltinType"]
+- ["3AST11BuiltinTypeC", "Int"]
+- ["3AST11BuiltinTypeC", "Set"]
+- ["3AST11BuiltinTypeC", "String"]
+- ["3AST11BuiltinTypeC", "TupleType"]
+- ["3AST11BuiltinTypeC", "bool"]
+- ["3AST11BuiltinTypeC", "float"]
+- ["3AST11BuiltinTypeC", "hashValue"]
+- ["3AST11BuiltinTypeC", "init"]
+- ["3AST11BuiltinTypeC", "int"]
+- ["3AST11BuiltinTypeC", "name"]
+- !private ["3AST11BuiltinTypeC", "serialize"]
+- ["3AST11BuiltinTypeC", "string"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "hashValue"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- !private ["Sl", "insert"]
+- !private ["Sl", "isEmpty"]
+- !private ["Sl", "joined"]
+- !private ["Sl", "map"]
+- !private ["SL", "hashValue"]
+- ["SL", "init"]
+- ["SL", "init"]
+- !private ["SL", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "insert"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "joined"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "insert"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "joined"]
+- !private ["s17CustomReflectableP", "map"]
+- ["s23CustomStringConvertibleP", "BuiltinType"]
+- ["s23CustomStringConvertibleP", "ErrorType"]
+- !private ["s23CustomStringConvertibleP", "Metatype"]
+- !private ["s23CustomStringConvertibleP", "Set"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "TypeVariable"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "cases"]
+- !private ["s23CustomStringConvertibleP", "codomain"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "domain"]
+- !private ["s23CustomStringConvertibleP", "elements"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "id"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "insert"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "joined"]
+- !private ["s23CustomStringConvertibleP", "label"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "nextID"]
+- !private ["s23CustomStringConvertibleP", "serialize"]
+- !private ["s23CustomStringConvertibleP", "type"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "contains"]
+- !private ["Se", "hashValue"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "insert"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "joined"]
+- !private ["Se", "map"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "contains"]
+- !private ["SE", "hashValue"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "insert"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "joined"]
+- !private ["SE", "map"]
+- ["SQ", "BuiltinType"]
+- ["SQ", "ErrorType"]
+- !private ["SQ", "Metatype"]
+- !private ["SQ", "Set"]
+- !private ["SQ", "String"]
+- !private ["SQ", "TypeVariable"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "cases"]
+- !private ["SQ", "codomain"]
+- !private ["SQ", "contains"]
+- ["SQ", "description"]
+- !private ["SQ", "domain"]
+- !private ["SQ", "elements"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "id"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "insert"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "joined"]
+- !private ["SQ", "label"]
+- !private ["SQ", "map"]
+- !private ["SQ", "name"]
+- !private ["SQ", "nextID"]
+- !private ["SQ", "serialize"]
+- !private ["SQ", "type"]
+- ["3AST9ErrorTypeC", "ErrorType"]
+- ["3AST9ErrorTypeC", "Set"]
+- ["3AST9ErrorTypeC", "String"]
+- ["3AST9ErrorTypeC", "TupleType"]
+- ["3AST9ErrorTypeC", "get"]
+- ["3AST9ErrorTypeC", "init"]
+- !private ["3AST9ErrorTypeC", "serialize"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "insert"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "joined"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hashValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s23ExpressibleByNilLiteralP", "map"]
+- !private ["s26ExpressibleByStringLiteralP", "hashValue"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "isEmpty"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "hashValue"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
+- ["3AST12FunctionTypeC", "Set"]
+- ["3AST12FunctionTypeC", "String"]
+- ["3AST12FunctionTypeC", "TupleType"]
+- ["3AST12FunctionTypeC", "TypeBase"]
+- ["3AST12FunctionTypeC", "codomain"]
+- ["3AST12FunctionTypeC", "domain"]
+- ["3AST12FunctionTypeC", "init"]
+- !private ["3AST12FunctionTypeC", "serialize"]
+- ["SH", "BuiltinType"]
+- ["SH", "ErrorType"]
+- !private ["SH", "Metatype"]
+- !private ["SH", "Set"]
+- !private ["SH", "String"]
+- !private ["SH", "TypeVariable"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "cases"]
+- !private ["SH", "codomain"]
+- !private ["SH", "contains"]
+- ["SH", "description"]
+- !private ["SH", "domain"]
+- !private ["SH", "elements"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "id"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "insert"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "joined"]
+- !private ["SH", "label"]
+- !private ["SH", "map"]
+- !private ["SH", "name"]
+- !private ["SH", "nextID"]
+- !private ["SH", "serialize"]
+- !private ["SH", "type"]
+- !private ["s6HasherV", "combine"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "isEmpty"]
+- ["3AST8MetatypeC", "Set"]
+- ["3AST8MetatypeC", "String"]
+- ["3AST8MetatypeC", "TupleType"]
+- ["3AST8MetatypeC", "TypeBase"]
+- !private ["3AST8MetatypeC", "init"]
+- !private ["3AST8MetatypeC", "serialize"]
+- ["3AST8MetatypeC", "type"]
+- !private ["s10MirrorPathP", "hashValue"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "isEmpty"]
+- !private ["SM", "isEmpty"]
+- !private ["SM", "joined"]
+- !private ["SM", "map"]
+- !private ["Sq", "map"]
+- !private ["Sk", "isEmpty"]
+- !private ["Sk", "joined"]
+- !private ["Sk", "map"]
+- !private ["Sm", "hashValue"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["Sm", "isEmpty"]
+- !private ["Sm", "joined"]
+- !private ["Sm", "map"]
+- !private ["ST", "contains"]
+- !private ["ST", "hashValue"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["ST", "insert"]
+- !private ["ST", "isEmpty"]
+- !private ["ST", "joined"]
+- !private ["ST", "map"]
+- !private ["Sh", "contains"]
+- !private ["Sh", "init"]
+- !private ["Sh", "insert"]
+- !private ["Sh", "map"]
+- !private ["s10SetAlgebraP", "contains"]
+- !private ["s10SetAlgebraP", "init"]
+- !private ["s10SetAlgebraP", "insert"]
+- !private ["s10SetAlgebraP", "map"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "hashValue"]
+- ["SS", "init"]
+- ["SS", "init"]
+- !private ["SS", "isEmpty"]
+- !private ["Sy", "hashValue"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- !private ["Sy", "isEmpty"]
+- !private ["5Utils15TextInputBufferP", "hashValue"]
+- ["5Utils15TextInputBufferP", "init"]
+- ["5Utils15TextInputBufferP", "init"]
+- !private ["5Utils15TextInputBufferP", "isEmpty"]
+- !private ["s16TextOutputStreamP", "hashValue"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "isEmpty"]
+- !private ["s20TextOutputStreamableP", "hashValue"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "isEmpty"]
+- ["3AST9TupleTypeC", "=="]
+- ["3AST9TupleTypeC", "Bool"]
+- ["3AST9TupleTypeC", "Set"]
+- ["3AST9TupleTypeC", "String"]
+- ["3AST9TupleTypeC", "TupleType"]
+- ["3AST9TupleTypeC", "TupleTypeElem"]
+- ["3AST9TupleTypeC", "deinit"]
+- ["3AST9TupleTypeC", "elements"]
+- ["3AST9TupleTypeC", "init"]
+- ["3AST9TupleTypeC", "label"]
+- !private ["3AST9TupleTypeC", "serialize"]
+- ["3AST13TupleTypeElemV", "=="]
+- ["3AST13TupleTypeElemV", "Bool"]
+- ["3AST13TupleTypeElemV", "String"]
+- ["3AST13TupleTypeElemV", "TupleTypeElem"]
+- ["3AST13TupleTypeElemV", "TypeBase"]
+- ["3AST13TupleTypeElemV", "deinit"]
+- ["3AST13TupleTypeElemV", "description"]
+- ["3AST13TupleTypeElemV", "init"]
+- ["3AST13TupleTypeElemV", "label"]
+- ["3AST13TupleTypeElemV", "type"]
+- ["3AST8TypeBaseC", "=="]
+- ["3AST8TypeBaseC", "Bool"]
+- ["3AST8TypeBaseC", "BuiltinType"]
+- ["3AST8TypeBaseC", "ErrorType"]
+- ["3AST8TypeBaseC", "Int"]
+- ["3AST8TypeBaseC", "Metatype"]
+- ["3AST8TypeBaseC", "Set"]
+- ["3AST8TypeBaseC", "String"]
+- ["3AST8TypeBaseC", "TupleType"]
+- ["3AST8TypeBaseC", "TupleTypeElem"]
+- ["3AST8TypeBaseC", "TypeBase"]
+- !private ["3AST8TypeBaseC", "TypeVariable"]
+- ["3AST8TypeBaseC", "UnionType"]
+- ["3AST8TypeBaseC", ""]
+- ["3AST8TypeBaseC", "bool"]
+- ["3AST8TypeBaseC", "cases"]
+- ["3AST8TypeBaseC", "codomain"]
+- ["3AST8TypeBaseC", "deinit"]
+- ["3AST8TypeBaseC", "description"]
+- ["3AST8TypeBaseC", "domain"]
+- ["3AST8TypeBaseC", "elements"]
+- ["3AST8TypeBaseC", "float"]
+- ["3AST8TypeBaseC", "get"]
+- ["3AST8TypeBaseC", "hash"]
+- ["3AST8TypeBaseC", "hashValue"]
+- ["3AST8TypeBaseC", "id"]
+- ["3AST8TypeBaseC", "init"]
+- !private ["3AST8TypeBaseC", "init"]
+- ["3AST8TypeBaseC", "int"]
+- ["3AST8TypeBaseC", "label"]
+- ["3AST8TypeBaseC", "metatype"]
+- !private ["3AST8TypeBaseC", "metatype.storage"]
+- ["3AST8TypeBaseC", "name"]
+- ["3AST8TypeBaseC", "nextID"]
+- ["3AST8TypeBaseC", "serialize"]
+- ["3AST8TypeBaseC", "string"]
+- ["3AST8TypeBaseC", "type"]
+- ["3AST12TypeVariableC", "Int"]
+- ["3AST12TypeVariableC", "Set"]
+- ["3AST12TypeVariableC", "String"]
+- ["3AST12TypeVariableC", "TupleType"]
+- !private ["3AST12TypeVariableC", "TypeVariable"]
+- ["3AST12TypeVariableC", "hashValue"]
+- ["3AST12TypeVariableC", "id"]
+- ["3AST12TypeVariableC", "init"]
+- !private ["3AST12TypeVariableC", "nextID"]
+- !private ["3AST12TypeVariableC", "serialize"]
+- ["3AST9UnionTypeC", "=="]
+- ["3AST9UnionTypeC", "Bool"]
+- ["3AST9UnionTypeC", "Set"]
+- ["3AST9UnionTypeC", "String"]
+- ["3AST9UnionTypeC", "TupleType"]
+- ["3AST9UnionTypeC", "TypeBase"]
+- ["3AST9UnionTypeC", "UnionType"]
+- ["3AST9UnionTypeC", "cases"]
+- ["3AST9UnionTypeC", "init"]
+- !private ["3AST9UnionTypeC", "serialize"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "joined"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "hashValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "hashValue"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "isEmpty"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "hashValue"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "isEmpty"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "hashValue"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "isEmpty"]
+- !private ["s33_ExpressibleByStringInterpolationP", "hashValue"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "insert"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "joined"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s16_SwiftStringViewP", "hashValue"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "isEmpty"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- "SK"
+- !private "Sb"
+- "3AST11BuiltinTypeC"
+- !private "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- "3AST9ErrorTypeC"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "3AST12FunctionTypeC"
+- "SH"
+- !private "s6HasherV"
+- "s25LosslessStringConvertibleP"
+- "3AST8MetatypeC"
+- "s10MirrorPathP"
+- !private "SM"
+- !private "Sq"
+- !private "Sk"
+- "Sm"
+- "ST"
+- !private "Sh"
+- !private "s10SetAlgebraP"
+- !private "s12StaticStringV"
+- "SS"
+- "Sy"
+- "5Utils15TextInputBufferP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "3AST9TupleTypeC"
+- "3AST13TupleTypeElemV"
+- "3AST8TypeBaseC"
+- "3AST12TypeVariableC"
+- "3AST9UnionTypeC"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+interface-hash: "54cf0d2521449137c70b3625a7e76ff9"

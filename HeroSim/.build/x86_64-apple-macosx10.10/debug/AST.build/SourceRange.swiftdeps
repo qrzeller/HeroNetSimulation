@@ -1,0 +1,224 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SourceLocation"
+- "SourceRange"
+- "=="
+- "<"
+- "=="
+provides-nominal:
+- "3AST14SourceLocationV"
+- "3AST11SourceRangeV"
+provides-member:
+- ["3AST14SourceLocationV", ""]
+- ["3AST11SourceRangeV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "&&"
+- !private "-"
+- "<"
+- "<="
+- "=="
+- ">"
+- ">="
+- "AssignmentPrecedence"
+- "Bool"
+- "Collection"
+- "Comparable"
+- "CustomStringConvertible"
+- "Equatable"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "Range"
+- "RangeExpression"
+- "SourceLocation"
+- "SourceRange"
+- "String"
+- !private "StringLiteralType"
+- "TextInputBuffer"
+- !private "UnicodeScalarType"
+depends-member:
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- ["SL", ""]
+- !private ["SL", "column"]
+- ["SL", "description"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "line"]
+- !private ["SL", "offset"]
+- !private ["SL", "source"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "Bound"]
+- !private ["s23CustomStringConvertibleP", "Range"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_Bound"]
+- !private ["s23CustomStringConvertibleP", "column"]
+- ["s23CustomStringConvertibleP", "contains"]
+- ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "end"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "line"]
+- !private ["s23CustomStringConvertibleP", "offset"]
+- ["s23CustomStringConvertibleP", "relative"]
+- !private ["s23CustomStringConvertibleP", "source"]
+- !private ["s23CustomStringConvertibleP", "start"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- ["SQ", "Bound"]
+- !private ["SQ", "Range"]
+- ["SQ", ""]
+- ["SQ", "_Default_Bound"]
+- !private ["SQ", "column"]
+- ["SQ", "contains"]
+- ["SQ", "description"]
+- !private ["SQ", "end"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "line"]
+- !private ["SQ", "offset"]
+- ["SQ", "relative"]
+- !private ["SQ", "source"]
+- !private ["SQ", "start"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["Sk", "init"]
+- !private ["Sk", "init"]
+- !private ["Sn", "init"]
+- !private ["Sn", "init"]
+- ["SX", "Bound"]
+- !private ["SX", "Range"]
+- ["SX", ""]
+- ["SX", "_Default_Bound"]
+- ["SX", "contains"]
+- ["SX", "description"]
+- !private ["SX", "end"]
+- !private ["SX", "init"]
+- !private ["SX", "init"]
+- ["SX", "relative"]
+- !private ["SX", "start"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- ["3AST14SourceLocationV", "<"]
+- ["3AST14SourceLocationV", "=="]
+- ["3AST14SourceLocationV", "Bool"]
+- ["3AST14SourceLocationV", "Int"]
+- ["3AST14SourceLocationV", "SourceLocation"]
+- ["3AST14SourceLocationV", "String"]
+- ["3AST14SourceLocationV", "TextInputBuffer"]
+- ["3AST14SourceLocationV", "column"]
+- ["3AST14SourceLocationV", "deinit"]
+- ["3AST14SourceLocationV", "description"]
+- ["3AST14SourceLocationV", "init"]
+- ["3AST14SourceLocationV", "line"]
+- ["3AST14SourceLocationV", "offset"]
+- ["3AST14SourceLocationV", "source"]
+- ["3AST11SourceRangeV", "=="]
+- ["3AST11SourceRangeV", "Bool"]
+- ["3AST11SourceRangeV", "Bound"]
+- ["3AST11SourceRangeV", "Collection"]
+- ["3AST11SourceRangeV", "Int"]
+- ["3AST11SourceRangeV", "Range"]
+- ["3AST11SourceRangeV", "SourceLocation"]
+- ["3AST11SourceRangeV", "SourceRange"]
+- ["3AST11SourceRangeV", "String"]
+- ["3AST11SourceRangeV", "_Default_Bound"]
+- ["3AST11SourceRangeV", "contains"]
+- ["3AST11SourceRangeV", "deinit"]
+- ["3AST11SourceRangeV", "description"]
+- ["3AST11SourceRangeV", "end"]
+- ["3AST11SourceRangeV", "init"]
+- ["3AST11SourceRangeV", "length"]
+- ["3AST11SourceRangeV", "relative"]
+- ["3AST11SourceRangeV", "start"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["5Utils15TextInputBufferP", "init"]
+- !private ["5Utils15TextInputBufferP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "SK"
+- !private "Sl"
+- "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "Sk"
+- !private "Sn"
+- "SX"
+- !private "Sm"
+- !private "ST"
+- "3AST14SourceLocationV"
+- "3AST11SourceRangeV"
+- !private "SS"
+- !private "Sy"
+- !private "5Utils15TextInputBufferP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+interface-hash: "51fb5b9331c99b094038c6169ffbe8f7"

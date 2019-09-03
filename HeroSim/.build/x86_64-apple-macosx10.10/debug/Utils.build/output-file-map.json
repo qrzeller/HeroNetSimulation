@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/master.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils/Sequence+Extensions.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Sequence+Extensions.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Sequence+Extensions.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Sequence+Extensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Sequence+Extensions.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils/Stack.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Stack.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Stack.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Stack~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Stack.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils/Stopwatch.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Stopwatch.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Stopwatch.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Stopwatch~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Stopwatch.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils/TextInputBuffer.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/TextInputBuffer.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/TextInputBuffer.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/TextInputBuffer~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/TextInputBuffer.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/Utils/Unreachable.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Unreachable.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Unreachable.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Unreachable~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.build/Unreachable.swiftdeps"
+  }
+}

@@ -1,0 +1,86 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Normalizer"
+provides-nominal:
+- "4Sema10NormalizerC"
+provides-member:
+- ["4Sema10NormalizerC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "ASTTransformer"
+- !private "Arg"
+- !private "Array"
+- "Binary"
+- !private "Call"
+- "CastingPrecedence"
+- !private "Expr"
+- "Node"
+- "Normalizer"
+- "Unary"
+depends-member:
+- !private ["3AST14ASTTransformerP", "Arg"]
+- !private ["3AST14ASTTransformerP", "Call"]
+- ["3AST14ASTTransformerP", ""]
+- ["3AST14ASTTransformerP", "transform"]
+- !private ["3AST3ArgC", "init"]
+- !private ["3AST6BinaryC", "left"]
+- !private ["3AST6BinaryC", "module"]
+- !private ["3AST6BinaryC", "op"]
+- !private ["3AST6BinaryC", "range"]
+- !private ["3AST6BinaryC", "right"]
+- !private ["3AST4CallC", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "left"]
+- !private ["SQ", "module"]
+- !private ["SQ", "op"]
+- !private ["SQ", "operand"]
+- !private ["SQ", "range"]
+- !private ["SQ", "right"]
+- !private ["3AST4ExprC", "left"]
+- !private ["3AST4ExprC", "module"]
+- !private ["3AST4ExprC", "op"]
+- !private ["3AST4ExprC", "operand"]
+- !private ["3AST4ExprC", "range"]
+- !private ["3AST4ExprC", "right"]
+- !private ["3AST4NodeC", "left"]
+- !private ["3AST4NodeC", "module"]
+- !private ["3AST4NodeC", "op"]
+- !private ["3AST4NodeC", "operand"]
+- !private ["3AST4NodeC", "range"]
+- !private ["3AST4NodeC", "right"]
+- !private ["4Sema10NormalizerC", "Arg"]
+- ["4Sema10NormalizerC", "Binary"]
+- !private ["4Sema10NormalizerC", "Call"]
+- !private ["4Sema10NormalizerC", "Expr"]
+- ["4Sema10NormalizerC", "Node"]
+- ["4Sema10NormalizerC", "Unary"]
+- ["4Sema10NormalizerC", "deinit"]
+- ["4Sema10NormalizerC", "init"]
+- ["4Sema10NormalizerC", "transform"]
+- !private ["3AST5UnaryC", "module"]
+- !private ["3AST5UnaryC", "op"]
+- !private ["3AST5UnaryC", "operand"]
+- !private ["3AST5UnaryC", "range"]
+depends-nominal:
+- "3AST14ASTTransformerP"
+- !private "3AST3ArgC"
+- !private "3AST6BinaryC"
+- !private "3AST4CallC"
+- !private "SQ"
+- !private "3AST4ExprC"
+- !private "3AST4NodeC"
+- "4Sema10NormalizerC"
+- !private "3AST5UnaryC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+interface-hash: "9395914254dd1e0fa2a25954f6cd6c2f"

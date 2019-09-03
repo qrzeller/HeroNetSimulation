@@ -1,0 +1,95 @@
+{
+  "": {
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/master.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/AST.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/AST.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/AST.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/AST~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/AST.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/ASTContext.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTContext.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTContext.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTContext~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTContext.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/ASTDumper.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTDumper.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTDumper.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTDumper~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTDumper.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/ASTTransformer+Traversal.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTTransformer+Traversal.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTTransformer+Traversal.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTTransformer+Traversal~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTTransformer+Traversal.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/ASTTransformer.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTTransformer.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTTransformer.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTTransformer~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTTransformer.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/ASTVisitor+Traversal.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTVisitor+Traversal.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTVisitor+Traversal.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTVisitor+Traversal~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTVisitor+Traversal.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/ASTVisitor.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTVisitor.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTVisitor.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTVisitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ASTVisitor.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/BuiltinScope.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/BuiltinScope.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/BuiltinScope.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/BuiltinScope~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/BuiltinScope.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/Constraint.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Constraint.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Constraint.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Constraint~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Constraint.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/ConstraintLocation.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ConstraintLocation.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ConstraintLocation.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ConstraintLocation~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/ConstraintLocation.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/Operators.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Operators.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Operators.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Operators~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Operators.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/Scope.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Scope.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Scope.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Scope~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Scope.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/SourceRange.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/SourceRange.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/SourceRange.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/SourceRange~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/SourceRange.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/Symbol.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Symbol.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Symbol.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Symbol~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Symbol.swiftdeps"
+  },
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/checkouts/AlpineLang.git-510188728071463435/Sources/AST/Type.swift": {
+    "dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Type.d",
+    "object": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Type.swift.o",
+    "swiftmodule": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Type~partial.swiftmodule",
+    "swift-dependencies": "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.build/Type.swiftdeps"
+  }
+}

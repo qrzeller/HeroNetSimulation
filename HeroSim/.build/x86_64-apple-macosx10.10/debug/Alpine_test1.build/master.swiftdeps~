@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "54f036128729232714a2e29d4d3f3813"
+build_time: [1551696043, 547632000]
+inputs:
+  "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/Sources/Alpine-test1/main.swift": [1551696041, 0]

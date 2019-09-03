@@ -1,0 +1,297 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PrefixOperator"
+- "InfixOperator"
+provides-nominal:
+- "3AST14PrefixOperatorO"
+- "3AST13InfixOperatorO"
+provides-member:
+- ["3AST14PrefixOperatorO", ""]
+- ["3AST13InfixOperatorO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "Array"
+- "CustomStringConvertible"
+- !private "FloatLiteralType"
+- "InfixOperator"
+- "Int"
+- !private "IntegerLiteralType"
+- "PrefixOperator"
+- "String"
+- "StringLiteralType"
+- !private "UnicodeScalarType"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- ["SL", "init"]
+- ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "add"]
+- ["s23CustomStringConvertibleP", "and"]
+- ["s23CustomStringConvertibleP", "as"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "div"]
+- ["s23CustomStringConvertibleP", "eq"]
+- ["s23CustomStringConvertibleP", "ge"]
+- ["s23CustomStringConvertibleP", "gt"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "is"]
+- ["s23CustomStringConvertibleP", "le"]
+- ["s23CustomStringConvertibleP", "lt"]
+- ["s23CustomStringConvertibleP", "mod"]
+- ["s23CustomStringConvertibleP", "mul"]
+- ["s23CustomStringConvertibleP", "ne"]
+- ["s23CustomStringConvertibleP", "not"]
+- ["s23CustomStringConvertibleP", "or"]
+- ["s23CustomStringConvertibleP", "peq"]
+- ["s23CustomStringConvertibleP", "pne"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "sub"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- ["SE", "init"]
+- ["SE", "init"]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- ["SQ", "add"]
+- ["SQ", "and"]
+- ["SQ", "as"]
+- ["SQ", "description"]
+- ["SQ", "div"]
+- ["SQ", "eq"]
+- ["SQ", "ge"]
+- ["SQ", "gt"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- ["SQ", "is"]
+- ["SQ", "le"]
+- ["SQ", "lt"]
+- ["SQ", "mod"]
+- ["SQ", "mul"]
+- ["SQ", "ne"]
+- ["SQ", "not"]
+- ["SQ", "or"]
+- ["SQ", "peq"]
+- ["SQ", "pne"]
+- ["SQ", "rawValue"]
+- ["SQ", "sub"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- ["SH", "add"]
+- ["SH", "and"]
+- ["SH", "as"]
+- ["SH", "description"]
+- ["SH", "div"]
+- ["SH", "eq"]
+- ["SH", "ge"]
+- ["SH", "gt"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "init"]
+- ["SH", "is"]
+- ["SH", "le"]
+- ["SH", "lt"]
+- ["SH", "mod"]
+- ["SH", "mul"]
+- ["SH", "ne"]
+- ["SH", "not"]
+- ["SH", "or"]
+- ["SH", "peq"]
+- ["SH", "pne"]
+- ["SH", "rawValue"]
+- ["SH", "sub"]
+- !private ["s6HasherV", "combine"]
+- ["3AST13InfixOperatorO", "Int"]
+- ["3AST13InfixOperatorO", "RawValue"]
+- ["3AST13InfixOperatorO", "String"]
+- ["3AST13InfixOperatorO", "_Default_RawValue"]
+- !private ["3AST13InfixOperatorO", "_findStringSwitchCase"]
+- ["3AST13InfixOperatorO", "add"]
+- ["3AST13InfixOperatorO", "and"]
+- ["3AST13InfixOperatorO", "as"]
+- ["3AST13InfixOperatorO", "deinit"]
+- ["3AST13InfixOperatorO", "description"]
+- ["3AST13InfixOperatorO", "div"]
+- ["3AST13InfixOperatorO", "eq"]
+- ["3AST13InfixOperatorO", "ge"]
+- ["3AST13InfixOperatorO", "gt"]
+- ["3AST13InfixOperatorO", "hash"]
+- ["3AST13InfixOperatorO", "hashValue"]
+- ["3AST13InfixOperatorO", "init"]
+- ["3AST13InfixOperatorO", "is"]
+- ["3AST13InfixOperatorO", "le"]
+- ["3AST13InfixOperatorO", "lt"]
+- ["3AST13InfixOperatorO", "mod"]
+- ["3AST13InfixOperatorO", "mul"]
+- ["3AST13InfixOperatorO", "ne"]
+- ["3AST13InfixOperatorO", "or"]
+- ["3AST13InfixOperatorO", "peq"]
+- ["3AST13InfixOperatorO", "pne"]
+- ["3AST13InfixOperatorO", "precedence"]
+- ["3AST13InfixOperatorO", "rawValue"]
+- ["3AST13InfixOperatorO", "sub"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["3AST14PrefixOperatorO", "RawValue"]
+- ["3AST14PrefixOperatorO", "String"]
+- ["3AST14PrefixOperatorO", "_Default_RawValue"]
+- !private ["3AST14PrefixOperatorO", "_findStringSwitchCase"]
+- ["3AST14PrefixOperatorO", "add"]
+- ["3AST14PrefixOperatorO", "deinit"]
+- ["3AST14PrefixOperatorO", "description"]
+- ["3AST14PrefixOperatorO", "hash"]
+- ["3AST14PrefixOperatorO", "hashValue"]
+- ["3AST14PrefixOperatorO", "init"]
+- ["3AST14PrefixOperatorO", "not"]
+- ["3AST14PrefixOperatorO", "rawValue"]
+- ["3AST14PrefixOperatorO", "sub"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "add"]
+- ["SY", "and"]
+- ["SY", "as"]
+- ["SY", "description"]
+- ["SY", "div"]
+- ["SY", "eq"]
+- ["SY", "ge"]
+- ["SY", "gt"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "is"]
+- ["SY", "le"]
+- ["SY", "lt"]
+- ["SY", "mod"]
+- ["SY", "mul"]
+- ["SY", "ne"]
+- ["SY", "not"]
+- ["SY", "or"]
+- ["SY", "peq"]
+- ["SY", "pne"]
+- ["SY", "rawValue"]
+- ["SY", "sub"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["5Utils15TextInputBufferP", "init"]
+- ["5Utils15TextInputBufferP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "SK"
+- !private "Sb"
+- !private "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- !private "s6HasherV"
+- "3AST13InfixOperatorO"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "3AST14PrefixOperatorO"
+- "Sm"
+- "SY"
+- "ST"
+- !private "s12StaticStringV"
+- "SS"
+- "Sy"
+- "5Utils15TextInputBufferP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+interface-hash: "ee71e296528ad89359c282d8b42bda04"

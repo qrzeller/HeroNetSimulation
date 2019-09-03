@@ -1,0 +1,522 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SOLVER_TIMEOUT"
+- "ConstraintSolver"
+- "SolverResult"
+provides-nominal:
+- "4Sema16ConstraintSolverV"
+- "4Sema12SolverResultO"
+- "4Sema12SolverResultO11FailureKindO"
+provides-member:
+- ["4Sema16ConstraintSolverV", ""]
+- ["4Sema12SolverResultO", ""]
+- ["4Sema12SolverResultO11FailureKindO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&&"
+- !private "+"
+- !private "<"
+- "=="
+- !private ">"
+- "ASTContext"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "Constraint"
+- !private "ConstraintPath"
+- "ConstraintSolver"
+- "Dictionary"
+- !private "FloatLiteralType"
+- !private "FunctionType"
+- !private "IntegerLiteralType"
+- !private "Metatype"
+- "SOLVER_TIMEOUT"
+- "Sequence"
+- !private "Set"
+- "SolverResult"
+- "Stopwatch"
+- !private "StringLiteralType"
+- "SubstitutionTable"
+- !private "TupleType"
+- !private "TupleTypeElem"
+- !private "TypeBase"
+- "TypeMatchResult"
+- !private "TypeVariable"
+- !private "UnionType"
+- !private "assert"
+- !private "zip"
+- !private "||"
+- !private "~="
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "compactMap"]
+- !private ["Sa", "contains"]
+- !private ["Sa", "count"]
+- !private ["Sa", "first"]
+- !private ["Sa", "init"]
+- !private ["Sa", "insert"]
+- !private ["Sa", "joined"]
+- !private ["Sa", "map"]
+- !private ["Sa", "popLast"]
+- !private ["Sa", "subscript"]
+- !private ["s13ArrayProtocolP", "append"]
+- !private ["s13ArrayProtocolP", "compactMap"]
+- !private ["s13ArrayProtocolP", "contains"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "first"]
+- !private ["s13ArrayProtocolP", "init"]
+- !private ["s13ArrayProtocolP", "insert"]
+- !private ["s13ArrayProtocolP", "joined"]
+- !private ["s13ArrayProtocolP", "map"]
+- !private ["s13ArrayProtocolP", "popLast"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "append"]
+- !private ["SK", "compactMap"]
+- !private ["SK", "contains"]
+- !private ["SK", "count"]
+- !private ["SK", "first"]
+- !private ["SK", "init"]
+- !private ["SK", "insert"]
+- !private ["SK", "joined"]
+- !private ["SK", "map"]
+- !private ["SK", "popLast"]
+- !private ["SK", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["Sl", "append"]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "contains"]
+- !private ["Sl", "count"]
+- !private ["Sl", "first"]
+- !private ["Sl", "init"]
+- !private ["Sl", "insert"]
+- !private ["Sl", "joined"]
+- !private ["Sl", "map"]
+- !private ["Sl", "popLast"]
+- !private ["Sl", "subscript"]
+- !private ["3AST10ConstraintV", "choices"]
+- !private ["3AST10ConstraintV", "conformance"]
+- !private ["3AST10ConstraintV", "disjunction"]
+- !private ["3AST10ConstraintV", "equality"]
+- !private ["3AST10ConstraintV", "init"]
+- !private ["3AST10ConstraintV", "kind"]
+- !private ["3AST10ConstraintV", "location"]
+- !private ["3AST10ConstraintV", "member"]
+- !private ["3AST10ConstraintV", "types"]
+- ["3AST14ConstraintKindO", "conformance"]
+- ["3AST14ConstraintKindO", "disjunction"]
+- ["3AST14ConstraintKindO", "equality"]
+- ["3AST14ConstraintKindO", "member"]
+- !private ["3AST14ConstraintPathO", "codomain"]
+- !private ["3AST14ConstraintPathO", "domain"]
+- !private ["3AST14ConstraintPathO", "elementIndex"]
+- !private ["3AST14ConstraintPathO", "unionCase"]
+- ["4Sema16ConstraintSolverV", "ASTContext"]
+- !private ["4Sema16ConstraintSolverV", "Array"]
+- ["4Sema16ConstraintSolverV", "Constraint"]
+- !private ["4Sema16ConstraintSolverV", "ConstraintPath"]
+- !private ["4Sema16ConstraintSolverV", "ConstraintSolver"]
+- !private ["4Sema16ConstraintSolverV", "Failure"]
+- !private ["4Sema16ConstraintSolverV", "FunctionType"]
+- !private ["4Sema16ConstraintSolverV", "Metatype"]
+- !private ["4Sema16ConstraintSolverV", "SOLVER_TIMEOUT"]
+- ["4Sema16ConstraintSolverV", "Sequence"]
+- !private ["4Sema16ConstraintSolverV", "Set"]
+- ["4Sema16ConstraintSolverV", "SolverResult"]
+- !private ["4Sema16ConstraintSolverV", "Stopwatch"]
+- ["4Sema16ConstraintSolverV", "SubstitutionTable"]
+- !private ["4Sema16ConstraintSolverV", "Success"]
+- !private ["4Sema16ConstraintSolverV", "TupleType"]
+- !private ["4Sema16ConstraintSolverV", "TupleTypeElem"]
+- !private ["4Sema16ConstraintSolverV", "TypeBase"]
+- ["4Sema16ConstraintSolverV", "TypeMatchResult"]
+- !private ["4Sema16ConstraintSolverV", "TypeVariable"]
+- !private ["4Sema16ConstraintSolverV", "UnionType"]
+- !private ["4Sema16ConstraintSolverV", "assert"]
+- !private ["4Sema16ConstraintSolverV", "assumptions"]
+- !private ["4Sema16ConstraintSolverV", "constraints"]
+- ["4Sema16ConstraintSolverV", "context"]
+- ["4Sema16ConstraintSolverV", "init"]
+- !private ["4Sema16ConstraintSolverV", "reify"]
+- ["4Sema16ConstraintSolverV", "solve"]
+- !private ["4Sema16ConstraintSolverV", "zip"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "insert"]
+- !private ["s28CustomDebugStringConvertibleP", "isEquivalent"]
+- !private ["s28CustomDebugStringConvertibleP", "joined"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "popLast"]
+- !private ["s28CustomDebugStringConvertibleP", "reified"]
+- !private ["s28CustomDebugStringConvertibleP", "reify"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "substitution"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "insert"]
+- !private ["s17CustomReflectableP", "joined"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "popLast"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "cases"]
+- !private ["s23CustomStringConvertibleP", "codomain"]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "domain"]
+- !private ["s23CustomStringConvertibleP", "elements"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- ["s23CustomStringConvertibleP", "index"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "insert"]
+- !private ["s23CustomStringConvertibleP", "joined"]
+- ["s23CustomStringConvertibleP", "label"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "popLast"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "type"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "append"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "contains"]
+- !private ["Se", "count"]
+- !private ["Se", "first"]
+- !private ["Se", "init"]
+- !private ["Se", "insert"]
+- !private ["Se", "joined"]
+- !private ["Se", "map"]
+- !private ["Se", "popLast"]
+- !private ["Se", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "append"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "contains"]
+- !private ["SE", "count"]
+- !private ["SE", "first"]
+- !private ["SE", "init"]
+- !private ["SE", "insert"]
+- !private ["SE", "joined"]
+- !private ["SE", "map"]
+- !private ["SE", "popLast"]
+- !private ["SE", "subscript"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "ambiguousExpression"]
+- !private ["SQ", "append"]
+- !private ["SQ", "cases"]
+- !private ["SQ", "codomain"]
+- !private ["SQ", "compactMap"]
+- ["SQ", "conformance"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "count"]
+- ["SQ", "disjunction"]
+- !private ["SQ", "domain"]
+- !private ["SQ", "elementIndex"]
+- !private ["SQ", "elements"]
+- ["SQ", "equality"]
+- !private ["SQ", "failure"]
+- !private ["SQ", "first"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "init"]
+- !private ["SQ", "insert"]
+- !private ["SQ", "isEquivalent"]
+- !private ["SQ", "joined"]
+- !private ["SQ", "label"]
+- !private ["SQ", "map"]
+- ["SQ", "member"]
+- !private ["SQ", "popLast"]
+- !private ["SQ", "reified"]
+- !private ["SQ", "reify"]
+- !private ["SQ", "set"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "substitution"]
+- !private ["SQ", "success"]
+- !private ["SQ", "timeout"]
+- !private ["SQ", "type"]
+- !private ["SQ", "typeMismatch"]
+- !private ["SQ", "unionCase"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "insert"]
+- !private ["s25ExpressibleByArrayLiteralP", "joined"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "popLast"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "isEquivalent"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "reified"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "reify"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "set"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "substitution"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "map"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["4Sema12SolverResultO11FailureKindO", "__derived_enum_equals"]
+- ["4Sema12SolverResultO11FailureKindO", "ambiguousExpression"]
+- ["4Sema12SolverResultO11FailureKindO", "deinit"]
+- ["4Sema12SolverResultO11FailureKindO", "hash"]
+- ["4Sema12SolverResultO11FailureKindO", "hashValue"]
+- ["4Sema12SolverResultO11FailureKindO", "timeout"]
+- ["4Sema12SolverResultO11FailureKindO", "typeMismatch"]
+- !private ["3AST12FunctionTypeC", "codomain"]
+- !private ["3AST12FunctionTypeC", "domain"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "ambiguousExpression"]
+- !private ["SH", "append"]
+- !private ["SH", "cases"]
+- !private ["SH", "codomain"]
+- !private ["SH", "compactMap"]
+- ["SH", "conformance"]
+- !private ["SH", "contains"]
+- !private ["SH", "count"]
+- ["SH", "disjunction"]
+- !private ["SH", "domain"]
+- !private ["SH", "elements"]
+- ["SH", "equality"]
+- !private ["SH", "failure"]
+- !private ["SH", "first"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "init"]
+- !private ["SH", "insert"]
+- !private ["SH", "isEquivalent"]
+- !private ["SH", "joined"]
+- !private ["SH", "label"]
+- !private ["SH", "map"]
+- ["SH", "member"]
+- !private ["SH", "popLast"]
+- !private ["SH", "reified"]
+- !private ["SH", "reify"]
+- !private ["SH", "set"]
+- !private ["SH", "subscript"]
+- !private ["SH", "substitution"]
+- !private ["SH", "success"]
+- !private ["SH", "timeout"]
+- !private ["SH", "type"]
+- !private ["SH", "typeMismatch"]
+- !private ["s6HasherV", "combine"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["3AST8MetatypeC", "type"]
+- !private ["SM", "append"]
+- !private ["SM", "compactMap"]
+- !private ["SM", "contains"]
+- !private ["SM", "count"]
+- !private ["SM", "first"]
+- !private ["SM", "init"]
+- !private ["SM", "insert"]
+- !private ["SM", "joined"]
+- !private ["SM", "map"]
+- !private ["SM", "popLast"]
+- !private ["SM", "subscript"]
+- !private ["Sq", "map"]
+- ["3AST6SelectC5OwneeO", "index"]
+- ["3AST6SelectC5OwneeO", "label"]
+- !private ["Sk", "append"]
+- !private ["Sk", "compactMap"]
+- !private ["Sk", "contains"]
+- !private ["Sk", "count"]
+- !private ["Sk", "first"]
+- !private ["Sk", "init"]
+- !private ["Sk", "insert"]
+- !private ["Sk", "joined"]
+- !private ["Sk", "map"]
+- !private ["Sk", "popLast"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "compactMap"]
+- !private ["Sm", "contains"]
+- !private ["Sm", "count"]
+- !private ["Sm", "first"]
+- !private ["Sm", "init"]
+- !private ["Sm", "insert"]
+- !private ["Sm", "joined"]
+- !private ["Sm", "map"]
+- !private ["Sm", "popLast"]
+- !private ["Sm", "subscript"]
+- ["SY", "conformance"]
+- ["SY", "disjunction"]
+- ["SY", "equality"]
+- ["SY", "member"]
+- !private ["ST", "all"]
+- !private ["ST", "append"]
+- !private ["ST", "compactMap"]
+- !private ["ST", "contains"]
+- !private ["ST", "count"]
+- !private ["ST", "enumerated"]
+- !private ["ST", "first"]
+- !private ["ST", "init"]
+- !private ["ST", "insert"]
+- !private ["ST", "isEquivalent"]
+- !private ["ST", "joined"]
+- !private ["ST", "map"]
+- !private ["ST", "popLast"]
+- !private ["ST", "reified"]
+- !private ["ST", "reify"]
+- !private ["ST", "set"]
+- !private ["ST", "sorted"]
+- !private ["ST", "subscript"]
+- !private ["ST", "substitution"]
+- !private ["Sh", "init"]
+- !private ["Sh", "map"]
+- !private ["s10SetAlgebraP", "init"]
+- !private ["s10SetAlgebraP", "map"]
+- ["4Sema12SolverResultO", "Bool"]
+- ["4Sema12SolverResultO", "Constraint"]
+- ["4Sema12SolverResultO", "FailureKind"]
+- ["4Sema12SolverResultO", "SubstitutionTable"]
+- ["4Sema12SolverResultO", "failure"]
+- ["4Sema12SolverResultO", "isSuccess"]
+- ["4Sema12SolverResultO", "success"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- ["5Utils9StopwatchV", "TimeInterval"]
+- !private ["5Utils9StopwatchV", "elapsed"]
+- !private ["5Utils9StopwatchV", "init"]
+- !private ["4Sema17SubstitutionTableV", "deinit"]
+- !private ["4Sema17SubstitutionTableV", "isEquivalent"]
+- !private ["4Sema17SubstitutionTableV", "reified"]
+- !private ["4Sema17SubstitutionTableV", "reify"]
+- !private ["4Sema17SubstitutionTableV", "set"]
+- !private ["4Sema17SubstitutionTableV", "substitution"]
+- !private ["3AST9TupleTypeC", "elements"]
+- !private ["3AST9TupleTypeC", "label"]
+- !private ["3AST13TupleTypeElemV", "label"]
+- !private ["3AST13TupleTypeElemV", "type"]
+- !private ["3AST8TypeBaseC", "cases"]
+- !private ["3AST8TypeBaseC", "codomain"]
+- !private ["3AST8TypeBaseC", "domain"]
+- !private ["3AST8TypeBaseC", "elements"]
+- !private ["3AST8TypeBaseC", "label"]
+- !private ["3AST8TypeBaseC", "type"]
+- !private ["3AST9UnionTypeC", "cases"]
+- !private ["s12Zip2SequenceV", "all"]
+- !private ["s12Zip2SequenceV", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s24_DestructorSafeContainerP", "contains"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "insert"]
+- !private ["s24_DestructorSafeContainerP", "joined"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s24_DestructorSafeContainerP", "popLast"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "insert"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "joined"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "popLast"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+depends-nominal:
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "3AST10ConstraintV"
+- "3AST14ConstraintKindO"
+- !private "3AST14ConstraintPathO"
+- "4Sema16ConstraintSolverV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "4Sema12SolverResultO11FailureKindO"
+- !private "3AST12FunctionTypeC"
+- "SH"
+- !private "s6HasherV"
+- !private "s25LosslessStringConvertibleP"
+- !private "3AST8MetatypeC"
+- !private "SM"
+- !private "Sq"
+- "3AST6SelectC5OwneeO"
+- !private "Sk"
+- !private "Sm"
+- "SY"
+- !private "ST"
+- !private "Sh"
+- !private "s10SetAlgebraP"
+- "4Sema12SolverResultO"
+- !private "s12StaticStringV"
+- "5Utils9StopwatchV"
+- !private "4Sema17SubstitutionTableV"
+- !private "3AST9TupleTypeC"
+- !private "3AST13TupleTypeElemV"
+- !private "3AST8TypeBaseC"
+- !private "3AST9UnionTypeC"
+- !private "s12Zip2SequenceV"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/AST.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+interface-hash: "b3eab1f732e96a500628dac22fa82ef5"

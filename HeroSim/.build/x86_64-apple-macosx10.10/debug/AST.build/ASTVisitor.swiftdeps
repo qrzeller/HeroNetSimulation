@@ -1,0 +1,76 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ASTVisitor"
+provides-nominal:
+- "3AST10ASTVisitorP"
+provides-member:
+- ["3AST10ASTVisitorP", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "ASTVisitor"
+- "Arg"
+- "Binary"
+- "Bool"
+- "Call"
+- "Double"
+- "Func"
+- "FuncSign"
+- "Ident"
+- "If"
+- "Int"
+- "LetBinding"
+- "Match"
+- "MatchCase"
+- "Module"
+- "Scalar"
+- "Select"
+- "String"
+- "Tuple"
+- "TupleElem"
+- "TupleSign"
+- "TupleSignElem"
+- "TypeAlias"
+- "TypeIdent"
+- "Unary"
+- "UnionSign"
+depends-member:
+- ["3AST10ASTVisitorP", "Arg"]
+- ["3AST10ASTVisitorP", "Binary"]
+- ["3AST10ASTVisitorP", "Bool"]
+- ["3AST10ASTVisitorP", "Call"]
+- ["3AST10ASTVisitorP", "Double"]
+- ["3AST10ASTVisitorP", "Func"]
+- ["3AST10ASTVisitorP", "FuncSign"]
+- ["3AST10ASTVisitorP", "Ident"]
+- ["3AST10ASTVisitorP", "If"]
+- ["3AST10ASTVisitorP", "Int"]
+- ["3AST10ASTVisitorP", "LetBinding"]
+- ["3AST10ASTVisitorP", "Match"]
+- ["3AST10ASTVisitorP", "MatchCase"]
+- ["3AST10ASTVisitorP", "Module"]
+- ["3AST10ASTVisitorP", "Scalar"]
+- ["3AST10ASTVisitorP", "Select"]
+- ["3AST10ASTVisitorP", "String"]
+- ["3AST10ASTVisitorP", "Tuple"]
+- ["3AST10ASTVisitorP", "TupleElem"]
+- ["3AST10ASTVisitorP", "TupleSign"]
+- ["3AST10ASTVisitorP", "TupleSignElem"]
+- ["3AST10ASTVisitorP", "TypeAlias"]
+- ["3AST10ASTVisitorP", "TypeIdent"]
+- ["3AST10ASTVisitorP", "Unary"]
+- ["3AST10ASTVisitorP", "UnionSign"]
+- ["3AST10ASTVisitorP", "visit"]
+depends-nominal:
+- "3AST10ASTVisitorP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+interface-hash: "37c73a3198c83af6acee1b6926cf8b07"

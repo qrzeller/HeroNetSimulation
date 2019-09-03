@@ -1,0 +1,637 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Node"
+- "Module"
+- "Func"
+- "TypeAlias"
+- "TypeSign"
+- "TypeIdent"
+- "FuncSign"
+- "TupleSign"
+- "TupleSignElem"
+- "UnionSign"
+- "Expr"
+- "If"
+- "Match"
+- "MatchCase"
+- "LetBinding"
+- "Binary"
+- "Unary"
+- "Call"
+- "Arg"
+- "Tuple"
+- "TupleElem"
+- "Select"
+- "Ident"
+- "Scalar"
+- "=="
+provides-nominal:
+- "3AST4NodeC"
+- "3AST6ModuleC"
+- "3AST4FuncC"
+- "3AST9TypeAliasC"
+- "3AST8TypeSignC"
+- "3AST9TypeIdentC"
+- "3AST8FuncSignC"
+- "3AST9TupleSignC"
+- "3AST13TupleSignElemC"
+- "3AST9UnionSignC"
+- "3AST4ExprC"
+- "3AST2IfC"
+- "3AST5MatchC"
+- "3AST9MatchCaseC"
+- "3AST10LetBindingC"
+- "3AST6BinaryC"
+- "3AST5UnaryC"
+- "3AST4CallC"
+- "3AST3ArgC"
+- "3AST5TupleC"
+- "3AST9TupleElemC"
+- "3AST6SelectC"
+- "3AST6SelectC5OwneeO"
+- "3AST5IdentC"
+- "3AST6ScalarC"
+provides-member:
+- ["3AST4NodeC", ""]
+- ["3AST6ModuleC", ""]
+- ["3AST4FuncC", ""]
+- ["3AST9TypeAliasC", ""]
+- ["3AST8TypeSignC", ""]
+- ["3AST9TypeIdentC", ""]
+- ["3AST8FuncSignC", ""]
+- ["3AST9TupleSignC", ""]
+- ["3AST13TupleSignElemC", ""]
+- ["3AST9UnionSignC", ""]
+- ["3AST4ExprC", ""]
+- ["3AST2IfC", ""]
+- ["3AST5MatchC", ""]
+- ["3AST9MatchCaseC", ""]
+- ["3AST10LetBindingC", ""]
+- ["3AST6BinaryC", ""]
+- ["3AST5UnaryC", ""]
+- ["3AST4CallC", ""]
+- ["3AST3ArgC", ""]
+- ["3AST5TupleC", ""]
+- ["3AST9TupleElemC", ""]
+- ["3AST6SelectC", ""]
+- ["3AST6SelectC5OwneeO", ""]
+- ["3AST5IdentC", ""]
+- ["3AST6ScalarC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "==="
+- "Arg"
+- "AssignmentPrecedence"
+- "Binary"
+- "Bool"
+- "Call"
+- !private "CastingPrecedence"
+- "CustomStringConvertible"
+- !private "Dictionary"
+- "Equatable"
+- "Expr"
+- !private "FloatLiteralType"
+- "Func"
+- "FuncSign"
+- "Ident"
+- "If"
+- "Int"
+- !private "IntegerLiteralType"
+- "LetBinding"
+- "Match"
+- "MatchCase"
+- "Metatype"
+- "Module"
+- "Node"
+- "Scalar"
+- "Scope"
+- "Select"
+- "SourceRange"
+- "String"
+- !private "StringLiteralType"
+- "Symbol"
+- "Tuple"
+- "TupleElem"
+- "TupleSign"
+- "TupleSignElem"
+- "TypeAlias"
+- "TypeBase"
+- "TypeIdent"
+- "TypeSign"
+- "Unary"
+- "UnionSign"
+depends-member:
+- ["3AST3ArgC", "Expr"]
+- ["3AST3ArgC", "Module"]
+- ["3AST3ArgC", "SourceRange"]
+- ["3AST3ArgC", "String"]
+- ["3AST3ArgC", "init"]
+- ["3AST3ArgC", "label"]
+- ["3AST3ArgC", "value"]
+- !private ["Sa", "compactMap"]
+- !private ["s13ArrayProtocolP", "compactMap"]
+- !private ["SK", "compactMap"]
+- ["3AST6BinaryC", "Expr"]
+- ["3AST6BinaryC", "Ident"]
+- ["3AST6BinaryC", "Int"]
+- ["3AST6BinaryC", "Module"]
+- ["3AST6BinaryC", "SourceRange"]
+- ["3AST6BinaryC", "init"]
+- ["3AST6BinaryC", "left"]
+- ["3AST6BinaryC", "op"]
+- ["3AST6BinaryC", "precedence"]
+- ["3AST6BinaryC", "right"]
+- !private ["Sz", "description"]
+- !private ["s7CVarArgP", "description"]
+- ["3AST4CallC", "Arg"]
+- ["3AST4CallC", "Expr"]
+- ["3AST4CallC", "Module"]
+- ["3AST4CallC", "SourceRange"]
+- ["3AST4CallC", "arguments"]
+- ["3AST4CallC", "callee"]
+- ["3AST4CallC", "init"]
+- !private ["Sl", "compactMap"]
+- !private ["Sl", "init"]
+- !private ["SL", "description"]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s29CustomPlaygroundQuickLookableP", "description"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "description"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "index"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "label"]
+- !private ["Se", "compactMap"]
+- !private ["Se", "description"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["SD", "init"]
+- !private ["SE", "compactMap"]
+- !private ["SE", "description"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SQ", "Dictionary"]
+- ["SQ", ""]
+- !private ["SQ", "arguments"]
+- !private ["SQ", "body"]
+- !private ["SQ", "callee"]
+- !private ["SQ", "cases"]
+- !private ["SQ", "codomain"]
+- !private ["SQ", "compactMap"]
+- !private ["SQ", "condition"]
+- !private ["SQ", "description"]
+- !private ["SQ", "domain"]
+- !private ["SQ", "elements"]
+- !private ["SQ", "elseExpr"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "label"]
+- !private ["SQ", "left"]
+- !private ["SQ", "map"]
+- !private ["SQ", "module"]
+- !private ["SQ", "name"]
+- !private ["SQ", "op"]
+- !private ["SQ", "operand"]
+- !private ["SQ", "ownee"]
+- !private ["SQ", "owner"]
+- !private ["SQ", "pattern"]
+- !private ["SQ", "precedence"]
+- !private ["SQ", "range"]
+- !private ["SQ", "right"]
+- !private ["SQ", "scope"]
+- !private ["SQ", "signature"]
+- !private ["SQ", "statements"]
+- !private ["SQ", "subject"]
+- !private ["SQ", "symbol"]
+- !private ["SQ", "thenExpr"]
+- !private ["SQ", "type"]
+- !private ["SQ", "value"]
+- ["3AST4ExprC", "Arg"]
+- ["3AST4ExprC", "CustomStringConvertible"]
+- ["3AST4ExprC", "Expr"]
+- ["3AST4ExprC", "FuncSign"]
+- ["3AST4ExprC", "Ident"]
+- ["3AST4ExprC", "Int"]
+- ["3AST4ExprC", "MatchCase"]
+- ["3AST4ExprC", "Module"]
+- ["3AST4ExprC", "Ownee"]
+- ["3AST4ExprC", "Scope"]
+- ["3AST4ExprC", "SourceRange"]
+- ["3AST4ExprC", "String"]
+- ["3AST4ExprC", "Symbol"]
+- ["3AST4ExprC", "T"]
+- ["3AST4ExprC", "TupleElem"]
+- ["3AST4ExprC", "TypeBase"]
+- ["3AST4ExprC", ""]
+- ["3AST4ExprC", "arguments"]
+- ["3AST4ExprC", "body"]
+- ["3AST4ExprC", "callee"]
+- ["3AST4ExprC", "cases"]
+- ["3AST4ExprC", "condition"]
+- ["3AST4ExprC", "elements"]
+- ["3AST4ExprC", "elseExpr"]
+- ["3AST4ExprC", "elseScope"]
+- ["3AST4ExprC", "init"]
+- ["3AST4ExprC", "innerScope"]
+- ["3AST4ExprC", "label"]
+- ["3AST4ExprC", "left"]
+- ["3AST4ExprC", "name"]
+- ["3AST4ExprC", "op"]
+- ["3AST4ExprC", "operand"]
+- ["3AST4ExprC", "ownee"]
+- ["3AST4ExprC", "owner"]
+- ["3AST4ExprC", "precedence"]
+- ["3AST4ExprC", "right"]
+- ["3AST4ExprC", "scope"]
+- ["3AST4ExprC", "signature"]
+- ["3AST4ExprC", "subject"]
+- ["3AST4ExprC", "symbol"]
+- ["3AST4ExprC", "thenExpr"]
+- ["3AST4ExprC", "thenScope"]
+- ["3AST4ExprC", "type"]
+- ["3AST4ExprC", "value"]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "description"]
+- !private ["s23ExpressibleByNilLiteralP", "map"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "description"]
+- ["3AST4FuncC", "Expr"]
+- ["3AST4FuncC", "FuncSign"]
+- ["3AST4FuncC", "Module"]
+- ["3AST4FuncC", "Scope"]
+- ["3AST4FuncC", "SourceRange"]
+- ["3AST4FuncC", "String"]
+- ["3AST4FuncC", "Symbol"]
+- ["3AST4FuncC", "body"]
+- ["3AST4FuncC", "init"]
+- ["3AST4FuncC", "innerScope"]
+- ["3AST4FuncC", "name"]
+- ["3AST4FuncC", "scope"]
+- ["3AST4FuncC", "signature"]
+- ["3AST4FuncC", "symbol"]
+- !private ["3AST4FuncC", "type"]
+- ["3AST8FuncSignC", "Module"]
+- ["3AST8FuncSignC", "SourceRange"]
+- ["3AST8FuncSignC", "TupleSign"]
+- ["3AST8FuncSignC", "TypeSign"]
+- ["3AST8FuncSignC", "codomain"]
+- ["3AST8FuncSignC", "domain"]
+- ["3AST8FuncSignC", "init"]
+- !private ["SH", "compactMap"]
+- !private ["SH", "description"]
+- !private ["SH", "init"]
+- !private ["SH", "map"]
+- !private ["SH", "scope"]
+- !private ["SH", "type"]
+- ["3AST5IdentC", "Module"]
+- ["3AST5IdentC", "Scope"]
+- ["3AST5IdentC", "SourceRange"]
+- ["3AST5IdentC", "String"]
+- ["3AST5IdentC", "Symbol"]
+- ["3AST5IdentC", "init"]
+- ["3AST5IdentC", "name"]
+- ["3AST5IdentC", "scope"]
+- ["3AST5IdentC", "symbol"]
+- ["3AST2IfC", "Expr"]
+- ["3AST2IfC", "Module"]
+- ["3AST2IfC", "Scope"]
+- ["3AST2IfC", "SourceRange"]
+- ["3AST2IfC", "condition"]
+- ["3AST2IfC", "elseExpr"]
+- ["3AST2IfC", "elseScope"]
+- ["3AST2IfC", "init"]
+- ["3AST2IfC", "thenExpr"]
+- ["3AST2IfC", "thenScope"]
+- !private ["Si", "description"]
+- ["3AST10LetBindingC", "Module"]
+- ["3AST10LetBindingC", "Scope"]
+- ["3AST10LetBindingC", "SourceRange"]
+- ["3AST10LetBindingC", "String"]
+- ["3AST10LetBindingC", "Symbol"]
+- ["3AST10LetBindingC", "init"]
+- ["3AST10LetBindingC", "name"]
+- ["3AST10LetBindingC", "scope"]
+- ["3AST10LetBindingC", "symbol"]
+- !private ["s25LosslessStringConvertibleP", "description"]
+- ["3AST5MatchC", "Expr"]
+- ["3AST5MatchC", "MatchCase"]
+- ["3AST5MatchC", "Module"]
+- ["3AST5MatchC", "SourceRange"]
+- ["3AST5MatchC", "cases"]
+- ["3AST5MatchC", "init"]
+- ["3AST5MatchC", "subject"]
+- ["3AST9MatchCaseC", "Expr"]
+- ["3AST9MatchCaseC", "Module"]
+- ["3AST9MatchCaseC", "Scope"]
+- ["3AST9MatchCaseC", "SourceRange"]
+- ["3AST9MatchCaseC", "init"]
+- ["3AST9MatchCaseC", "innerScope"]
+- ["3AST9MatchCaseC", "pattern"]
+- ["3AST9MatchCaseC", "value"]
+- !private ["s10MirrorPathP", "description"]
+- !private ["3AST6ModuleC", "Dictionary"]
+- ["3AST6ModuleC", "Func"]
+- ["3AST6ModuleC", "Node"]
+- ["3AST6ModuleC", "Scope"]
+- ["3AST6ModuleC", "SourceRange"]
+- ["3AST6ModuleC", "String"]
+- ["3AST6ModuleC", "Symbol"]
+- ["3AST6ModuleC", "functions"]
+- ["3AST6ModuleC", "id"]
+- ["3AST6ModuleC", "init"]
+- ["3AST6ModuleC", "innerScope"]
+- !private ["3AST6ModuleC", "module"]
+- ["3AST6ModuleC", "statements"]
+- !private ["SM", "compactMap"]
+- ["3AST4NodeC", "=="]
+- ["3AST4NodeC", "Arg"]
+- ["3AST4NodeC", "Bool"]
+- ["3AST4NodeC", "CustomStringConvertible"]
+- !private ["3AST4NodeC", "Dictionary"]
+- ["3AST4NodeC", "Expr"]
+- ["3AST4NodeC", "Func"]
+- ["3AST4NodeC", "FuncSign"]
+- ["3AST4NodeC", "Ident"]
+- ["3AST4NodeC", "Int"]
+- ["3AST4NodeC", "MatchCase"]
+- ["3AST4NodeC", "Metatype"]
+- ["3AST4NodeC", "Module"]
+- ["3AST4NodeC", "Node"]
+- ["3AST4NodeC", "Ownee"]
+- ["3AST4NodeC", "Scope"]
+- ["3AST4NodeC", "SourceRange"]
+- ["3AST4NodeC", "String"]
+- ["3AST4NodeC", "Symbol"]
+- ["3AST4NodeC", "T"]
+- ["3AST4NodeC", "TupleElem"]
+- ["3AST4NodeC", "TupleSign"]
+- ["3AST4NodeC", "TupleSignElem"]
+- ["3AST4NodeC", "TypeBase"]
+- ["3AST4NodeC", "TypeSign"]
+- ["3AST4NodeC", ""]
+- ["3AST4NodeC", "arguments"]
+- ["3AST4NodeC", "body"]
+- ["3AST4NodeC", "callee"]
+- ["3AST4NodeC", "cases"]
+- ["3AST4NodeC", "codomain"]
+- ["3AST4NodeC", "condition"]
+- ["3AST4NodeC", "deinit"]
+- ["3AST4NodeC", "domain"]
+- ["3AST4NodeC", "elements"]
+- ["3AST4NodeC", "elseExpr"]
+- ["3AST4NodeC", "elseScope"]
+- ["3AST4NodeC", "functions"]
+- ["3AST4NodeC", "id"]
+- ["3AST4NodeC", "init"]
+- !private ["3AST4NodeC", "init"]
+- ["3AST4NodeC", "innerScope"]
+- ["3AST4NodeC", "label"]
+- ["3AST4NodeC", "left"]
+- ["3AST4NodeC", "module"]
+- ["3AST4NodeC", "name"]
+- ["3AST4NodeC", "op"]
+- ["3AST4NodeC", "operand"]
+- ["3AST4NodeC", "ownee"]
+- ["3AST4NodeC", "owner"]
+- ["3AST4NodeC", "pattern"]
+- ["3AST4NodeC", "precedence"]
+- ["3AST4NodeC", "range"]
+- ["3AST4NodeC", "right"]
+- ["3AST4NodeC", "scope"]
+- ["3AST4NodeC", "signature"]
+- ["3AST4NodeC", "statements"]
+- ["3AST4NodeC", "subject"]
+- ["3AST4NodeC", "symbol"]
+- ["3AST4NodeC", "thenExpr"]
+- ["3AST4NodeC", "thenScope"]
+- ["3AST4NodeC", "type"]
+- ["3AST4NodeC", "value"]
+- !private ["Sj", "description"]
+- !private ["Sq", "map"]
+- ["3AST6SelectC5OwneeO", "Int"]
+- ["3AST6SelectC5OwneeO", "String"]
+- ["3AST6SelectC5OwneeO", "deinit"]
+- ["3AST6SelectC5OwneeO", "description"]
+- ["3AST6SelectC5OwneeO", "index"]
+- ["3AST6SelectC5OwneeO", "label"]
+- !private ["Sk", "compactMap"]
+- !private ["Sm", "compactMap"]
+- ["3AST6ScalarC", "Module"]
+- ["3AST6ScalarC", "SourceRange"]
+- ["3AST6ScalarC", "T"]
+- ["3AST6ScalarC", "init"]
+- ["3AST6ScalarC", "value"]
+- ["3AST6SelectC", "CustomStringConvertible"]
+- ["3AST6SelectC", "Expr"]
+- ["3AST6SelectC", "Int"]
+- ["3AST6SelectC", "Module"]
+- ["3AST6SelectC", "Ownee"]
+- ["3AST6SelectC", "SourceRange"]
+- ["3AST6SelectC", "String"]
+- ["3AST6SelectC", "init"]
+- ["3AST6SelectC", "ownee"]
+- ["3AST6SelectC", "owner"]
+- !private ["ST", "compactMap"]
+- !private ["ST", "init"]
+- !private ["SZ", "description"]
+- !private ["s13SignedNumericP", "description"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["Sx", "description"]
+- ["3AST6SymbolC", "deinit"]
+- !private ["3AST6SymbolC", "scope"]
+- !private ["3AST6SymbolC", "type"]
+- ["3AST5TupleC", "Module"]
+- ["3AST5TupleC", "SourceRange"]
+- ["3AST5TupleC", "String"]
+- ["3AST5TupleC", "TupleElem"]
+- ["3AST5TupleC", "elements"]
+- ["3AST5TupleC", "init"]
+- ["3AST5TupleC", "label"]
+- ["3AST9TupleElemC", "Expr"]
+- ["3AST9TupleElemC", "Module"]
+- ["3AST9TupleElemC", "SourceRange"]
+- ["3AST9TupleElemC", "String"]
+- ["3AST9TupleElemC", "init"]
+- ["3AST9TupleElemC", "label"]
+- ["3AST9TupleElemC", "value"]
+- ["3AST9TupleSignC", "Module"]
+- ["3AST9TupleSignC", "SourceRange"]
+- ["3AST9TupleSignC", "String"]
+- ["3AST9TupleSignC", "TupleSignElem"]
+- ["3AST9TupleSignC", "elements"]
+- ["3AST9TupleSignC", "init"]
+- ["3AST9TupleSignC", "label"]
+- ["3AST13TupleSignElemC", "Module"]
+- ["3AST13TupleSignElemC", "SourceRange"]
+- ["3AST13TupleSignElemC", "String"]
+- ["3AST13TupleSignElemC", "TypeSign"]
+- ["3AST13TupleSignElemC", "init"]
+- ["3AST13TupleSignElemC", "label"]
+- ["3AST13TupleSignElemC", "name"]
+- ["3AST13TupleSignElemC", "signature"]
+- ["3AST9TypeAliasC", "Module"]
+- ["3AST9TypeAliasC", "Scope"]
+- ["3AST9TypeAliasC", "SourceRange"]
+- ["3AST9TypeAliasC", "String"]
+- ["3AST9TypeAliasC", "Symbol"]
+- ["3AST9TypeAliasC", "TypeSign"]
+- ["3AST9TypeAliasC", "init"]
+- ["3AST9TypeAliasC", "name"]
+- ["3AST9TypeAliasC", "scope"]
+- ["3AST9TypeAliasC", "signature"]
+- ["3AST9TypeAliasC", "symbol"]
+- ["3AST9TypeIdentC", "Module"]
+- ["3AST9TypeIdentC", "Scope"]
+- ["3AST9TypeIdentC", "SourceRange"]
+- ["3AST9TypeIdentC", "String"]
+- ["3AST9TypeIdentC", "Symbol"]
+- ["3AST9TypeIdentC", "init"]
+- ["3AST9TypeIdentC", "name"]
+- ["3AST9TypeIdentC", "scope"]
+- ["3AST9TypeIdentC", "symbol"]
+- ["3AST8TypeSignC", "Metatype"]
+- ["3AST8TypeSignC", "Module"]
+- ["3AST8TypeSignC", "Scope"]
+- ["3AST8TypeSignC", "SourceRange"]
+- ["3AST8TypeSignC", "String"]
+- ["3AST8TypeSignC", "Symbol"]
+- ["3AST8TypeSignC", "TupleSign"]
+- ["3AST8TypeSignC", "TupleSignElem"]
+- ["3AST8TypeSignC", "TypeSign"]
+- ["3AST8TypeSignC", ""]
+- ["3AST8TypeSignC", "cases"]
+- ["3AST8TypeSignC", "codomain"]
+- ["3AST8TypeSignC", "domain"]
+- ["3AST8TypeSignC", "elements"]
+- ["3AST8TypeSignC", "init"]
+- ["3AST8TypeSignC", "label"]
+- ["3AST8TypeSignC", "name"]
+- ["3AST8TypeSignC", "scope"]
+- ["3AST8TypeSignC", "symbol"]
+- ["3AST8TypeSignC", "type"]
+- ["3AST5UnaryC", "Expr"]
+- ["3AST5UnaryC", "Ident"]
+- ["3AST5UnaryC", "Module"]
+- ["3AST5UnaryC", "SourceRange"]
+- ["3AST5UnaryC", "init"]
+- ["3AST5UnaryC", "op"]
+- ["3AST5UnaryC", "operand"]
+- ["3AST9UnionSignC", "Module"]
+- ["3AST9UnionSignC", "SourceRange"]
+- ["3AST9UnionSignC", "TypeSign"]
+- ["3AST9UnionSignC", "cases"]
+- ["3AST9UnionSignC", "init"]
+- !private ["s18_BitwiseOperationsP", "description"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "description"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "compactMap"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "description"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+depends-nominal:
+- "3AST3ArgC"
+- !private "Sa"
+- !private "s13ArrayProtocolP"
+- !private "SK"
+- "3AST6BinaryC"
+- !private "Sz"
+- !private "s7CVarArgP"
+- "3AST4CallC"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- "3AST4ExprC"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "3AST4FuncC"
+- "3AST8FuncSignC"
+- !private "SH"
+- "3AST5IdentC"
+- "3AST2IfC"
+- !private "Si"
+- "3AST10LetBindingC"
+- !private "s25LosslessStringConvertibleP"
+- "3AST5MatchC"
+- "3AST9MatchCaseC"
+- !private "s10MirrorPathP"
+- "3AST6ModuleC"
+- !private "SM"
+- "3AST4NodeC"
+- !private "Sj"
+- !private "Sq"
+- "3AST6SelectC5OwneeO"
+- !private "Sk"
+- !private "Sm"
+- "3AST6ScalarC"
+- "3AST6SelectC"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "Sx"
+- "3AST6SymbolC"
+- "3AST5TupleC"
+- "3AST9TupleElemC"
+- "3AST9TupleSignC"
+- "3AST13TupleSignElemC"
+- "3AST9TypeAliasC"
+- "3AST9TypeIdentC"
+- "3AST8TypeSignC"
+- "3AST5UnaryC"
+- "3AST9UnionSignC"
+- !private "s18_BitwiseOperationsP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/quentinzeller/Github/OFA/Alpine-tests/Alpine-test1/.build/x86_64-apple-macosx10.10/debug/Utils.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+interface-hash: "7c2e27df8508f4071f91cb3d9fddf1e6"
